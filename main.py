@@ -664,100 +664,201 @@ def _build_fixture_lines(fixtures: list, group_title: str) -> list:
 #  Main — fetch 4 nguồn, gộp, lưu file
 # ════════════════════════════════════════════════════════════════[...]
 
-TINHLAGI_M3U_URL = os.environ.get("TINHLAGI_M3U_URL", "https://tinhlagi.pro/s.m3u")
-_TINHLAGI_GROUP_MATCH = "TIẾU LÂM"
+# ─── Giờ Vàng TV config ──────────────────────────────────────────────────────
+GIOVANG_ALL_JSON_URL = "https://live-api.keonhacaitp.one/storage/livestream/all.json"
+GIOVANG_STREAMS_URL  = "https://giovang.city/wp-json/custom-api/v1/streams"
+GIOVANG_FRONTEND_URL = "https://giovang.city"
+
+# ─── Pháo Hoa TV config ──────────────────────────────────────────────────────
+PHAOHOA_API_BASE     = (os.environ.get("PHAOHOA_API") or "https://phaohoa1.live")
+PHAOHOA_FRONTEND_URL = (os.environ.get("PHAOHOA_FRONTEND") or "https://phaohoa.live")
+
+_GIOVANG_HDR = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+    "Referer":    GIOVANG_FRONTEND_URL + "/",
+    "Accept":     "application/json, text/plain, */*",
+}
+
+_PHAOHOA_HDR = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+    "Referer":    PHAOHOA_FRONTEND_URL + "/",
+    "Accept":     "application/json, text/plain, */*",
+}
 
 
-def _parse_tinhlagi_tieulam(text: str) -> list:
-    """Parse M3U thô từ tinhlagi.pro, trả về list channel dict cho nhóm 'Tiếu Lâm TV'.
-    Bỏ qua các bản (HD2) và (Nhà đài) cho gọn danh sách.
-    """
-    lines = text.splitlines()
-    channels: list = []
-    i = 0
-    while i < len(lines):
-        line = lines[i]
-        if line.startswith("#EXTINF"):
-            m = re.search(r'group-title="([^"]*)"', line)
-            group = m.group(1) if m else ""
-            if _TINHLAGI_GROUP_MATCH in group.upper():
-                logo_m = re.search(r'tvg-logo="([^"]*)"', line)
-                logo   = logo_m.group(1) if logo_m else ""
-                title  = line.split(",", 1)[1].strip() if "," in line else ""
-                referrer = ""
-                url      = ""
-                j = i + 1
-                while j < len(lines) and not lines[j].startswith("#EXTINF") and lines[j].strip():
-                    l2 = lines[j]
-                    if l2.startswith("#EXTVLCOPT:http-referrer="):
-                        referrer = l2.split("=", 1)[1].strip()
-                    elif not l2.startswith("#"):
-                        url = l2.strip()
-                    j += 1
-                if url:
-                    title_upper = title.upper()
-                    if "(HD2)" in title_upper or "NHÀ ĐÀI" in title_upper:
-                        i = j
-                        continue
-                    channels.append({"title": title, "logo": logo, "referrer": referrer, "url": url})
-                i = j
-                continue
-        i += 1
-    return channels
+# ─── Giờ Vàng TV ─────────────────────────────────────────────────────────────
+
+def _fetch_giovang_streams() -> dict:
+    """Fetch BLV stream URLs từ giovang.city custom API.
+    Trả về dict {blv_slug: stream_url} hoặc {} nếu API lỗi."""
+    try:
+        r = requests.get(GIOVANG_STREAMS_URL, timeout=12, headers=_GIOVANG_HDR)
+        if r.status_code != 200:
+            return {}
+        data = r.json()
+        if isinstance(data, list):
+            result = {}
+            for item in data:
+                slug = item.get("slug") or item.get("blv") or item.get("select_blv") or ""
+                url  = item.get("stream_url") or item.get("url") or item.get("hls") or ""
+                if slug and url:
+                    result[slug] = url
+            return result
+        if isinstance(data, dict) and data.get("code") in ("json_error", "api_error"):
+            return {}
+        if isinstance(data, dict):
+            return {k: v for k, v in data.items() if isinstance(v, str) and "m3u8" in v}
+    except Exception:
+        pass
+    return {}
 
 
-_TIEULAM_TITLE_RE = re.compile(
-    r'^(?P<time>\d{1,2}:\d{2})\s+(?P<date>\d{1,2}/\d{1,2})\s+'
-    r'(?P<home>.+?)\s+vs\s+(?P<away>.+?)\s*'
-    r'(?:\((?P<blv>[^)]*)\))?\s*(?:\[geo\])?$',
-    re.IGNORECASE,
-)
-
-
-def _format_tieulam_title(title: str) -> str:
-    """Chuẩn hoá tiêu đề Tiếu Lâm TV theo định dạng dùng dấu gạch ngang/gạch đứng
-    giống Khán Đài A / Vòng Cấm TV: 'HH:MM - DD/MM | Home VS Away | BLV ...',
-    đồng thời bỏ thẻ [geo]."""
-    m = _TIEULAM_TITLE_RE.match(title.strip())
-    if not m:
-        return re.sub(r'\s*\[geo\]\s*', '', title, flags=re.IGNORECASE).strip()
-    time_str = m.group("time")
-    date_str = m.group("date")
-    home     = m.group("home").strip()
-    away     = m.group("away").strip()
-    blv      = (m.group("blv") or "").strip()
-    formatted = f"{time_str} - {date_str} | {home} VS {away}"
-    if blv:
-        formatted += f" | {blv}"
-    return formatted
-
-def _build_tieulam_lines_from_channels(channels: list) -> list:
-    """Chuyển channel entries (đã lọc từ tinhlagi.pro) thành M3U lines."""
+def _build_giovang_lines(matches: list, streams: dict) -> list:
+    """Chuyển giovang.city match list thành M3U lines (chỉ trận có BLV và stream URL)."""
+    now_ts = time.time()
     lines: list = []
-    for ch in channels:
-        raw_title = (ch.get("title") or "").strip()
-        url       = (ch.get("url") or "").strip()
-        if not raw_title or not url:
+    try:
+        matches = sorted(matches, key=lambda m: m.get("time_start", 0))
+    except Exception:
+        pass
+
+    for match in matches:
+        is_live    = bool(match.get("is_live"))
+        time_start = int(match.get("time_start") or 0)
+        blv_list   = match.get("blv") or []
+        if not blv_list:
             continue
-        title    = _format_tieulam_title(raw_title)
-        logo     = _logo_from_text(title)
-        referrer = ch.get("referrer") or ""
-        lines.append(f'#EXTINF:-1 tvg-logo="{logo}" group-title="TieuLam TV",{title}')
-        if referrer:
-            lines.append(f"#EXTVLCOPT:http-referrer={referrer}")
-        lines.append(url)
+
+        elapsed = now_ts - time_start if time_start else 0
+        # Bỏ qua trận đã kết thúc hơn 2h hoặc quá xa trong tương lai (> 24h)
+        if elapsed > MATCH_MAX_AGE_SECONDS and not is_live:
+            continue
+        if time_start and elapsed < -86400:
+            continue
+
+        t1     = (match.get("teams") or {}).get("home", {}).get("name", "Home").strip()
+        t2     = (match.get("teams") or {}).get("away", {}).get("name", "Away").strip()
+        league = ((match.get("league") or {}).get("title") or "").strip()
+        logo   = _logo_from_text(t1 + " " + t2 + " " + league)
+
+        if time_start:
+            dt_vn    = datetime.fromtimestamp(time_start, tz=VN_TZ)
+            time_str = dt_vn.strftime("%H:%M")
+            date_str = dt_vn.strftime("%d/%m")
+        else:
+            time_str = "--:--"
+            date_str = "--/--"
+
+        for blv_id in blv_list:
+            stream_url = streams.get(blv_id, "")
+            if not stream_url:
+                continue
+            blv_display = blv_id.replace("blv-", "BLV ").replace("-", " ").title()
+            display = f"{time_str} - {date_str} | {t1} VS {t2} ({league}) | {blv_display}"
+            lines.append(f'#EXTINF:-1 tvg-logo="{logo}" group-title="Giờ Vàng TV",{display}')
+            final_url = stream_url
+            if "|" not in stream_url:
+                final_url += f"|Referer={GIOVANG_FRONTEND_URL}/&User-Agent=Mozilla/5.0"
+            lines.append(final_url)
     return lines
 
 
-def fetch_tieulam() -> list:
-    """Nguồn dữ liệu TieuLam TV — lấy từ danh sách tổng hợp tinhlagi.pro
-    (lọc nhóm 'TIẾU LÂM TV'), giống cách làm bên repo Verceliptv."""
-    r = requests.get(TINHLAGI_M3U_URL, timeout=15, headers={"User-Agent": "Mozilla/5.0"})
+def fetch_giovang() -> list:
+    """Nguồn Giờ Vàng TV từ giovang.city."""
+    streams = _fetch_giovang_streams()
+    if not streams:
+        raise ValueError("giovang: không lấy được stream URLs từ custom API (API tạm thời lỗi)")
+    r = requests.get(GIOVANG_ALL_JSON_URL, timeout=15, headers=_GIOVANG_HDR)
     r.raise_for_status()
-    channels = _parse_tinhlagi_tieulam(r.text)
-    if not channels:
-        raise ValueError("tinhlagi: không tìm thấy kênh Tiếu Lâm TV")
-    return _build_tieulam_lines_from_channels(channels)
+    data    = r.json()
+    matches = data.get("response", []) if isinstance(data, dict) else (data if isinstance(data, list) else [])
+    if not matches:
+        raise ValueError("giovang: không có trận đấu nào trong all.json")
+    lines = _build_giovang_lines(matches, streams)
+    if not lines:
+        raise ValueError("giovang: không có trận nào có BLV với stream URL khớp")
+    return lines
+
+
+# ─── Pháo Hoa TV ─────────────────────────────────────────────────────────────
+
+def _fetch_phaohoa_matches() -> list:
+    """Fetch scheduled + live matches từ phaohoa.live API."""
+    results: list = []
+    for status in ("live", "scheduled"):
+        try:
+            url = f"{PHAOHOA_API_BASE}/api/matches/?status={status}&ordering=start_time&page_size=100"
+            r   = requests.get(url, timeout=15, headers=_PHAOHOA_HDR)
+            if r.status_code == 200:
+                data = r.json()
+                results.extend(data.get("results") or [])
+        except Exception:
+            pass
+    return results
+
+
+def _build_phaohoa_lines(matches: list) -> list:
+    """Chuyển phaohoa.live match list thành M3U lines (chỉ trận có BLV tiếng Việt)."""
+    now_ts = time.time()
+    lines: list = []
+    seen_urls: set = set()
+    try:
+        matches = sorted(matches, key=lambda m: m.get("start_time") or "")
+    except Exception:
+        pass
+
+    for match in matches:
+        status = str(match.get("status") or "").lower().strip()
+        if status in FINISHED_STATUS_STRINGS:
+            continue
+
+        start_time_str = match.get("start_time") or ""
+        time_str = "--:--"
+        date_str = "--/--"
+        if start_time_str:
+            try:
+                dt      = datetime.fromisoformat(start_time_str.replace("Z", "+00:00"))
+                elapsed = now_ts - dt.timestamp()
+                if elapsed > MATCH_MAX_AGE_SECONDS:
+                    continue
+                if elapsed < -86400:          # hơn 24h trong tương lai — bỏ qua
+                    continue
+                dt_vn    = dt.astimezone(VN_TZ)
+                time_str = dt_vn.strftime("%H:%M")
+                date_str = dt_vn.strftime("%d/%m")
+            except Exception:
+                pass
+
+        t1     = (match.get("home_team_name") or "Home").strip()
+        t2     = (match.get("away_team_name") or "Away").strip()
+        league = (match.get("tournament_name") or "").strip()
+        logo   = _logo_from_text(t1 + " " + t2 + " " + league)
+
+        for comm in match.get("commentators") or []:
+            stream_url = (comm.get("stream_url") or "").strip()
+            if not stream_url:
+                continue
+            # Dedup theo URL trong cùng 1 lần chạy
+            if stream_url in seen_urls:
+                # Vẫn thêm entry mới với tên trận khác nhau, chỉ bỏ nếu cùng trận
+                pass
+            seen_urls.add(stream_url)
+            name = (comm.get("name") or "BLV").strip()
+            display = f"{time_str} - {date_str} | {t1} VS {t2} ({league}) | {name}"
+            lines.append(f'#EXTINF:-1 tvg-logo="{logo}" group-title="Pháo Hoa TV",{display}')
+            final_url = stream_url
+            if "|" not in stream_url:
+                final_url += f"|Referer={PHAOHOA_FRONTEND_URL}/&User-Agent=Mozilla/5.0"
+            lines.append(final_url)
+    return lines
+
+
+def fetch_phaohoa() -> list:
+    """Nguồn Pháo Hoa TV từ phaohoa.live."""
+    matches = _fetch_phaohoa_matches()
+    if not matches:
+        raise ValueError("phaohoa: không fetch được dữ liệu trận đấu từ API")
+    return _build_phaohoa_lines(matches)
 
 
 def fetch_hoiquan() -> list:
@@ -783,10 +884,11 @@ def fetch_vtv() -> list:
 def main():
     # Tự động follow redirect để cập nhật domain thực tế của từng nguồn
     _resolve_all_frontends()
-    print("🔄 Đang fetch dữ liệu từ 4 nguồn song song…")
+    print("🔄 Đang fetch dữ liệu từ 6 nguồn song song…")
 
     tasks = {
-        "tieulam":  fetch_tieulam,
+        "giovang":  fetch_giovang,
+        "phaohoa":  fetch_phaohoa,
         "hoiquan":  fetch_hoiquan,
         "khandaia": fetch_khandaia,
         "vongcam":  fetch_vongcam,
@@ -809,13 +911,14 @@ def main():
                 errors.append(f"{key}: {exc}")
                 print(f"  ❌ {key}: {exc}", file=sys.stderr)
 
-    tieulam_lines  = results.get("tieulam",  [])
+    giovang_lines  = results.get("giovang",  [])
+    phaohoa_lines  = results.get("phaohoa",  [])
     hoiquan_lines  = results.get("hoiquan",  [])
     khandaia_lines = results.get("khandaia", [])
     vongcam_lines  = results.get("vongcam",  [])
     vtv_lines      = results.get("vtv",      [])
 
-    all_lines = tieulam_lines + hoiquan_lines + khandaia_lines + vongcam_lines + vtv_lines
+    all_lines = giovang_lines + phaohoa_lines + hoiquan_lines + khandaia_lines + vongcam_lines + vtv_lines
 
     total   = sum(1 for l in all_lines if l.startswith("#EXTINF"))
     content = "#EXTM3U\n" + "\n".join(all_lines)
@@ -825,10 +928,12 @@ def main():
     with open("dekki.m3u", "w", encoding="utf-8") as f:
         f.write(content)
 
+    gv_count = sum(1 for l in giovang_lines if l.startswith("#EXTINF"))
+    ph_count = sum(1 for l in phaohoa_lines if l.startswith("#EXTINF"))
     vc_count = sum(1 for l in vongcam_lines if l.startswith("#EXTINF"))
-    print(f"\n✅ Hoàn thành! Đã lưu {total} kênh vào 'dekki.m3u' (Vòng Cấm: {vc_count})")
+    print(f"\n✅ Hoàn thành! Đã lưu {total} kênh vào 'dekki.m3u' (Giờ Vàng: {gv_count}, Pháo Hoa: {ph_count}, Vòng Cấm: {vc_count})")
     if errors:
-        print(f"⚠️  Lỗi x���y ra: {'; '.join(errors)}", file=sys.stderr)
+        print(f"⚠️  Lỗi xảy ra: {'; '.join(errors)}", file=sys.stderr)
 
 
 if __name__ == "__main__":
