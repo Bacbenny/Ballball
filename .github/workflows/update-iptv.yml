@@ -45,27 +45,11 @@ jobs:
           CF_API_TOKEN:         ${{ secrets.CF_API_TOKEN }}
           RELAY_SECRET:         ${{ secrets.RELAY_SECRET }}
           HOIQUAN_API:          ${{ secrets.HOIQUAN_API }}
-          KHANDAIA_API:         ${{ secrets.KHANDAIA_API }}
+          KHANDAIA_API:        ${{ secrets.KHANDAIA_API }}
           VONGCAM_API:          ${{ secrets.VONGCAM_API }}
           VONGCAM_ACCESS_TOKEN: ${{ secrets.VONGCAM_TOKEN }}
           VONGCAM_TOKEN:        ${{ secrets.VONGCAM_TOKEN }}
         run: python deploy_workers.py || echo "Worker deploy skipped"
-
-      - name: Test CF Worker health (/healthz)
-        env:
-          RELAY_SECRET: ${{ secrets.RELAY_SECRET }}
-        run: python test_worker_health.py
-
-      - name: Diagnose relay
-        env:
-          RELAY_SECRET:             ${{ secrets.RELAY_SECRET }}
-          HOIQUAN_API:              ${{ secrets.HOIQUAN_API }}
-          HOIQUAN_FRONTEND:         ${{ secrets.HOIQUAN_FRONTEND }}
-          KHANDAIA_API:             ${{ secrets.KHANDAIA_API }}
-          KHANDAIA_FRONTEND:        ${{ secrets.KHANDAIA_FRONTEND }}
-          VONGCAM_API:              ${{ secrets.VONGCAM_API }}
-          VONGCAM_ACCESS_TOKEN:     ${{ secrets.VONGCAM_TOKEN }}
-        run: python diagnose_relay.py || echo "Diagnose completed (non-fatal)"
 
       - name: Run IPTV updater
         env:

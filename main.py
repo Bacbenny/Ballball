@@ -1,6 +1,8 @@
 import base64
 import hashlib
 import hmac
+import html
+import json
 import os
 import re
 import sys
@@ -713,6 +715,87 @@ def _fetch_giovang_streams() -> dict:
     return {}
 
 
+def _slugify_team(name: str) -> str:
+    s = name.lower().strip()
+    s = re.sub(r'[^a-z0-9\s-]', '', s)
+    s = re.sub(r'[\s]+', '-', s)
+    s = re.sub(r'-+', '-', s)
+    return s.strip('-')
+
+
+def _build_match_page_url(match: dict) -> str:
+    mid = match.get('id', '')
+    if not mid:
+        return ''
+    teams = match.get('teams', {})
+    home = teams.get('home', {})
+    away = teams.get('away', {})
+    slug1 = home.get('slug', '') or _slugify_team(home.get('name', ''))
+    slug2 = away.get('slug', '') or _slugify_team(away.get('name', ''))
+    date = match.get('date', '').replace('/', '-')
+    if not slug1 or not slug2 or not date:
+        return ''
+    return f"{GIOVANG_FRONTEND_URL}/truc-tiep-{slug1}-vs-{slug2}-{date}-{mid}/"
+
+
+def _fetch_giovang_streams_from_pages(matches: list) -> dict:
+    now_ts = time.time()
+    active = []
+    for m in matches:
+        blv_list = m.get('blv') or []
+        if not blv_list:
+            continue
+        is_live = bool(m.get('is_live'))
+        time_start = int(m.get('time_start') or 0)
+        elapsed = now_ts - time_start if time_start else 0
+        if elapsed > MATCH_MAX_AGE_SECONDS and not is_live:
+            continue
+        if time_start and elapsed < -86400:
+            continue
+        active.append(m)
+
+    if not active:
+        return {}
+
+    def _scrape(match):
+        url = _build_match_page_url(match)
+        if not url:
+            return {}
+        try:
+            r = requests.get(url, headers=_GIOVANG_HDR, timeout=12)
+            if not r.ok:
+                return {}
+            blv_attrs = re.findall(r'data-blv="([^"]+)"', r.text)
+            result = {}
+            for raw in blv_attrs:
+                decoded = html.unescape(raw)
+                try:
+                    blvs = json.loads(decoded)
+                    for blv in blvs:
+                        key = blv.get('blv_key', '')
+                        stream_url = (blv.get('pc_stream_url') or
+                                      blv.get('mobile_stream_url') or
+                                      blv.get('link_stream_hd') or
+                                      blv.get('link_stream_sd') or '')
+                        if key and stream_url:
+                            result[key] = stream_url
+                except Exception:
+                    pass
+            return result
+        except Exception:
+            return {}
+
+    streams = {}
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        futures = {pool.submit(_scrape, m): m for m in active}
+        for fut in as_completed(futures):
+            try:
+                streams.update(fut.result())
+            except Exception:
+                pass
+    return streams
+
+
 def _build_giovang_lines(matches: list, streams: dict) -> list:
     """Chuyển giovang.city match list thành M3U lines (chỉ trận có BLV và stream URL)."""
     now_ts = time.time()
@@ -766,14 +849,19 @@ def _build_giovang_lines(matches: list, streams: dict) -> list:
 def fetch_giovang() -> list:
     """Nguồn Giờ Vàng TV từ giovang.city."""
     streams = _fetch_giovang_streams()
-    if not streams:
-        raise ValueError("giovang: không lấy được stream URLs từ custom API (API tạm thời lỗi)")
     r = requests.get(GIOVANG_ALL_JSON_URL, timeout=15, headers=_GIOVANG_HDR)
     r.raise_for_status()
     data    = r.json()
     matches = data.get("response", []) if isinstance(data, dict) else (data if isinstance(data, list) else [])
     if not matches:
         raise ValueError("giovang: không có trận đấu nào trong all.json")
+    if not streams:
+        print("  giovang: streams API lỗi, thử scrape trang trận đấu...", file=sys.stderr)
+        streams = _fetch_giovang_streams_from_pages(matches)
+        if streams:
+            print(f"  giovang: scrape OK, {len(streams)} streams", file=sys.stderr)
+    if not streams:
+        raise ValueError("giovang: không lấy được stream URLs (API lỗi và scrape cũng thất bại)")
     lines = _build_giovang_lines(matches, streams)
     if not lines:
         raise ValueError("giovang: không có trận nào có BLV với stream URL khớp")

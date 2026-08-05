@@ -1,19 +1,16 @@
 #!/usr/bin/env python3
-"""
-auto_discover.py — Tự động phát hiện và cập nhật API URLs cho tất cả nguồn BallBall.
-Chạy thủ công hoặc qua GitHub Actions mỗi 3 giờ.
+"""auto_discover.py — Tự động phát hiện và cập nhật API URLs cho tất cả nguồn BallBall.
+Chay thu cong hoac qua GitHub Actions moi 3 gio.
 
-Env vars cần thiết:
-  CF_API_TOKEN / CLOUDFLARE_API_TOKEN  — Cloudflare API token (quyền edit workers)
+Env vars can thiet:
+  CF_API_TOKEN / CLOUDFLARE_API_TOKEN  — Cloudflare API token (quyen edit workers)
   RELAY_SECRET                          — Relay auth secret
 """
-import os, re, sys, json, time, requests, hashlib
-from datetime import datetime, timezone, timedelta, date as _date
+import os, re, sys, time, requests
+from datetime import datetime, timezone
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-# ── Constants ───────────────────────────────────────────────────────────[...]
 CF_TOKEN   = os.environ.get("CF_API_TOKEN") or os.environ.get("CLOUDFLARE_API_TOKEN", "")
-CF_ACCOUNT = "1c17b9b516c9a00478f2e538883c7e3b"
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
       "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36")
 
@@ -37,16 +34,11 @@ SOURCES = {
     },
 }
 
-# ── HTTP helpers ──────────────────────────────────────────────────────────[...]
+# ── HTTP helpers ──────────────────────────────────────────────────────────
 def _get(url, headers=None, timeout=10, **kw):
     h = {"User-Agent": UA, "Accept": "application/json, */*"}
     if headers: h.update(headers)
     return requests.get(url, headers=h, timeout=timeout, **kw)
-
-def _post(url, json_body, headers=None, timeout=12):
-    h = {"User-Agent": UA, "Content-Type": "application/json", "Accept": "application/json"}
-    if headers: h.update(headers)
-    return requests.post(url, json=json_body, headers=h, timeout=timeout)
 
 # ── JS bundle scraper ────────────────────────────────────────────────────────
 def _fetch_js_bundles(frontend_url: str, max_js: int = 5) -> list[str]:
@@ -76,7 +68,7 @@ def _extract_api_url(js: str, patterns: list[str]) -> str | None:
             return hit.rstrip("/")
     return None
 
-# ── HoiQuan discovery ────────────────────────────────────────────────────────[...]
+# ── HoiQuan discovery ────────────────────────────────────────────────────────
 def discover_hoiquan(known: str) -> tuple[str, str]:
     patterns = [
         r'VITE_SERVER_API_BASE_URL:\s*"(https://[^"]+)"',
@@ -114,7 +106,7 @@ def discover_hoiquan(known: str) -> tuple[str, str]:
                 pass
     return known, "known"
 
-# ── KhanDai discovery ────────────────────────────────────────────────────────[...]
+# ── KhanDai discovery ────────────────────────────────────────────────────────
 def discover_khandaia(known: str) -> tuple[str, str]:
     patterns = [
         r'VITE_SERVER_API_BASE_URL:\s*"(https://[^"]+)"',
@@ -128,7 +120,8 @@ def discover_khandaia(known: str) -> tuple[str, str]:
         if url:
             try:
                 r = _get(url.rstrip("/") + "/fixtures/unfinished",
-                         headers={"Referer": frontend + "/"}, timeout=6)
+                         headers={"Referer": frontend + "/"},
+                         timeout=6)
                 if r.ok:
                     return url, "js"
             except Exception:
@@ -148,7 +141,7 @@ def discover_khandaia(known: str) -> tuple[str, str]:
                 pass
     return known, "known"
 
-# ── VongCam discovery ────────────────────────────────────────────────────────[...]
+# ── VongCam discovery ────────────────────────────────────────────────────────
 def discover_vongcam_token(known_token: str) -> tuple[str, str]:
     frontend = SOURCES["vongcam"]["frontend"]
     for js in _fetch_js_bundles(frontend, max_js=6):
@@ -163,98 +156,11 @@ def discover_vongcam_token(known_token: str) -> tuple[str, str]:
                     return hit, "js"
     return known_token, "known"
 
-# ── CF Worker update ────────────────────────────────────────────────────────–[...]
-def _get_worker_script(name: str) -> str:
-    """Lấy source code worker đang deploy (trả về phần JS trong multipart)."""
-    r = requests.get(
-        f"https://api.cloudflare.com/client/v4/accounts/{CF_ACCOUNT}/workers/scripts/{name}",
-        headers={"Authorization": f"Bearer {CF_TOKEN}"},
-        timeout=15,
-    )
-    if not r.ok:
-        return ""
-    # Response là multipart — tìm phần JS
-    text = r.text
-    # Tìm đoạn code JS (sau boundary + Content-Type: application/javascript)
-    # Cách đơn giản: lấy phần sau Content-Type header của part đầu
-    parts = text.split("\r\n\r\n", 1)
-    if len(parts) > 1:
-        return parts[1]
-    return text
-
-
-OBSOLETE_BINDINGS = {"GITHUB_RAW_URL", "PLAYLIST_KEY"}
-REPLIT_RELAY_URL = (
-    os.environ.get("HOIQUAN_REPLIT_RELAY_URL")
-    or os.environ.get("REPLIT_RELAY_URL")
-    or ""
-)
-RELAY_SECRET = os.environ.get("RELAY_SECRET", "")
-
-
-def _get_existing_bindings(name: str) -> list:
-    try:
-        r = requests.get(
-            f"https://api.cloudflare.com/client/v4/accounts/{CF_ACCOUNT}/workers/scripts/{name}/settings",
-            headers={"Authorization": f"Bearer {CF_TOKEN}"},
-            timeout=15,
-        )
-        if r.ok:
-            return r.json().get("result", {}).get("bindings", []) or []
-    except Exception:
-        pass
-    return []
-
-
-def _build_worker_bindings(name: str, existing: list) -> list:
-    bindings, seen = [], set()
-    for b in existing:
-        bname, btype = b.get("name", ""), b.get("type", "")
-        if not bname or bname in OBSOLETE_BINDINGS:
-            continue
-        if btype == "secret_text":
-            bindings.append({"name": bname, "type": "secret_text"})
-            seen.add(bname)
-    if name == "hoiquan-relay" and REPLIT_RELAY_URL:
-        bindings.append({"name": "REPLIT_RELAY_URL", "type": "plain_text", "text": REPLIT_RELAY_URL.rstrip("/")})
-        seen.add("REPLIT_RELAY_URL")
-    if "RELAY_SECRET" not in seen and RELAY_SECRET:
-        bindings.append({"name": "RELAY_SECRET", "type": "secret_text", "text": RELAY_SECRET})
-    return bindings
-
-
-def _deploy_worker(name: str, script: str) -> bool:
-    """Deploy worker lên CF bằng multipart/form-data đúng chuẩn.
-
-    FIX: Giữ secret_text bindings (RELAY_SECRET) khi redeploy.
-    """
-    existing = _get_existing_bindings(name)
-    bindings = _build_worker_bindings(name, existing)
-
-    metadata = json.dumps({
-        "main_module": "index.js",
-        "compatibility_date": "2024-09-23",
-        "usage_model": "standard",
-        "bindings": bindings,
-    })
-
-    r = requests.put(
-        f"https://api.cloudflare.com/client/v4/accounts/{CF_ACCOUNT}/workers/scripts/{name}",
-        headers={"Authorization": f"Bearer {CF_TOKEN}"},
-        files={
-            "metadata": (None, metadata, "application/json"),
-            "index.js": (None, script,   "application/javascript+module"),
-        },
-        timeout=30,
-    )
-    return r.ok and r.json().get("success", False)
-
-
-# ── main.py patch ─────────────────────────────────────────────────────────–[...]
+# ── main.py patch ───────────────────────────────────────────────────────────
 MAIN_PY_PATH = os.path.join(os.path.dirname(__file__), "main.py")
 
 def _update_main_py(key: str, new_url: str) -> bool:
-    """Cập nhật KNOWN_API_BASE constant trong main.py."""
+    """Cap nhat KNOWN_API_BASE constant trong main.py."""
     try:
         with open(MAIN_PY_PATH, "r") as f:
             src = f.read()
@@ -268,7 +174,7 @@ def _update_main_py(key: str, new_url: str) -> bool:
             return False
         new_src = re.sub(pat, lambda m: m.group(1) + f'"{new_url}"', src, count=1)
         if new_src == src:
-            return False  # no change
+            return False
         with open(MAIN_PY_PATH, "w") as f:
             f.write(new_src)
         return True
@@ -276,8 +182,7 @@ def _update_main_py(key: str, new_url: str) -> bool:
         print(f"  main.py patch error: {e}")
         return False
 
-
-# ── Main ────────────────────────────────────────────────────────────–[...]
+# ── Main ───────────────────────────────────────────────────────────────────
 def main():
     print()
     print("=" * 65)
@@ -312,7 +217,7 @@ def main():
     for name, fn, known in tasks:
         new_url, method, err = results[name]
         status = "ERROR" if err else ("NEW" if new_url != known else "OK ")
-        print(f"  [{status}] {name:12s} → {new_url}  (via {method})")
+        print(f"  [{status}] {name:12s} -> {new_url}  (via {method})")
         if err:
             print(f"           Error: {err}")
             errors.append(name)
