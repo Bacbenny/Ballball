@@ -1,46 +1,30 @@
 #!/usr/bin/env python3
-"""auto_discover.py — Tự động phát hiện và cập nhật API URLs cho tất cả nguồn BallBall.
+"""auto_discover.py — Tự động phát hiện và cập nhật API URLs cho Pháo Hoa TV.
 Chay thu cong hoac qua GitHub Actions moi 3 gio.
-
-Env vars can thiet:
-  CF_API_TOKEN / CLOUDFLARE_API_TOKEN  — Cloudflare API token (quyen edit workers)
-  RELAY_SECRET                          — Relay auth secret
 """
-import os, re, sys, time, requests
+import os, re, sys, requests
 from datetime import datetime, timezone
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-CF_TOKEN   = os.environ.get("CF_API_TOKEN") or os.environ.get("CLOUDFLARE_API_TOKEN", "")
+CF_TOKEN = os.environ.get("CF_API_TOKEN") or os.environ.get("CLOUDFLARE_API_TOKEN", "")
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
       "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36")
 
 SOURCES = {
-    "hoiquan": {
-        "frontend":  (os.environ.get("HOIQUAN_FRONTEND") or "https://sv2.hoiquan4.live"),
-        "known_api": (os.environ.get("HOIQUAN_API")      or "https://sv.hoiquantv.xyz/api/v1/external"),
-        "env_key":   "HOIQUAN_API",
-        "probe_path": "/fixtures/unfinished",
-    },
-    "khandaia": {
-        "frontend":  (os.environ.get("KHANDAIA_FRONTEND") or "https://tructiep.khandaia.link"),
-        "known_api": (os.environ.get("KHANDAIA_API")      or "https://sv.khandai-a.xyz/api/v1/external"),
-        "env_key":   "KHANDAIA_API",
-        "probe_path": "/fixtures/unfinished",
-    },
-    "vongcam": {
-        "frontend":  (os.environ.get("VONGCAM_FRONTEND") or "https://sv2.vongcam3.live"),
-        "known_api": (os.environ.get("VONGCAM_API")      or "https://sv.bugiotv.xyz/internal/api/matches"),
-        "env_key":   "VONGCAM_API",
+    "phaohoa": {
+        "frontend":  (os.environ.get("PHAOHOA_FRONTEND") or "https://phaohoa.live"),
+        "known_api": (os.environ.get("PHAOHOA_API")      or "https://phaohoa1.live"),
+        "env_key":   "PHAOHOA_API",
     },
 }
 
-# ── HTTP helpers ──────────────────────────────────────────────────────────
+
 def _get(url, headers=None, timeout=10, **kw):
     h = {"User-Agent": UA, "Accept": "application/json, */*"}
     if headers: h.update(headers)
     return requests.get(url, headers=h, timeout=timeout, **kw)
 
-# ── JS bundle scraper ────────────────────────────────────────────────────────
+
 def _fetch_js_bundles(frontend_url: str, max_js: int = 5) -> list[str]:
     try:
         html = _get(frontend_url, timeout=12).text
@@ -58,31 +42,30 @@ def _fetch_js_bundles(frontend_url: str, max_js: int = 5) -> list[str]:
             pass
     return results
 
+
 def _extract_api_url(js: str, patterns: list[str]) -> str | None:
     for pat in patterns:
         hits = re.findall(pat, js)
         for hit in hits:
-            if any(x in hit for x in ["cdn", "pull", "stream", "secufun", "asynccdn",
-                                       "jsdelivr", "twemoji", "flashscore"]):
+            if any(x in hit for x in ["cdn", "pull", "jsdelivr", "twemoji", "flashscore"]):
                 continue
             return hit.rstrip("/")
     return None
 
-# ── HoiQuan discovery ────────────────────────────────────────────────────────
-def discover_hoiquan(known: str) -> tuple[str, str]:
+
+def discover_phaohoa(known: str) -> tuple[str, str]:
     patterns = [
         r'VITE_SERVER_API_BASE_URL:\s*"(https://[^"]+)"',
         r'VITE_API_BASE(?:_URL)?:\s*"(https://[^"]+)"',
-        r'baseURL:\s*"(https://sv\.[^"]+)"',
-        r'"(https://sv\.[a-z0-9\-]+\.[a-z]+/api/v\d+/external)"',
-        r'"(https://[a-z0-9\-]+\.[a-z]+/api/v\d+/external)"',
+        r'baseURL:\s*"(https://[^"]+)"',
+        r'"(https://phaohoa\d*\.live)"',
     ]
-    frontend = SOURCES["hoiquan"]["frontend"]
+    frontend = SOURCES["phaohoa"]["frontend"]
     for js in _fetch_js_bundles(frontend, max_js=5):
         url = _extract_api_url(js, patterns)
         if url:
             try:
-                r = _get(url.rstrip("/") + "/fixtures/unfinished",
+                r = _get(f"{url}/api/matches/?status=live&page_size=1",
                          headers={"Referer": frontend + "/"},
                          timeout=6)
                 if r.ok:
@@ -90,88 +73,26 @@ def discover_hoiquan(known: str) -> tuple[str, str]:
             except Exception:
                 pass
 
-    sv_domains = ["sv.hoiquantv.xyz", "sv2.hoiquantv.xyz", "sv3.hoiquantv.xyz",
-                  "api.hoiquantv.xyz", "sv.hoiquan4.live"]
-    probe_paths = ["/api/v1/external", "/api/v2/external", "/api/v1/fixtures/unfinished",
-                   "/api/v2/fixtures/unfinished", "/external", "/fixtures/unfinished"]
-    for dom in sv_domains:
-        for path in probe_paths:
-            try:
-                url = f"https://{dom}{path}"
-                r = _get(url, headers={"Referer": frontend + "/"}, timeout=4)
-                if r.ok and r.headers.get("content-type", "").startswith("application/json"):
-                    base = f"https://{dom}" + path.rsplit("/", 1)[0]
-                    return base, "probe"
-            except Exception:
-                pass
+    for dom in ["phaohoa1.live", "phaohoa2.live", "phaohoa3.live"]:
+        try:
+            url = f"https://{dom}"
+            r = _get(f"{url}/api/matches/?status=live&page_size=1",
+                     headers={"Referer": frontend + "/"}, timeout=4)
+            if r.ok:
+                return url, "probe"
+        except Exception:
+            pass
     return known, "known"
 
-# ── KhanDai discovery ────────────────────────────────────────────────────────
-def discover_khandaia(known: str) -> tuple[str, str]:
-    patterns = [
-        r'VITE_SERVER_API_BASE_URL:\s*"(https://[^"]+)"',
-        r'VITE_API_BASE(?:_URL)?:\s*"(https://[^"]+)"',
-        r'baseURL:\s*"(https://sv\.[^"]+)"',
-        r'"(https://sv\.[a-z0-9\-]+\.[a-z]+/api/v\d+/external)"',
-    ]
-    frontend = SOURCES["khandaia"]["frontend"]
-    for js in _fetch_js_bundles(frontend, max_js=5):
-        url = _extract_api_url(js, patterns)
-        if url:
-            try:
-                r = _get(url.rstrip("/") + "/fixtures/unfinished",
-                         headers={"Referer": frontend + "/"},
-                         timeout=6)
-                if r.ok:
-                    return url, "js"
-            except Exception:
-                pass
 
-    sv_domains = ["sv.khandai-a.xyz", "sv2.khandai-a.xyz", "api.khandaia.link",
-                  "sv.khandaia.live", "sv3.khandai-a.xyz"]
-    for dom in sv_domains:
-        for path in ["/api/v1/external", "/api/v2/external", "/fixtures/unfinished"]:
-            try:
-                url = f"https://{dom}{path}"
-                r = _get(url, headers={"Referer": frontend + "/"}, timeout=4)
-                if r.ok and r.headers.get("content-type", "").startswith("application/json"):
-                    base = f"https://{dom}" + path.rsplit("/", 1)[0]
-                    return base, "probe"
-            except Exception:
-                pass
-    return known, "known"
-
-# ── VongCam discovery ────────────────────────────────────────────────────────
-def discover_vongcam_token(known_token: str) -> tuple[str, str]:
-    frontend = SOURCES["vongcam"]["frontend"]
-    for js in _fetch_js_bundles(frontend, max_js=6):
-        for pat in [
-            r"""[Aa]ccess[-_]?[Tt]oken['"]?\s*:\s*['"]([A-Z0-9]{4,32})['"]""",
-            r"""['"]Access-Token['"]\s*:\s*['"]([A-Z0-9]{4,32})['"]""",
-            r"""[Aa]uthorization['"]?\s*:\s*['"]([A-Z0-9]{4,32})['"]""",
-        ]:
-            hits = re.findall(pat, js)
-            for hit in hits:
-                if hit and hit.lower() not in ("null", "undefined"):
-                    return hit, "js"
-    return known_token, "known"
-
-# ── main.py patch ───────────────────────────────────────────────────────────
 MAIN_PY_PATH = os.path.join(os.path.dirname(__file__), "main.py")
 
+
 def _update_main_py(key: str, new_url: str) -> bool:
-    """Cap nhat KNOWN_API_BASE constant trong main.py."""
     try:
         with open(MAIN_PY_PATH, "r") as f:
             src = f.read()
-        patterns_map = {
-            "hoiquan":  r'(HOIQUAN_KNOWN_API_BASE\s*=\s*\(os\.environ\.get\("HOIQUAN_API"\)\s*or\s*)"https://[^"]+"',
-            "khandaia": r'(KHANDAIA_KNOWN_API_BASE\s*=\s*\(os\.environ\.get\("KHANDAIA_API"\)\s*or\s*)"https://[^"]+"',
-            "vongcam":  r'(VONGCAM_KNOWN_API_BASE\s*=\s*\(os\.environ\.get\("VONGCAM_API"\)\s*or\s*)"https://[^"]+"',
-        }
-        pat = patterns_map.get(key)
-        if not pat:
-            return False
+        pat = r'(PHAOHOA_API_BASE\s*=\s*\(os\.environ\.get\("PHAOHOA_API"\)\s*or\s*)"https://[^"]+"'
         new_src = re.sub(pat, lambda m: m.group(1) + f'"{new_url}"', src, count=1)
         if new_src == src:
             return False
@@ -182,7 +103,7 @@ def _update_main_py(key: str, new_url: str) -> bool:
         print(f"  main.py patch error: {e}")
         return False
 
-# ── Main ───────────────────────────────────────────────────────────────────
+
 def main():
     print()
     print("=" * 65)
@@ -194,22 +115,21 @@ def main():
     changed = []
     errors  = []
 
-    def run_discovery(name, fn, known):
-        try:
-            new_url, method = fn(known)
-            return name, new_url, method, None
-        except Exception as e:
-            return name, known, "error", str(e)
-
     tasks = [
-        ("hoiquan",  discover_hoiquan,        SOURCES["hoiquan"]["known_api"]),
-        ("khandaia", discover_khandaia,       SOURCES["khandaia"]["known_api"]),
-        ("vongcam",  discover_vongcam_token,  (os.environ.get("VONGCAM_ACCESS_TOKEN") or "AB321C")),
+        ("phaohoa", discover_phaohoa, SOURCES["phaohoa"]["known_api"]),
     ]
 
     results = {}
     with ThreadPoolExecutor(max_workers=3) as ex:
-        futs = {ex.submit(run_discovery, n, fn, k): n for n, fn, k in tasks}
+        futs = {}
+        for name, fn, known in tasks:
+            def run(n, f, k):
+                try:
+                    new_url, method = f(k)
+                    return n, new_url, method, None
+                except Exception as e:
+                    return n, k, "error", str(e)
+            futs[ex.submit(run, name, fn, known)] = name
         for fut in as_completed(futs):
             name, new_url, method, err = fut.result()
             results[name] = (new_url, method, err)

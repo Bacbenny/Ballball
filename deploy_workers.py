@@ -1,26 +1,12 @@
 #!/usr/bin/env python3
-"""deploy_workers.py — Auto-redeploy CF Workers (multipart form CF API v4)
-
-Fixes:
-  1. Dung multipart/form-data (requests.files) thay vi json=
-  2. Field name "index.js" phai khop voi main_module trong metadata
-  3. Inject bindings rieng cho tung worker
-  4. FIX code 10021: Khong add secret_text binding khong co gia tri text
-     (CF API yeu cau text property cho secret_text — neu khong co gia tri
-      thi skip deploy de tranh wipe binding hien tai)
-"""
+"""deploy_workers.py — Auto-redeploy CF Workers (multipart form CF API v4)"""
 import os, sys, hashlib, json, requests
 from pathlib import Path
 
-CF_TOKEN  = os.environ.get("CLOUDFLARE_API_TOKEN") or os.environ.get("CF_API_TOKEN", "")
-ACCOUNT   = "1c17b9b516c9a00478f2e538883c7e3b"
+CF_TOKEN = os.environ.get("CLOUDFLARE_API_TOKEN") or os.environ.get("CF_API_TOKEN", "")
+ACCOUNT  = "1c17b9b516c9a00478f2e538883c7e3b"
 
-HOIQUAN_API   = os.environ.get("HOIQUAN_API", "").strip()
-KHANDAIA_API  = os.environ.get("KHANDAIA_API", "").strip()
-VONGCAM_API   = os.environ.get("VONGCAM_API", "").strip()
-VONGCAM_TOKEN = (os.environ.get("VONGCAM_ACCESS_TOKEN") or os.environ.get("VONGCAM_TOKEN", "AB321C")).strip()
-
-RELAY_SECRET  = os.environ.get("RELAY_SECRET", "").strip()
+RELAY_SECRET = os.environ.get("RELAY_SECRET", "").strip()
 
 if not CF_TOKEN:
     print("No CLOUDFLARE_API_TOKEN / CF_API_TOKEN — skipping worker deploy")
@@ -50,10 +36,6 @@ def get_existing_bindings(name: str) -> list:
 
 
 def build_bindings(name: str) -> list | None:
-    """
-    Tao bindings list cho tung worker.
-    RELAY_SECRET bat buoc (secret_text); skip deploy neu khong co gia tri.
-    """
     if not RELAY_SECRET:
         existing = get_existing_bindings(name)
         has_secret = any(b.get("name") == "RELAY_SECRET" for b in existing)
@@ -63,20 +45,8 @@ def build_bindings(name: str) -> list | None:
         print(f"  {name}: WARN — RELAY_SECRET not set, deploying without it")
 
     bindings: list = []
-
-    if name == "dekki":
-        if HOIQUAN_API:
-            bindings.append({"name": "HOIQUAN_API", "type": "plain_text", "text": HOIQUAN_API})
-        if KHANDAIA_API:
-            bindings.append({"name": "KHANDAIA_API", "type": "plain_text", "text": KHANDAIA_API})
-        if VONGCAM_API:
-            bindings.append({"name": "VONGCAM_API", "type": "plain_text", "text": VONGCAM_API})
-        if VONGCAM_TOKEN:
-            bindings.append({"name": "VONGCAM_ACCESS_TOKEN", "type": "plain_text", "text": VONGCAM_TOKEN})
-
     if RELAY_SECRET:
         bindings.append({"name": "RELAY_SECRET", "type": "secret_text", "text": RELAY_SECRET})
-
     return bindings
 
 
@@ -119,11 +89,7 @@ def deploy(name: str, path: str) -> bool:
     return ok
 
 
-
 def enable_workers_dev(name: str) -> bool:
-    """Bat workers.dev subdomain routing cho worker script.
-    Khong goi ham nay se dan den CF error 1042 (script not routable via workers.dev).
-    """
     r = requests.put(
         f"https://api.cloudflare.com/client/v4/accounts/{ACCOUNT}/workers/scripts/{name}/subdomain",
         headers={**_cf_headers(), "Content-Type": "application/json"},
