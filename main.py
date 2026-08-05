@@ -667,8 +667,9 @@ def _build_fixture_lines(fixtures: list, group_title: str) -> list:
 # ════════════════════════════════════════════════════════════════[...]
 
 # ─── Giờ Vàng TV config ──────────────────────────────────────────────────────
-GIOVANG_ALL_JSON_URL = "https://live-api.keonhacaitp.one/storage/livestream/all.json"
-GIOVANG_STREAMS_URL  = "https://giovang.city/wp-json/custom-api/v1/streams"
+GIOVANG_ALL_JSON_URL  = "https://live-api.keonhacaitp.one/storage/livestream/all.json"
+GIOVANG_LIVE_JSON_URL = "https://live-api.keonhacaitp.one/storage/livestream/live.json"
+GIOVANG_STREAMS_URL   = "https://giovang.city/wp-json/custom-api/v1/streams"
 GIOVANG_FRONTEND_URL = "https://giovang.city"
 
 # ─── Pháo Hoa TV config ──────────────────────────────────────────────────────
@@ -849,12 +850,29 @@ def _build_giovang_lines(matches: list, streams: dict) -> list:
 def fetch_giovang() -> list:
     """Nguồn Giờ Vàng TV từ giovang.city."""
     streams = _fetch_giovang_streams()
+
+    # Fetch scheduled matches (all.json)
     r = requests.get(GIOVANG_ALL_JSON_URL, timeout=15, headers=_GIOVANG_HDR)
     r.raise_for_status()
     data    = r.json()
     matches = data.get("response", []) if isinstance(data, dict) else (data if isinstance(data, list) else [])
+
+    # Fetch live matches (live.json) and merge
+    try:
+        lr = requests.get(GIOVANG_LIVE_JSON_URL, timeout=15, headers=_GIOVANG_HDR)
+        if lr.ok:
+            ldata = lr.json()
+            live_matches = ldata.get("response", []) if isinstance(ldata, dict) else (ldata if isinstance(ldata, list) else [])
+            seen_ids = {m.get("id") for m in matches}
+            for m in live_matches:
+                if m.get("id") not in seen_ids:
+                    matches.append(m)
+                    seen_ids.add(m.get("id"))
+    except Exception:
+        pass
+
     if not matches:
-        raise ValueError("giovang: không có trận đấu nào trong all.json")
+        raise ValueError("giovang: không có trận đấu nào trong all.json/live.json")
     if not streams:
         print("  giovang: streams API lỗi, thử scrape trang trận đấu...", file=sys.stderr)
         streams = _fetch_giovang_streams_from_pages(matches)
