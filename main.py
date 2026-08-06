@@ -8,6 +8,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone, timedelta
 
 import requests
+from urllib.parse import quote
 
 # ─── Shared config ───────────────────────────────────────────────────────────
 VN_TZ                 = timezone(timedelta(hours=7))
@@ -103,6 +104,11 @@ GIOVANG_ALL_JSON_URL  = "https://live-api.keonhacaitp.one/storage/livestream/all
 GIOVANG_LIVE_JSON_URL = "https://live-api.keonhacaitp.one/storage/livestream/live.json"
 GIOVANG_STREAMS_URL   = "https://giovang.city/wp-json/custom-api/v1/streams"
 GIOVANG_FRONTEND_URL   = "https://giovang.city"
+# Relay URL — set GIOVANG_RELAY_BASE env var để override khi Replit domain thay đổi
+GIOVANG_RELAY_BASE = (
+    os.environ.get("GIOVANG_RELAY_BASE") or
+    "https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay"
+)
 
 _GIOVANG_HDR = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
@@ -326,27 +332,37 @@ def _build_giovang_lines(matches: list, streams: dict) -> list:
             date_str = "--/--"
 
         for blv_id in blv_list:
-            stream_url, blv_name = _lookup_stream(streams, blv_id)
-            if not stream_url:
-                continue
-            blv_display = blv_name or blv_id.replace("blv-", "BLV ").replace("-", " ").title()
+            blv_display = blv_id.replace("blv-", "BLV ").replace("-", " ").title()
             display = f"{time_str} - {date_str} | {t1} VS {t2} ({league}) | {blv_display}"
+            if GIOVANG_RELAY_BASE:
+                # Relay mode: URL fetch real-time khi player click — không cần stream URL tĩnh
+                page_url = _build_match_page_url(match)
+                if not page_url:
+                    continue
+                final_url = (f"{GIOVANG_RELAY_BASE}"
+                             f"?page={quote(page_url, safe='')}"
+                             f"&blv={quote(blv_id, safe='')}")
+            else:
+                # Direct mode: lấy URL tại thời điểm tạo M3U
+                stream_url, blv_name = _lookup_stream(streams, blv_id)
+                if not stream_url:
+                    continue
+                blv_display = blv_name or blv_display
+                display = f"{time_str} - {date_str} | {t1} VS {t2} ({league}) | {blv_display}"
+                final_url = stream_url
+                if "|" not in stream_url:
+                    final_url += f"|Referer={GIOVANG_FRONTEND_URL}/&User-Agent=Mozilla/5.0"
             lines.append(f'#EXTINF:-1 tvg-logo="{logo}" group-title="Giờ Vàng TV",{display}')
-            final_url = stream_url
-            if "|" not in stream_url:
-                final_url += f"|Referer={GIOVANG_FRONTEND_URL}/&User-Agent=Mozilla/5.0"
             lines.append(final_url)
     return lines
 
 
-def fetch_giovang() -> list:
-    """Nguồn Giờ Vàng TV: fetch all.json + live.json, scrape từng trang trận để lấy
-    stream URL từ data-blv attribute (không dùng custom API vì không ổn định)."""
+def _fetch_giovang_matches() -> list:
+    """Fetch danh sách trận từ all.json + live.json, merge không trùng lặp."""
     r = requests.get(GIOVANG_ALL_JSON_URL, timeout=15, headers=_GIOVANG_HDR)
     r.raise_for_status()
     data    = r.json()
     matches = data.get("response", []) if isinstance(data, dict) else (data if isinstance(data, list) else [])
-
     try:
         lr = requests.get(GIOVANG_LIVE_JSON_URL, timeout=15, headers=_GIOVANG_HDR)
         if lr.ok:
@@ -355,14 +371,32 @@ def fetch_giovang() -> list:
             seen_ids = {m.get("id") for m in matches}
             for m in live_matches:
                 if m.get("id") not in seen_ids:
-                    matches.insert(0, m)      # live trước
+                    matches.insert(0, m)
                     seen_ids.add(m.get("id"))
     except Exception:
         pass
+    return matches
 
+
+def fetch_giovang() -> list:
+    """Nguồn Giờ Vàng TV.
+    - Relay mode (GIOVANG_RELAY_BASE set): chỉ cần danh sách trận → build relay URL,
+      stream URL thực được fetch real-time khi player click.
+    - Direct mode: scrape từng trang trận để lấy URL tĩnh (dễ stale khi CDN rotate)."""
+    matches = _fetch_giovang_matches()
     if not matches:
         raise ValueError("giovang: không có trận đấu nào trong all.json/live.json")
 
+    if GIOVANG_RELAY_BASE:
+        # ── Relay mode ──────────────────────────────────────────────────────────
+        lines = _build_giovang_lines(matches, {})
+        if not lines:
+            raise ValueError("giovang: không có trận nào trong thời gian hợp lệ")
+        n = sum(1 for l in lines if l.startswith('#EXTINF'))
+        print(f"  giovang: relay mode — {n} kênh (URL fetch real-time)", file=sys.stderr)
+        return lines
+
+    # ── Direct mode ─────────────────────────────────────────────────────────────
     streams = _fetch_giovang_streams_from_pages(matches)
     if not streams:
         raise ValueError("giovang: không lấy được stream URLs từ trang trận đấu")
@@ -520,4 +554,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
