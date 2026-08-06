@@ -48,11 +48,12 @@ jobs:
 
       - name: Run IPTV updater
         env:
-          RELAY_SECRET:   ${{ secrets.RELAY_SECRET }}
-          VTV_M3U_URL:    ${{ secrets.VTV_M3U_URL }}
-          PHAOHOA_API:    ${{ secrets.PHAOHOA_API }}
-          PHAOHOA_FRONTEND: ${{ secrets.PHAOHOA_FRONTEND }}
-          MATCH_MAX_DURATION: ${{ secrets.MATCH_MAX_DURATION }}
+          RELAY_SECRET:        ${{ secrets.RELAY_SECRET }}
+          VTV_M3U_URL:         ${{ secrets.VTV_M3U_URL }}
+          PHAOHOA_API:         ${{ secrets.PHAOHOA_API }}
+          PHAOHOA_FRONTEND:    ${{ secrets.PHAOHOA_FRONTEND }}
+          MATCH_MAX_DURATION:  ${{ secrets.MATCH_MAX_DURATION }}
+          GIOVANG_RELAY_BASE:  ${{ secrets.GIOVANG_RELAY_BASE }}
         run: python main.py
 
       - name: Commit and Push changes
