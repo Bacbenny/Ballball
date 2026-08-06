@@ -119,14 +119,17 @@ def _norm_blv(key: str) -> str:
     return key[4:] if key.startswith("blv-") else key
 
 
-def _lookup_stream(streams: dict, blv_id: str) -> str:
-    """Lookup stream URL theo blv_id — thử cả dạng có/không prefix blv-."""
-    return (
-        streams.get(blv_id) or
-        streams.get(_norm_blv(blv_id)) or
-        streams.get(f"blv-{blv_id}") or
-        ""
-    )
+def _lookup_stream(streams: dict, blv_id: str):
+    """Lookup stream data theo blv_id — trả về (url, name) hoặc ("", None)."""
+    val = (streams.get(blv_id) or
+           streams.get(_norm_blv(blv_id)) or
+           streams.get(f"blv-{blv_id}"))
+    if not val:
+        return ("", None)
+    # Support cả dạng cũ (str) và mới (tuple)
+    if isinstance(val, tuple):
+        return val
+    return (val, None)
 
 
 def _fetch_giovang_streams() -> dict:
@@ -166,12 +169,30 @@ def _fetch_giovang_streams() -> dict:
     return {}
 
 
+_VN_CHAR_MAP = {
+    "à":"a","á":"a","ả":"a","ã":"a","ạ":"a","ă":"a","ằ":"a","ắ":"a","ẳ":"a","ẵ":"a","ặ":"a",
+    "â":"a","ầ":"a","ấ":"a","ẩ":"a","ẫ":"a","ậ":"a","è":"e","é":"e","ẻ":"e","ẽ":"e","ẹ":"e",
+    "ê":"e","ề":"e","ế":"e","ể":"e","ễ":"e","ệ":"e","ì":"i","í":"i","ỉ":"i","ĩ":"i","ị":"i",
+    "ò":"o","ó":"o","ỏ":"o","õ":"o","ọ":"o","ô":"o","ồ":"o","ố":"o","ổ":"o","ỗ":"o","ộ":"o",
+    "ơ":"o","ờ":"o","ớ":"o","ở":"o","ỡ":"o","ợ":"o","ù":"u","ú":"u","ủ":"u","ũ":"u","ụ":"u",
+    "ư":"u","ừ":"u","ứ":"u","ử":"u","ữ":"u","ự":"u","ỳ":"y","ý":"y","ỷ":"y","ỹ":"y","ỵ":"y",
+    "đ":"d","À":"a","Á":"a","Ả":"a","Ã":"a","Ạ":"a","Ă":"a","Ằ":"a","Ắ":"a","Ẳ":"a","Ẵ":"a",
+    "Ặ":"a","Â":"a","Ầ":"a","Ấ":"a","Ẩ":"a","Ẫ":"a","Ậ":"a","È":"e","É":"e","Ẻ":"e","Ẽ":"e",
+    "Ẹ":"e","Ê":"e","Ề":"e","Ế":"e","Ể":"e","Ễ":"e","Ệ":"e","Ì":"i","Í":"i","Ỉ":"i","Ĩ":"i",
+    "Ị":"i","Ò":"o","Ó":"o","Ỏ":"o","Õ":"o","Ọ":"o","Ô":"o","Ồ":"o","Ố":"o","Ổ":"o","Ỗ":"o",
+    "Ộ":"o","Ơ":"o","Ờ":"o","Ớ":"o","Ở":"o","Ỡ":"o","Ợ":"o","Ù":"u","Ú":"u","Ủ":"u","Ũ":"u",
+    "Ụ":"u","Ư":"u","Ừ":"u","Ứ":"u","Ử":"u","Ữ":"u","Ự":"u","Ỳ":"y","Ý":"y","Ỷ":"y","Ỹ":"y",
+    "Ỵ":"y","Đ":"d",
+}
+
+
 def _slugify_team(name: str) -> str:
-    s = name.lower().strip()
-    s = re.sub(r'[^a-z0-9\s-]', '', s)
-    s = re.sub(r'[\s]+', '-', s)
-    s = re.sub(r'-+', '-', s)
-    return s.strip('-')
+    """Slugify có hỗ trợ tiếng Việt có dấu."""
+    import unicodedata as _ud
+    text = _ud.normalize("NFC", str(name))
+    result = "".join(_VN_CHAR_MAP.get(c, c.lower()) for c in text)
+    result = re.sub(r"[^a-z0-9]+", "-", result)
+    return result.strip("-")
 
 
 def _build_match_page_url(match: dict) -> str:
@@ -229,13 +250,14 @@ def _fetch_giovang_streams_from_pages(matches: list) -> dict:
                                       blv.get('link_stream_hd') or
                                       blv.get('link_stream_sd') or '')
                         if key and stream_url:
-                            result[key] = stream_url
+                            blv_name = (blv.get("blv_name") or "").strip() or None
+                            result[key] = (stream_url, blv_name)
                             norm = _norm_blv(key)
                             if norm != key:
-                                result[norm] = stream_url
+                                result[norm] = (stream_url, blv_name)
                             prefixed = f"blv-{key}"
                             if prefixed != key and prefixed not in result:
-                                result[prefixed] = stream_url
+                                result[prefixed] = (stream_url, blv_name)
                 except Exception:
                     pass
             return result
@@ -304,10 +326,10 @@ def _build_giovang_lines(matches: list, streams: dict) -> list:
             date_str = "--/--"
 
         for blv_id in blv_list:
-            stream_url = _lookup_stream(streams, blv_id)
+            stream_url, blv_name = _lookup_stream(streams, blv_id)
             if not stream_url:
                 continue
-            blv_display = blv_id.replace("blv-", "BLV ").replace("-", " ").title()
+            blv_display = blv_name or blv_id.replace("blv-", "BLV ").replace("-", " ").title()
             display = f"{time_str} - {date_str} | {t1} VS {t2} ({league}) | {blv_display}"
             lines.append(f'#EXTINF:-1 tvg-logo="{logo}" group-title="Giờ Vàng TV",{display}')
             final_url = stream_url
@@ -318,8 +340,8 @@ def _build_giovang_lines(matches: list, streams: dict) -> list:
 
 
 def fetch_giovang() -> list:
-    streams = _fetch_giovang_streams()
-
+    """Nguồn Giờ Vàng TV: fetch all.json + live.json, scrape từng trang trận để lấy
+    stream URL từ data-blv attribute (không dùng custom API vì không ổn định)."""
     r = requests.get(GIOVANG_ALL_JSON_URL, timeout=15, headers=_GIOVANG_HDR)
     r.raise_for_status()
     data    = r.json()
@@ -333,7 +355,7 @@ def fetch_giovang() -> list:
             seen_ids = {m.get("id") for m in matches}
             for m in live_matches:
                 if m.get("id") not in seen_ids:
-                    matches.append(m)
+                    matches.insert(0, m)      # live trước
                     seen_ids.add(m.get("id"))
     except Exception:
         pass
@@ -341,40 +363,9 @@ def fetch_giovang() -> list:
     if not matches:
         raise ValueError("giovang: không có trận đấu nào trong all.json/live.json")
 
-    now_ts = time.time()
+    streams = _fetch_giovang_streams_from_pages(matches)
     if not streams:
-        # Streams API hoàn toàn thất bại — scrape tất cả
-        print("  giovang: streams API lỗi, thử scrape trang trận đấu...", file=sys.stderr)
-        streams = _fetch_giovang_streams_from_pages(matches)
-        if streams:
-            print(f"  giovang: scrape OK, {len(streams)} streams", file=sys.stderr)
-    else:
-        # Streams API có dữ liệu — nhưng chủ động scrape thêm các trận
-        # sắp bắt đầu (trong 60 phút) hoặc đang live mà chưa có stream URL
-        need_scrape = []
-        for m in matches:
-            blv_list = m.get("blv") or []
-            if not blv_list:
-                continue
-            is_live    = bool(m.get("is_live"))
-            time_start = int(m.get("time_start") or 0)
-            elapsed    = now_ts - time_start if time_start else 0
-            # Lọc: đang live HOẶC sắp bắt đầu trong PRE_MATCH_WINDOW_SECONDS
-            in_window = is_live or (-PRE_MATCH_WINDOW_SECONDS <= elapsed <= MATCH_MAX_AGE_SECONDS)
-            if not in_window:
-                continue
-            missing = [bid for bid in blv_list if not _lookup_stream(streams, bid)]
-            if missing:
-                need_scrape.append(m)
-        if need_scrape:
-            print(f"  giovang: scrape bổ sung {len(need_scrape)} trận sắp/đang diễn ra...", file=sys.stderr)
-            scraped = _fetch_giovang_streams_from_pages(need_scrape)
-            if scraped:
-                streams.update(scraped)
-                print(f"  giovang: scrape bổ sung OK, +{len(scraped)} streams", file=sys.stderr)
-
-    if not streams:
-        raise ValueError("giovang: không lấy được stream URLs (API lỗi và scrape cũng thất bại)")
+        raise ValueError("giovang: không lấy được stream URLs từ trang trận đấu")
     lines = _build_giovang_lines(matches, streams)
     if not lines:
         raise ValueError("giovang: không có trận nào có BLV với stream URL khớp")
