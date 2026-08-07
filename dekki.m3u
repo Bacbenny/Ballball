@@ -1,12 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://ssl.gstatic.com/onebox/media/sports/logos/optimized/MUNnNZz6uRoHFVeC0EBnmA_96x96.png" group-title="Giờ Vàng TV",06:10 - 07/08 | Boston Red Sox VS Chicago White Sox (MLB) | Blv Can
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-boston-red-sox-vs-chicago-white-sox-07-08-2026-5b9qccar6p2v%2F&blv=blv-can
-#EXTINF:-1 tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/687f4fda7efc61afefa80ee3591a56f2.png" group-title="Giờ Vàng TV",09:00 - 07/08 | Portland Fire VS Toronto Tempo (Women’s National Basketball Association) | Blv Ben
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-portland-fire-vs-toronto-tempo-07-08-2026-22615071%2F&blv=blv-ben
-#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/club-america.png" group-title="Giờ Vàng TV",09:00 - 07/08 | Club America VS San Diego FC (North Central America Leagues Cup) | Blv Mason
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-club-america-vs-san-diego-fc-07-08-2026-6a6be5af24d46db8701e7c69%2F&blv=blv-mason
-#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/portland-timbers.png" group-title="Giờ Vàng TV",09:30 - 07/08 | Portland Timbers VS Puebla (North Central America Leagues Cup) | Blv Minh
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-portland-timbers-vs-puebla-07-08-2026-69b749603a7b546ad10d13e8%2F&blv=blv-minh
 #EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/jilBtfFG-0xLZRP53.png" group-title="Giờ Vàng TV",13:00 - 07/08 | Vietnam W VS Indonesia W (SEA V.CUP 2026) | Blv Can
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-vietnam-w-vs-indonesia-w-07-08-2026-exmda4yrcagq%2F&blv=blv-can
 #EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/xtnvwhh5-rgb1I9qH.png" group-title="Giờ Vàng TV",14:00 - 07/08 | EDG VS JDG (LPL) | Blv Minh
@@ -79,8 +71,6 @@ https://luong.phaohoa.live/live/phaohoa5/index.m3u8?expire=1815505159&sign=67cc5
 https://luong.phaohoa.live/live/phaohoa7/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
 #EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_479.jpg" group-title="Pháo Hoa TV",20:00 - 07/08 | Việt Nam VS Cambodia (ASEAN Championship) | Kevin
 https://luong.phaohoa.live/live/phaohoa2/index.m3u8?expire=1815505159&sign=d3bfcbaa36f949863f22cc89e1cc1afa|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
-#EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_6176.jpg" group-title="Pháo Hoa TV",22:30 - 07/08 | Petrolul VS Otelul (Liga I) | Văn Minh
-https://luong.phaohoa.live/live/phaohoa3/index.m3u8?expire=1815505159&sign=32dbf97946c3646cdd7f664aebd7fa2a|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
 #EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_3543.jpg" group-title="Pháo Hoa TV",23:00 - 07/08 | SJK VS Gnistan (Veikkausliiga) | Chim Nhỏ
 https://luong.phaohoa.live/live/phaohoa5/index.m3u8?expire=1815505159&sign=67cc5bcdcabb081229f5406e5b07483d|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
 #EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/OIP_OI6UvXR.jpg" group-title="Pháo Hoa TV",23:55 - 07/08 | Serbia VS Nga (Giao Hữu) | KaKa
@@ -91,6 +81,8 @@ https://luong.phaohoa.live/live/phaohoa4/index.m3u8?expire=1815505159&sign=faaa2
 https://luong.phaohoa.live/live/phaohoa2/index.m3u8?expire=1815505159&sign=d3bfcbaa36f949863f22cc89e1cc1afa|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
 #EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_3085.jpg" group-title="Pháo Hoa TV",00:00 - 08/08 | Fulham VS Crystal Palace (Club Friendlies) | Ken
 https://luong.phaohoa.live/live/phaohoa7/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
+#EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_1238.jpg" group-title="Pháo Hoa TV",00:30 - 08/08 | Altach VS Tirol (Bundesliga) | Văn Minh
+https://luong.phaohoa.live/live/phaohoa3/index.m3u8?expire=1815505159&sign=32dbf97946c3646cdd7f664aebd7fa2a|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
 #EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_3911.jpg" group-title="Pháo Hoa TV",01:30 - 08/08 | Bochum VS Hertha Berlin (2. Bundesliga) | Chim Nhỏ
 https://luong.phaohoa.live/live/phaohoa5/index.m3u8?expire=1815505159&sign=67cc5bcdcabb081229f5406e5b07483d|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
 #EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/OIP_hdpF9Rm.jpg" group-title="Pháo Hoa TV",13:00 - 08/08 | Việt Nam VS Philippines (Sea V Cup) | KaKa
