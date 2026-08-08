@@ -1,16 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/fsLmL8ZA-K2mdw3oq.png" group-title="Giờ Vàng TV",17:00 - 08/08 | NS VS DNS (LCK) | Blv Pery
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-ns-vs-dns-08-08-2026-2bgt61hbzr1q%2F&blv=blv-pery
-#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/fc-tokyo.png" group-title="Giờ Vàng TV",17:00 - 08/08 | FC Tokyo VS FC Machida Zelvia (VĐQG Nhật Bản) | Blv Mason
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-fc-tokyo-vs-machida-zelvia-08-08-2026-6a6be5b524d46db8701e856c%2F&blv=blv-mason
-#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/cerezo-osaka.png" group-title="Giờ Vàng TV",17:00 - 08/08 | Cerezo Osaka VS Okayama FC (VĐQG Nhật Bản) | Blv Tri
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-cerezo-osaka-vs-fagiano-okayama-08-08-2026-6a6be5b524d46db8701e8564%2F&blv=blv-tri
-#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/avispa-fukuoka.png" group-title="Giờ Vàng TV",17:00 - 08/08 | Avispa Fukuoka VS Vissel Kobe (VĐQG Nhật Bản) | Blv Beo
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-avispa-fukuoka-vs-vissel-kobe-08-08-2026-6a6be5b524d46db8701e855b%2F&blv=blv-beo
-#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/fc-anyang.png" group-title="Giờ Vàng TV",18:00 - 08/08 | FC Anyang VS Daejeon Citizen (K-League Hàn Quốc) | Blv Bon
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-fc-anyang-vs-daejeon-citizen-08-08-2026-6a6be5b624d46db8701e8696%2F&blv=blv-bon
-#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/juventus.png" group-title="Giờ Vàng TV",18:00 - 08/08 | Juventus VS Inter Milan (Giao hữu) | Blv Ben
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-juventus-vs-inter-milan-08-08-2026-6a73cf471770f714540400cb%2F&blv=blv-ben
 #EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/zmqCswGG-jDh1Bm4g.png" group-title="Giờ Vàng TV",18:30 - 08/08 | Macau Black Bears VS San Miguel Beermen (Philippines PBA Governors'' Cup) | Blv Cay
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-macau-black-bears-vs-san-miguel-beermen-08-08-2026-hosvxjlzcevb%2F&blv=blv-cay
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/dalian-zhixing.png" group-title="Giờ Vàng TV",18:35 - 08/08 | Dalian Yingbo VS Liaoning Tieren (VĐQG Trung Quốc) | Blv Minh
@@ -19,14 +7,14 @@ https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/ap
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-zhejiang-fc-vs-wuhan-three-towns-08-08-2026-6a6be5b724d46db8701e87de%2F&blv=blv-minh
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/valerenga.png" group-title="Giờ Vàng TV",19:00 - 08/08 | Valerenga VS Bodo Glimt (VĐQG Na Uy) | Blv Beo
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-valerenga-vs-bodo-glimt-08-08-2026-6a6be5b724d46db8701e8823%2F&blv=blv-beo
-#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/chelsea.png" group-title="Giờ Vàng TV",19:00 - 08/08 | Chelsea FC VS AC Milan (Giao hữu) | Blv Leo
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-chelsea-fc-vs-ac-milan-08-08-2026-6a727db76216b480a1022cf3%2F&blv=blv-leo
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/yunnan-yukun.png" group-title="Giờ Vàng TV",19:00 - 08/08 | Yunnan Yukun VS Chengdu Rongcheng (VĐQG Trung Quốc) | Blv Tri
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-yunnan-yukun-vs-chengdu-rongcheng-08-08-2026-6a6be5b724d46db8701e8817%2F&blv=blv-tri
-#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/thailand.png" group-title="Giờ Vàng TV",20:00 - 08/08 | Thái Lan VS Myanmar (ASIAN CUP 2026) | Blv Ngu
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-thailand-vs-myanmar-08-08-2026-6a178624058587a6e10c6401%2F&blv=blv-ngu
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-yunnan-yukun-vs-chengdu-rongcheng-fc-08-08-2026-6a6be5b724d46db8701e8817%2F&blv=blv-tri
+#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/chelsea.png" group-title="Giờ Vàng TV",19:00 - 08/08 | Chelsea FC VS AC Milan (Giao hữu) | Blv Leo
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-chelsea-vs-ac-milan-08-08-2026-6a727db76216b480a1022cf3%2F&blv=blv-leo
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/malaysia.png" group-title="Giờ Vàng TV",20:00 - 08/08 | Malaysia VS Philippines (ASIAN CUP 2026) | Blv Bon
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-malaysia-vs-philippines-08-08-2026-6a178624058587a6e10c6400%2F&blv=blv-bon
+#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/thailand.png" group-title="Giờ Vàng TV",20:00 - 08/08 | Thái Lan VS Myanmar (ASIAN CUP 2026) | Blv Ngu
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-thailand-vs-myanmar-08-08-2026-6a178624058587a6e10c6401%2F&blv=blv-ngu
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/bayer-leverkusen.png" group-title="Giờ Vàng TV",20:30 - 08/08 | Bayer Leverkusen VS Sevilla (Giao hữu) | Blv Mason
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-bayer-leverkusen-vs-sevilla-08-08-2026-6a73cf471770f714540400d8%2F&blv=blv-mason
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/tottenham-hotspur.png" group-title="Giờ Vàng TV",21:00 - 08/08 | Tottenham Hotspur VS Getafe (Giao hữu) | Blv Leo
@@ -44,7 +32,7 @@ https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/ap
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/vitoria-guimaraes.png" group-title="Giờ Vàng TV",00:00 - 09/08 | Vitoria Guimaraes VS FC Arouca (VĐQG Bồ Đào Nha) | Blv Beo
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-vitoria-guimaraes-vs-fc-arouca-09-08-2026-6a6d373924d46db8705f5c84%2F&blv=blv-beo
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/estrela-da-amadora.png" group-title="Giờ Vàng TV",02:30 - 09/08 | Amadora VS Sporting CP (VĐQG Bồ Đào Nha) | Blv Ngong
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-estrela-da-amadora-vs-sporting-cp-09-08-2026-6a6d373a24d46db8705f5dab%2F&blv=blv-ngong
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-amadora-vs-sporting-cp-09-08-2026-6a6d373a24d46db8705f5dab%2F&blv=blv-ngong
 #EXTINF:-1 tvg-logo="https://ssl.gstatic.com/onebox/media/sports/logos/optimized/vsXMXekftWCjaARo-WYVkA_96x96.png" group-title="Giờ Vàng TV",05:30 - 09/08 | Orlando City SC VS León (Leagues Cup) | Blv Beo
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-orlando-city-sc-vs-leon-09-08-2026-fygjbbmxsdum%2F&blv=blv-beo
 #EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/UuRSjmDa-4roE8Tb8.png" group-title="Giờ Vàng TV",07:00 - 09/08 | Supra du Quebec VS Cavalry (Canada - Canadian Premier League) | Blv Tri
@@ -52,7 +40,7 @@ https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/ap
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/botafogo-rj.png" group-title="Giờ Vàng TV",07:00 - 09/08 | Botafogo (RJ) VS Fluminense (RJ) (VĐQG Brazil) | Blv Minh
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-botafogo-rj-vs-fluminense-rj-09-08-2026-6a6d373c24d46db8705f60c8%2F&blv=blv-minh
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/inter-miami-cf.png" group-title="Giờ Vàng TV",07:00 - 09/08 | Inter Miami VS Monterrey (North Central America Leagues Cup) | Blv Ben
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-inter-miami-cf-vs-monterrey-09-08-2026-69b9f0a3b44d771b900c40c9%2F&blv=blv-ben
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-inter-miami-vs-monterrey-09-08-2026-69b9f0a3b44d771b900c40c9%2F&blv=blv-ben
 #EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMMxMUwIPSdaSgT7lH9AQ0oWzH6-0GuLOXarxV7VepzPF-rSrJ_Hfo2P2F&s=10" group-title="Giờ Vàng TV",07:00 - 09/08 | Acheson VS Jones (BKFC Fight Night Sturgis: Acheson vs. Jones) | Blv Cay
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-acheson-vs-jones-09-08-2026-pcro37ox4ui2%2F&blv=blv-cay
 #EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/Yg133Fg5-pnn58dSo.png" group-title="Giờ Vàng TV",07:10 - 09/08 | Arizona Diamonbacks VS Los Angeles Dodgers (MLB) | Blv Ngu
@@ -68,13 +56,11 @@ https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/ap
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/toluca.png" group-title="Giờ Vàng TV",10:10 - 09/08 | Toluca VS Los Angeles FC (North Central America Leagues Cup) | Blv Mason
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-toluca-vs-los-angeles-fc-09-08-2026-69b89f34751748191c09c9a1%2F&blv=blv-mason
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/wollongong-wolves.png" group-title="Giờ Vàng TV",12:00 - 09/08 | South Coast Wolves VS Sydney United (NPL NSW Úc) | Blv Bon
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-wollongong-wolves-vs-sydney-united-09-08-2026-6a6d373c24d46db8705f6170%2F&blv=blv-bon
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-south-coast-wolves-vs-sydney-united-09-08-2026-6a6d373c24d46db8705f6170%2F&blv=blv-bon
 #EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/tGBUmhgl-O8wf8QL1.png" group-title="Giờ Vàng TV",13:00 - 09/08 | Indonesia W VS Philippines W (SEA V.CUP 2026) | Blv Sun
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-indonesia-w-vs-philippines-w-09-08-2026-xq2z5wjrvdkv%2F&blv=blv-sun
 #EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/Y9vJAmyB-Mqc5HTbN.png" group-title="Giờ Vàng TV",14:00 - 09/08 | LNG VS IG (LPL) | Blv Minh
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-lng-vs-ig-09-08-2026-1hm4xhl7es51%2F&blv=blv-minh
-#EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_88.jpg" group-title="Pháo Hoa TV",19:00 - 08/08 | Chelsea VS AC Milan (Club Friendlies) | Pháo Thủ
-https://luong.phaohoa.live/live/phaohoa4/index.m3u8?expire=1815505159&sign=faaa23580764370ed378ecd708c9f262|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
 #EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_478.jpg" group-title="Pháo Hoa TV",20:00 - 08/08 | Malaysia VS Philippines (ASEAN Championship) | Kevin
 https://luong.phaohoa.live/live/phaohoa2/index.m3u8?expire=1815505159&sign=d3bfcbaa36f949863f22cc89e1cc1afa|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
 #EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_480.jpg" group-title="Pháo Hoa TV",20:00 - 08/08 | Thái Lan VS Myanmar (ASEAN Championship) | Chim Nhỏ
