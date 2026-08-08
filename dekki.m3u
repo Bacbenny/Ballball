@@ -1,8 +1,6 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8sIRgc-U7LAkxO9ZXTypmTzmh3pZvhdBbyAIpqCc4J2bIZiHKpjpr6oY&s=10" group-title="Giờ Vàng TV",06:00 - 08/08 | Casper Ruud VS Joao Fonseca (Canadian Open) | Blv Ben
+#EXTINF:-1 tvg-logo="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f3be.png" group-title="Giờ Vàng TV",06:00 - 08/08 | Casper Ruud VS Joao Fonseca (Canadian Open) | Blv Ben
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-casper-ruud-vs-joao-fonseca-08-08-2026-b56my7zvjel9%2F&blv=blv-ben
-#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/forge-fc.png" group-title="Giờ Vàng TV",06:00 - 08/08 | Forge VS Vancouver FC (Canada - Canadian Premier League) | Blv Beo
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-forge-vs-vancouver-fc-08-08-2026-6ddrvhb3y3cu%2F&blv=blv-beo
 #EXTINF:-1 tvg-logo="https://ssl.gstatic.com/onebox/media/sports/logos/optimized/kNiURsT2QKUI_jwkbgwPaw_96x96.png" group-title="Giờ Vàng TV",06:05 - 08/08 | New York Yankees VS Atlanta Braves (MLB) | Blv Cay
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-new-york-yankees-vs-atlanta-braves-08-08-2026-x3s9p75lm8qg%2F&blv=blv-cay
 #EXTINF:-1 tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/e4fdbc941d11c2927bafb5b8978e8ea6.png" group-title="Giờ Vàng TV",06:30 - 08/08 | Washington Mystics VS Atlanta Dream (Women’s National Basketball Association) | Blv Can
