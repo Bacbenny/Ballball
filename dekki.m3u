@@ -1,12 +1,6 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7YzZnDH_GUxsGuKe-Sig7UeMJ2ou8xKt8sOAQW3oXl2gsHbu7KpwqgXB-&s=10" group-title="Giờ Vàng TV",22:00 - 09/08 | APPT Manila 2026 Main Event –Day 2 VS APPT Manila 2026 Main Event –Day 2 (APPT) | Blv Ngu
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-appt-manila-2026-main-event-day-2-vs-appt-manila-2026-main-event-day-2-09-08-2026-0aw0v389zsua%2F&blv=blv-ngu
 #EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/0r6WZYXg-rkx09pZH.png" group-title="Giờ Vàng TV",23:30 - 09/08 | Liudmila Samsonova / Alina Korneeva VS Elena Rybakina / Coco Gauff (Canadian Open WTA) | Blv Sun
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-liudmila-samsonova-alina-korneeva-vs-elena-rybakina-coco-gauff-09-08-2026-wkmomvdhgcpa%2F&blv=blv-sun
-#EXTINF:-1 tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/e4fdbc941d11c2927bafb5b8978e8ea6.png" group-title="Giờ Vàng TV",02:00 - 10/08 | Washington Mystics VS Phoenix Mercury (Women’s National Basketball Association) | Blv Pery
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-washington-mystics-vs-phoenix-mercury-10-08-2026-20715070%2F&blv=blv-pery
-#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/palmeiras.png" group-title="Giờ Vàng TV",02:00 - 10/08 | Palmeiras VS Internacional (RS) (VĐQG Brazil) | Blv Ngong
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-palmeiras-vs-internacional-rs-10-08-2026-6a712bb724d46db870f88137%2F&blv=blv-ngong
 #EXTINF:-1 tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/df5084b6a0e471356f94c0d460105072.png" group-title="Giờ Vàng TV",02:30 - 10/08 | Minnesota Lynx VS Dallas Wings (Women’s National Basketball Association) | Blv Ben
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-minnesota-lynx-vs-dallas-wings-10-08-2026-21715071%2F&blv=blv-ben
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/bragantino.png" group-title="Giờ Vàng TV",04:30 - 10/08 | Bragantino SP VS Corinthians Paulista (SP) (VĐQG Brazil) | Blv Mù
@@ -65,6 +59,10 @@ https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/ap
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-pakhtakor-vs-al-hussein-irbid-11-08-2026-6a41b7a69c43f2321008bdc6%2F&blv=blv-bon
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/fc-kairat-almaty.png" group-title="Giờ Vàng TV",22:00 - 11/08 | FC Kairat Almaty VS Levski Sofia (C1) | Blv Minh
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-fc-kairat-almaty-vs-levski-sofia-11-08-2026-6a6d37d37c050192260d53d2%2F&blv=blv-minh
+#EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_147.jpg" group-title="Pháo Hoa TV",02:30 - 10/08 | Benfica VS Academico Viseu (Primeira Liga) | Ken
+https://luong.phaohoa.live/live/phaohoa7/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
+#EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_5997.jpg" group-title="Pháo Hoa TV",02:30 - 10/08 | Moreirense VS Braga (Primeira Liga) | Pháo Thủ
+https://luong.phaohoa.live/live/phaohoa4/index.m3u8?expire=1815505159&sign=faaa23580764370ed378ecd708c9f262|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
 #EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_7780.jpg" group-title="Pháo Hoa TV",19:30 - 10/08 | Polissya Zhytomyr VS Metalist 1925 (Premier League) | Pháo Thủ
 https://luong.phaohoa.live/live/phaohoa4/index.m3u8?expire=1815505159&sign=faaa23580764370ed378ecd708c9f262|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
 #EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_7820.jpg" group-title="Pháo Hoa TV",22:00 - 10/08 | Karpaty Lviv VS LNZ Cherkasy (Premier League) | Tày
