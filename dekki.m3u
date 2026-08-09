@@ -1,14 +1,12 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/Y9vJAmyB-Mqc5HTbN.png" group-title="Giờ Vàng TV",14:00 - 09/08 | LNG VS IG (LPL) | Blv Minh
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-lng-vs-ig-09-08-2026-1hm4xhl7es51%2F&blv=blv-minh
 #EXTINF:-1 tvg-logo="https://www.flashscore.com/team/dplus-kia-league-of-legends/dYyE6rQs/" group-title="Giờ Vàng TV",15:00 - 09/08 | DK VS KT (LCK) | Blv Pery
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-dk-vs-kt-09-08-2026-igeof76x2jy8%2F&blv=blv-pery
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/tokyo-verdy.png" group-title="Giờ Vàng TV",16:00 - 09/08 | Tokyo Verdy VS Kawasaki Frontale (VĐQG Nhật Bản) | Blv Bon
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-tokyo-verdy-vs-kawasaki-frontale-09-08-2026-6a6d373d24d46db8705f621d%2F&blv=blv-bon
 #EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/ttyYvae5-dfe82GzD.png" group-title="Giờ Vàng TV",16:15 - 09/08 | Phoenix Fuelmasters VS Rain or Shine San Miguel (Philippines PBA Governors'' Cup) | Blv Leo
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-phoenix-fuelmasters-vs-rain-or-shine-san-miguel-09-08-2026-dxfhqvfmx27x%2F&blv=blv-leo
-#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtFHXMFCo0GoOqfuXA_vAYWVOYwC6Rz9w2cg&s" group-title="Giờ Vàng TV",16:30 - 09/08 | CHUNG KẾT VS CHUNG KẾT (WTT Champions Yokohama 2026) | Blv 18
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-chung-ket-vs-chung-ket-09-08-2026-3irl7ismh1k8%2F&blv=blv-18
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtFHXMFCo0GoOqfuXA_vAYWVOYwC6Rz9w2cg&s" group-title="Giờ Vàng TV",16:30 - 09/08 | Miwa HARIMOTO VS Chen XingTong (WTT Champions Yokohama 2026) | Blv 18
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-miwa-harimoto-vs-chen-xingtong-09-08-2026-3irl7ismh1k8%2F&blv=blv-18
 #EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/jilBtfFG-0xLZRP53.png" group-title="Giờ Vàng TV",16:30 - 09/08 | Việt Nam W VS Thái Lan W (SEA V.CUP 2026) | Blv Sun
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-viet-nam-w-vs-thai-lan-w-09-08-2026-i0aay6fksse5%2F&blv=blv-sun
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/v-varen-nagasaki.png" group-title="Giờ Vàng TV",17:00 - 09/08 | V-Varen Nagasaki VS Kyoto Sanga (VĐQG Nhật Bản) | Blv Mason
@@ -59,6 +57,10 @@ https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/ap
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-paranaque-patriots-vs-binan-tatak-gel-10-08-2026-23971279%2F&blv=blv-leo
 #EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/zsQb9iFG-ziRjVPgA.png" group-title="Giờ Vàng TV",15:00 - 11/08 | Ulaanbaatar VS Hang Yuen (Asia - AFC Challenge League vòng loại) | Blv 18
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-ulaanbaatar-vs-hang-yuen-11-08-2026-152ro82pukmu%2F&blv=blv-18
+#EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/f7YLvsAr-fckengae.png" group-title="Giờ Vàng TV",16:00 - 11/08 | Fortis (BAN) VS Muras United (KGZ) (Asia - AFC Challenge League vòng loại) | Blv Mason
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-fortis-ban-vs-muras-united-kgz-11-08-2026-q8pen2qrmpn1%2F&blv=blv-mason
+#EXTINF:-1 tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/1ba7bc78f9d1c7a7110e43d1c6f141f3.png" group-title="Giờ Vàng TV",16:00 - 11/08 | Zamboanga Familys Brand Sardines VS Valenzuela Classics (Philippines MPBL) | Blv Cay
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-zamboanga-familys-brand-sardines-vs-valenzuela-classics-11-08-2026-29281279%2F&blv=blv-cay
 #EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_5088.jpg" group-title="Pháo Hoa TV",16:00 - 09/08 | Verdy VS Kawasaki Frontale (J1 League) | Pháo Thủ
 https://luong.phaohoa.live/live/phaohoa4/index.m3u8?expire=1815505159&sign=faaa23580764370ed378ecd708c9f262|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
 #EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/OIP_Q9mUTFM.jpg" group-title="Pháo Hoa TV",16:30 - 09/08 | Thái Lan VS Việt Nam (Sea V Cup) | KaKa
