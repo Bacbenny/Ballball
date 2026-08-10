@@ -1,16 +1,18 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/dMVqE8Yg-6sW7CEHO.png" group-title="Giờ Vàng TV",15:15 - 10/08 | DNS VS KRX (KeSPA Cup) | Blv Can
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-dns-vs-krx-10-08-2026-nq3jfcesl845%2F&blv=blv-can
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJv2dSqdPNuW_wtY5dGFUBvqZvTRzTknqEjLRwp9qYsw&s=10" group-title="Giờ Vàng TV",17:30 - 10/08 | TBD VS TBD (KeSPA Cup) | Blv Ngu
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-tbd-vs-tbd-10-08-2026-092bxf4t0f8b%2F&blv=blv-ngu
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/3/32/Mohun_Bagan_Super_Giant.svg/1280px-Mohun_Bagan_Super_Giant.svg.png?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail" group-title="Giờ Vàng TV",17:30 - 10/08 | Mohun Bagan VS CISF Protectors (VĐQG Ấn Độ) | Blv Mat
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-mohun-bagan-vs-cisf-protectors-10-08-2026-g85skf5o0buh%2F&blv=blv-mat
-#EXTINF:-1 tvg-logo="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f3ae.png" group-title="Giờ Vàng TV",17:30 - 10/08 | TBD VS TBD (KeSPA Cup) | Blv Ngu
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-tbd-vs-tbd-10-08-2026-092bxf4t0f8b%2F&blv=blv-ngu
 #EXTINF:-1 tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/1b58325d8265d895b6cf505730edcf77.png" group-title="Giờ Vàng TV",18:00 - 10/08 | Manila Stars VS San Juan Knights (Philippines MPBL) | Blv Leo
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-manila-stars-vs-san-juan-knights-10-08-2026-35971271%2F&blv=blv-leo
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/polissya-zhytomyr.png" group-title="Giờ Vàng TV",19:30 - 10/08 | Polissya Zhytomyr VS Metalist 1925 Kharkiv (VĐQG Ukraine) | Blv Bon
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-polissya-zhytomyr-vs-metalist-1925-kharkiv-10-08-2026-6a712bb824d46db870f88340%2F&blv=blv-bon
 #EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHH7PxSVe72SF08DjOM0K3SkW-QavxLWnwEGAa8nw8Nw&s=10" group-title="Giờ Vàng TV",20:30 - 10/08 | SC Delhi VS Indian Air Force (India - Durand Cup) | Blv Leo
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-sc-delhi-vs-indian-air-force-10-08-2026-1q6n3mlxa852%2F&blv=blv-leo
+#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/fc-botosani.png" group-title="Giờ Vàng TV",22:30 - 10/08 | FC Botosani VS Corvinul Hunedoara (VĐQG Romania) | Blv Beo
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-fc-botosani-vs-corvinul-hunedoara-10-08-2026-6a6d373924d46db8705f5ca0%2F&blv=blv-beo
+#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/panionios.png" group-title="Giờ Vàng TV",22:30 - 10/08 | Panionios VS Olympiakos Piraeus B (Giao hữu) | Blv Leo
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-panionios-vs-olympiakos-piraeus-b-10-08-2026-6a78ea5724d46db8701166fc%2F&blv=blv-leo
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/fakel.png" group-title="Giờ Vàng TV",23:30 - 10/08 | Fakel Voronezh VS FC Terek Groznyi (VĐQG Nga) | Blv Mason
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-fakel-vs-terek-grozny-10-08-2026-6a712bb924d46db870f883c5%2F&blv=blv-mason
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/ik-sirius-fk.png" group-title="Giờ Vàng TV",00:00 - 11/08 | IK Sirius FK VS Brommapojkarna (VĐQG Thụy Điển) | Blv Mat
@@ -87,8 +89,6 @@ https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/ap
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-pakhtakor-vs-al-hussein-irbid-11-08-2026-6a41b7a69c43f2321008bdc6%2F&blv=blv-bon
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/fc-kairat-almaty.png" group-title="Giờ Vàng TV",22:00 - 11/08 | FC Kairat Almaty VS Levski Sofia (C1) | Blv Minh
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-fc-kairat-almaty-vs-levski-sofia-11-08-2026-6a6d37d37c050192260d53d2%2F&blv=blv-minh
-#EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_7780.jpg" group-title="Pháo Hoa TV",19:30 - 10/08 | Polissya Zhytomyr VS Metalist 1925 (Premier League) | Tày
-https://luong.phaohoa.live/live/phaohoa8/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
 #EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_7820.jpg" group-title="Pháo Hoa TV",22:00 - 10/08 | Karpaty Lviv VS LNZ Cherkasy (Premier League) | Tày
 https://luong.phaohoa.live/live/phaohoa8/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
 #EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_2169.jpg" group-title="Pháo Hoa TV",23:00 - 10/08 | Botev Vratsa VS Slavia Sofia (First League) | Chim Nhỏ
