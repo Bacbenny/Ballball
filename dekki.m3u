@@ -1,10 +1,6 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/gangwon-fc.png" group-title="Giờ Vàng TV",17:30 - 11/08 | Gangwon FC VS Gamba Osaka (AFC Champions League) | Blv Mat
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-gangwon-fc-vs-gamba-osaka-11-08-2026-6a41b7a69c43f2321008bdc5%2F&blv=blv-mat
 #EXTINF:-1 tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/9529e695d84617e304094fe949504b05.png" group-title="Giờ Vàng TV",18:00 - 11/08 | Batang Kankaloo VS GenSan Warriors (Philippines MPBL) | Blv Leo
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-batang-kankaloo-vs-gensan-warriors-11-08-2026-37971273%2F&blv=blv-leo
-#EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/2agQKghl-4EPybus0.png" group-title="Giờ Vàng TV",18:30 - 11/08 | NLEX Road Warriors VS TNT Tropang 5G (PBA) | Blv Cay
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-nlex-road-warriors-vs-tnt-tropang-5g-11-08-2026-5f2jppj21en3%2F&blv=blv-cay
 #EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/t4fKAUCr-Ic1Pqa6C.png" group-title="Giờ Vàng TV",19:00 - 11/08 | Paro VS Abu Muslim (Asia - AFC Challenge League vòng loại) | Blv Tri
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-paro-vs-abu-muslim-11-08-2026-mfqgfgbd7irl%2F&blv=blv-tri
 #EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/hUcj2AeM-ILBgbXn2.png" group-title="Giờ Vàng TV",21:00 - 11/08 | Dordoi Bishkek VS Homs Al Fidaa (SYR) (Asia - AFC Challenge League vòng loại) | Blv 18
@@ -25,6 +21,16 @@ https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/ap
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-sabah-fk-baku-vs-aarhus-agf-11-08-2026-6a6be65c78c63f75900cb4df%2F&blv=blv-mason
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/fc-iberia-1999-tbilisi.png" group-title="Giờ Vàng TV",23:00 - 11/08 | FC Saburtalo Tbilisi VS Larne FC (C2) | Blv Tri
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-fc-iberia-1999-tbilisi-vs-larne-fc-11-08-2026-6a6d37da7c050192260d53d9%2F&blv=blv-tri
+#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/nk-publikum-celje.png" group-title="Giờ Vàng TV",01:15 - 12/08 | NK Publikum Celje VS FC Ararat Armenia (C1) | Blv Leo
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-nk-publikum-celje-vs-fc-ararat-armenia-12-08-2026-6a6be65c78c63f75900cb4de%2F&blv=blv-leo
+#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/sturm-graz.png" group-title="Giờ Vàng TV",01:30 - 12/08 | Sturm Graz VS Fenerbahce (C1) | Blv Mason
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-sturm-graz-vs-fenerbahce-12-08-2026-6a6d37d37c050192260d53d7%2F&blv=blv-mason
+#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/lyon.png" group-title="Giờ Vàng TV",02:00 - 12/08 | Lyonnais VS Sparta Prague (C1) | Blv Ngong
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-lyon-vs-ac-sparta-prague-12-08-2026-6a6d37d37c050192260d53d4%2F&blv=blv-ngong
+#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/boca-juniors.png" group-title="Giờ Vàng TV",05:00 - 12/08 | Boca Juniors VS Deportivo Recoleta (Copa Sudamericana) | Blv Mù
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-boca-juniors-vs-deportivo-recoleta-12-08-2026-6a6d37ed7c050192260d53f8%2F&blv=blv%20M%C3%B9
+#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/fluminense-rj.png" group-title="Giờ Vàng TV",05:00 - 12/08 | Fluminense (RJ) VS Independiente Rivadavia (Copa Libertadores) | Blv Mat
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-fluminense-rj-vs-independiente-rivadavia-12-08-2026-6a1e20420f35ed8a050aab77%2F&blv=blv-mat
 #EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/bgSWuehl-SxdIjKYi.png" group-title="Giờ Vàng TV",15:00 - 13/08 | KRX VS FearX (LCK) | Blv Pery
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-krx-vs-fearx-13-08-2026-zerluvwohcg8%2F&blv=blv-pery
 #EXTINF:-1 tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/44b923abc0dfdd25add729b91a4f6d28.png" group-title="Giờ Vàng TV",16:00 - 13/08 | Paranaque Patriots VS Quezon Huskers (Philippines MPBL) | Blv Leo
@@ -37,8 +43,6 @@ https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/ap
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-bodoland-fc-vs-kams-fc-13-08-2026-elkhn9krejfl%2F&blv=blv-mat
 #EXTINF:-1 tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/36bfb5322e04aeaa9b71c9633a73cc0b.png" group-title="Giờ Vàng TV",18:00 - 13/08 | Pasig City VS Negros Muscovados (Philippines MPBL) | Blv Ben
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-pasig-city-vs-negros-muscovados-13-08-2026-22081270%2F&blv=blv-ben
-#EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_5171.jpg" group-title="Pháo Hoa TV",17:30 - 11/08 | Gangwon VS Gamba Osaka (AFC Champions League Elite) | Pháo Thủ
-https://luong.phaohoa.live/live/phaohoa4/index.m3u8?expire=1815505159&sign=faaa23580764370ed378ecd708c9f262|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
 #EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_245.jpg" group-title="Pháo Hoa TV",22:00 - 11/08 | Kairat Almaty VS Levski Sofia (UEFA Champions League) | Kevin
 https://luong.phaohoa.live/live/phaohoa2/index.m3u8?expire=1815505159&sign=d3bfcbaa36f949863f22cc89e1cc1afa|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
 #EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/OIP_4kCzOp7.jpg" group-title="Pháo Hoa TV",22:30 - 11/08 | Pháp VS Italy (Giao Hữu) | KaKa
