@@ -1,10 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/pKkqJ4Wg-bB59SVBr.png" group-title="Giờ Vàng TV",16:00 - 11/08 | Hanwha Life VS DN SOOPers (KeSPA Cup) | Blv Minh
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-hanwha-life-vs-dn-soopers-11-08-2026-yzm4akqfpewu%2F&blv=blv-minh
-#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/juventus.png" group-title="Giờ Vàng TV",17:00 - 11/08 | Juventus VS Palermo (Giao hữu) | Blv Can
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-juventus-vs-palermo-11-08-2026-6a77c41a40e443c1d9050060%2F&blv=blv-can
-#EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/ryQ9WHCr-nadjQI7q.png" group-title="Giờ Vàng TV",17:00 - 11/08 | Maziya VS Regar-TadAZ (TAJ) (Asia - AFC Challenge League vòng loại) | Blv Mat
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-maziya-vs-regar-tadaz-taj-11-08-2026-o855014y9rzu%2F&blv=blv-mat
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/gangwon-fc.png" group-title="Giờ Vàng TV",17:30 - 11/08 | Gangwon FC VS Gamba Osaka (AFC Champions League) | Blv Mat
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-gangwon-fc-vs-gamba-osaka-11-08-2026-6a41b7a69c43f2321008bdc5%2F&blv=blv-mat
 #EXTINF:-1 tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/9529e695d84617e304094fe949504b05.png" group-title="Giờ Vàng TV",18:00 - 11/08 | Batang Kankaloo VS GenSan Warriors (Philippines MPBL) | Blv Leo
@@ -39,8 +33,12 @@ https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/ap
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-lgd-vs-tes-13-08-2026-00ghczs2u2uv%2F&blv=blv-minh
 #EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/rglkqMzB-UJqSxlpo.png" group-title="Giờ Vàng TV",17:00 - 13/08 | GEN VS HLE (LCK) | Blv Ngu
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-gen-vs-hle-13-08-2026-x4wtmk25xiuq%2F&blv=blv-ngu
+#EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/fNSblsg5-Iy87ShL0.png" group-title="Giờ Vàng TV",17:30 - 13/08 | Bodoland FC VS KAMS FC (VĐQG Ấn Độ) | Blv Mat
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-bodoland-fc-vs-kams-fc-13-08-2026-elkhn9krejfl%2F&blv=blv-mat
 #EXTINF:-1 tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/36bfb5322e04aeaa9b71c9633a73cc0b.png" group-title="Giờ Vàng TV",18:00 - 13/08 | Pasig City VS Negros Muscovados (Philippines MPBL) | Blv Ben
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-pasig-city-vs-negros-muscovados-13-08-2026-22081270%2F&blv=blv-ben
+#EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_5171.jpg" group-title="Pháo Hoa TV",17:30 - 11/08 | Gangwon VS Gamba Osaka (AFC Champions League Elite) | Pháo Thủ
+https://luong.phaohoa.live/live/phaohoa4/index.m3u8?expire=1815505159&sign=faaa23580764370ed378ecd708c9f262|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
 #EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_245.jpg" group-title="Pháo Hoa TV",22:00 - 11/08 | Kairat Almaty VS Levski Sofia (UEFA Champions League) | Kevin
 https://luong.phaohoa.live/live/phaohoa2/index.m3u8?expire=1815505159&sign=d3bfcbaa36f949863f22cc89e1cc1afa|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
 #EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/OIP_4kCzOp7.jpg" group-title="Pháo Hoa TV",22:30 - 11/08 | Pháp VS Italy (Giao Hữu) | KaKa
