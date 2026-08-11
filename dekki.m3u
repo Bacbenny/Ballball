@@ -1,8 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://ssl.gstatic.com/onebox/media/sports/logos/optimized/aIZzEm7snhpCtwAFsjxPQw_96x96.png" group-title="Giờ Vàng TV",08:45 - 11/08 | San Francisco Giants VS Houston Astros (MLB) | Blv Cay
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-san-francisco-giants-vs-houston-astros-11-08-2026-ffix3knfomm7%2F&blv=blv-cay
-#EXTINF:-1 tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/f9c0c5ff8557d6be9b17f1ab94781948.png" group-title="Giờ Vàng TV",09:00 - 11/08 | Seattle Storm VS Chicago Sky (Women’s National Basketball Association) | Blv Leo
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-seattle-storm-vs-chicago-sky-11-08-2026-24715074%2F&blv=blv-leo
 #EXTINF:-1 tvg-logo="https://ssl.gstatic.com/onebox/media/sports/logos/optimized/58MDezoOT1DAkMexRNiW3w_96x96.png" group-title="Giờ Vàng TV",09:10 - 11/08 | Los Angeles Dodgers VS Kansas City Royals (MLB) | Blv Can
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-los-angeles-dodgers-vs-kansas-city-royals-11-08-2026-3nawx79z7ds9%2F&blv=blv-can
 #EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/WGoU6kdM-t2gZ0NGc.png" group-title="Giờ Vàng TV",10:00 - 11/08 | Central Stallions (MON) VS Taiwan Steel (TPE) (Asia - AFC Challenge League vòng loại) | Blv Beo
@@ -21,8 +17,8 @@ https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/ap
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-converge-fiberxers-vs-terrafirma-dyip-11-08-2026-3i0cnytpbiw3%2F&blv=blv-pery
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/adelaide-united.png" group-title="Giờ Vàng TV",16:30 - 11/08 | Adelaide United FC VS Công An Hà Nội (AFC Champions League) | Blv Ngong
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-adelaide-united-vs-cong-an-ha-noi-11-08-2026-6a4065a33c78f1054f0ee082%2F&blv=blv-ngong
-#EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/ryQ9WHCr-nadjQI7q.png" group-title="Giờ Vàng TV",17:00 - 11/08 | Maziya VS Regar-TadAZ (TAJ) (Asia - AFC Challenge League vòng loại) | Blv Mù
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-maziya-vs-regar-tadaz-taj-11-08-2026-o855014y9rzu%2F&blv=blv%20M%C3%B9
+#EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/ryQ9WHCr-nadjQI7q.png" group-title="Giờ Vàng TV",17:00 - 11/08 | Maziya VS Regar-TadAZ (TAJ) (Asia - AFC Challenge League vòng loại) | Blv Mat
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-maziya-vs-regar-tadaz-taj-11-08-2026-o855014y9rzu%2F&blv=blv-mat
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/juventus.png" group-title="Giờ Vàng TV",17:00 - 11/08 | Juventus VS Palermo (Giao hữu) | Blv Can
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-juventus-vs-palermo-11-08-2026-6a77c41a40e443c1d9050060%2F&blv=blv-can
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/gangwon-fc.png" group-title="Giờ Vàng TV",17:30 - 11/08 | Gangwon FC VS Gamba Osaka (AFC Champions League) | Blv Bon
@@ -43,6 +39,14 @@ https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/ap
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-pakhtakor-vs-al-hussein-irbid-11-08-2026-6a41b7a69c43f2321008bdc6%2F&blv=blv-bon
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/fc-kairat-almaty.png" group-title="Giờ Vàng TV",22:00 - 11/08 | FC Kairat Almaty VS Levski Sofia (C1) | Blv Minh
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-fc-kairat-almaty-vs-levski-sofia-11-08-2026-6a6d37d37c050192260d53d2%2F&blv=blv-minh
+#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/al-jazirauae.png" group-title="Giờ Vàng TV",23:00 - 11/08 | Al-Jazira(UAE) VS Al Ittihad Jeddah (AFC Champions League) | Blv Beo
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-al-jazira-uae-vs-al-ittihad-11-08-2026-6a4065a33c78f1054f0ee083%2F&blv=blv-beo
+#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/bodo-glimt.png" group-title="Giờ Vàng TV",23:00 - 11/08 | Bodo Glimt VS Saint Gilloise (C1) | Blv Leo
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-bodo-glimt-vs-saint-gilloise-11-08-2026-6a6d37d37c050192260d53d3%2F&blv=blv-leo
+#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/sabah-fk-baku.png" group-title="Giờ Vàng TV",23:00 - 11/08 | Sabah FK VS Aarhus AGF (C1) | Blv Mason
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-sabah-fk-baku-vs-aarhus-agf-11-08-2026-6a6be65c78c63f75900cb4df%2F&blv=blv-mason
+#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/fc-iberia-1999-tbilisi.png" group-title="Giờ Vàng TV",23:00 - 11/08 | FC Saburtalo Tbilisi VS Larne FC (C2) | Blv Tri
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-fc-iberia-1999-tbilisi-vs-larne-fc-11-08-2026-6a6d37da7c050192260d53d9%2F&blv=blv-tri
 #EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_1052.jpg" group-title="Pháo Hoa TV",16:30 - 11/08 | Adelaide United VS Công An Hà Nội (AFC Champions League Elite) | Ken
 https://luong.phaohoa.live/live/phaohoa7/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
 #EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_1052.jpg" group-title="Pháo Hoa TV",16:30 - 11/08 | Adelaide United VS Công An Hà Nội (AFC Champions League Elite) | Kevin
