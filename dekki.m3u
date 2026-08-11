@@ -1,16 +1,12 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/pakhtakor.png" group-title="Giờ Vàng TV",22:00 - 11/08 | Pakhtakor Tashkent VS Al Hussein Irbid (AFC Champions League) | Blv Bon
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-pakhtakor-vs-al-hussein-irbid-11-08-2026-6a41b7a69c43f2321008bdc6%2F&blv=blv-bon
-#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/fc-kairat-almaty.png" group-title="Giờ Vàng TV",22:00 - 11/08 | FC Kairat Almaty VS Levski Sofia (C1) | Blv Minh
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-fc-kairat-almaty-vs-levski-sofia-11-08-2026-6a6d37d37c050192260d53d2%2F&blv=blv-minh
-#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/fc-iberia-1999-tbilisi.png" group-title="Giờ Vàng TV",23:00 - 11/08 | FC Saburtalo Tbilisi VS Larne FC (C2) | Blv Tri
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-fc-iberia-1999-tbilisi-vs-larne-fc-11-08-2026-6a6d37da7c050192260d53d9%2F&blv=blv-tri
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/sabah-fk-baku.png" group-title="Giờ Vàng TV",23:00 - 11/08 | Sabah FK VS Aarhus AGF (C1) | Blv Mason
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-sabah-fk-baku-vs-aarhus-agf-11-08-2026-6a6be65c78c63f75900cb4df%2F&blv=blv-mason
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/bodo-glimt.png" group-title="Giờ Vàng TV",23:00 - 11/08 | Bodo Glimt VS Saint Gilloise (C1) | Blv Leo
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-bodo-glimt-vs-saint-gilloise-11-08-2026-6a6d37d37c050192260d53d3%2F&blv=blv-leo
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/al-jazirauae.png" group-title="Giờ Vàng TV",23:00 - 11/08 | Al-Jazira(UAE) VS Al Ittihad Jeddah (AFC Champions League) | Blv Beo
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-al-jazira-uae-vs-al-ittihad-11-08-2026-6a4065a33c78f1054f0ee083%2F&blv=blv-beo
+#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/fc-iberia-1999-tbilisi.png" group-title="Giờ Vàng TV",23:00 - 11/08 | FC Saburtalo Tbilisi VS Larne FC (C2) | Blv Tri
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-fc-saburtalo-tbilisi-vs-larne-fc-11-08-2026-6a6d37da7c050192260d53d9%2F&blv=blv-tri
 #EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/dQXp4veM-WztgPI73.png" group-title="Giờ Vàng TV",23:30 - 11/08 | Luciano Darderi VS Brandon Nakashima (ATP Mubadala Open) | Blv Ben
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-luciano-darderi-vs-brandon-nakashima-11-08-2026-hp6vwg9bvan6%2F&blv=blv-ben
 #EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/A5stpqzB-bJuw1oYE.png" group-title="Giờ Vàng TV",00:40 - 12/08 | Rafael Jodar VS Arthur Fils (Canadian Open) | Blv Ben
@@ -89,10 +85,12 @@ https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/ap
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-pasig-city-vs-negros-muscovados-13-08-2026-22081270%2F&blv=blv-ben
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/termez-surkhon.png" group-title="Giờ Vàng TV",21:00 - 13/08 | Termez Surkhon VS FK Sogdiana Jizak (Uzbekistan Super League) | Blv Bon
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-termez-surkhon-vs-sogdiana-jizak-13-08-2026-6a7671a424d46db870ae7cf6%2F&blv=blv-bon
-#EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_245.jpg" group-title="Pháo Hoa TV",22:00 - 11/08 | Kairat Almaty VS Levski Sofia (UEFA Champions League) | Kevin
-https://luong.phaohoa.live/live/phaohoa2/index.m3u8?expire=1815505159&sign=d3bfcbaa36f949863f22cc89e1cc1afa|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
-#EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/OIP_4kCzOp7.jpg" group-title="Pháo Hoa TV",22:30 - 11/08 | Pháp VS Italy (Giao Hữu) | KaKa
-https://luong.phaohoa.live/live/phaohoa6/index.m3u8?expire=1815505159&sign=16059952b038cc8982ab6d1980711dc9|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
+#EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_215.jpg" group-title="Pháo Hoa TV",23:00 - 11/08 | Bodo/Glimt VS Royale Union SG (UEFA Champions League) | Pháo Thủ
+https://luong.phaohoa.live/live/phaohoa4/index.m3u8?expire=1815505159&sign=faaa23580764370ed378ecd708c9f262|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
+#EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_7826.jpg" group-title="Pháo Hoa TV",23:00 - 11/08 | Al Jazira VS Al Ittihad (AFC Champions League Elite) | Ken
+https://luong.phaohoa.live/live/phaohoa7/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
+#EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_1305.jpg" group-title="Pháo Hoa TV",23:00 - 11/08 | Sabah Baku VS Aarhus (UEFA Champions League) | Tày
+https://luong.phaohoa.live/live/phaohoa8/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
 #EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_5466.jpg" group-title="Pháo Hoa TV",00:30 - 12/08 | Nijmegen VS Olympiacos Piraeus (UEFA Champions League) | Kevin
 https://luong.phaohoa.live/live/phaohoa2/index.m3u8?expire=1815505159&sign=d3bfcbaa36f949863f22cc89e1cc1afa|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
 #EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_116.jpg" group-title="Pháo Hoa TV",01:15 - 12/08 | Celje VS Ararat-Armenia (UEFA Champions League) | Pháo Thủ
