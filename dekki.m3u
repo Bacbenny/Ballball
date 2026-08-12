@@ -1,8 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/dinamo-barnaul.png" group-title="Giờ Vàng TV",18:00 - 12/08 | Dinamo Barnaul VS Dinamo Vladivostok (Cúp Nga) | Blv Mù
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-dinamo-barnaul-vs-dinamo-vladivostok-12-08-2026-6a77c3f440e443c1d904ff63%2F&blv=blv%20M%C3%B9
-#EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/jw4MZXYA-UiVdRBAg.png" group-title="Giờ Vàng TV",18:30 - 12/08 | Magnolia Hotshots VS Phoenix Fuelmasters (Philippines MPBL) | Blv Leo
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-magnolia-hotshots-vs-phoenix-fuelmasters-12-08-2026-q6x70z5deq2h%2F&blv=blv-leo
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/irtysh-1946-omsk.png" group-title="Giờ Vàng TV",20:00 - 12/08 | Irtysh 1946 Omsk VS Saturn Moscow (Cúp Nga) | Blv Mù
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-irtysh-1946-omsk-vs-saturn-moscow-12-08-2026-6a46fe289bd8eef1c40e9e9a%2F&blv=blv%20M%C3%B9
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/east-bengal.png" group-title="Giờ Vàng TV",20:30 - 12/08 | East Bengal VS Al-Arabi Club (AFC Cup) | Blv Beo
@@ -33,6 +29,30 @@ https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/ap
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-inter-miami-cf-vs-club-leon-13-08-2026-69b9f0a3b44d771b900c40cd%2F&blv=blv-ngong
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/orlando-city.png" group-title="Giờ Vàng TV",06:30 - 13/08 | Orlando City VS Atletico San Luis (North Central America Leagues Cup) | Blv Tri
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-orlando-city-vs-atletico-san-luis-13-08-2026-69b89f34751748191c09c9a8%2F&blv=blv-tri
+#EXTINF:-1 tvg-logo="https://ssl.gstatic.com/onebox/media/sports/logos/optimized/LXZ8fEgzf0_FwSyq15buPw_96x96.png" group-title="Giờ Vàng TV",07:00 - 13/08 | Monterrey VS Nashville SC (Leagues Cup) | Blv Minh
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-monterrey-vs-nashville-sc-13-08-2026-ga882mbjyjd1%2F&blv=blv-minh
+#EXTINF:-1 tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/17dcd412f5ecfaa1bc4b85e6e39bc0c4.png" group-title="Giờ Vàng TV",07:00 - 13/08 | Dallas Wings VS Toronto Tempo (Women’s National Basketball Association) | Blv Pery
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-dallas-wings-vs-toronto-tempo-13-08-2026-28715078%2F&blv=blv-pery
+#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/cruzeiro.png" group-title="Giờ Vàng TV",07:30 - 13/08 | Cruzeiro (MG) VS Flamengo (Copa Libertadores) | Blv Bon
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-cruzeiro-vs-flamengo-13-08-2026-6a1e20420f35ed8a050aab6e%2F&blv=blv-bon
+#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/cd-motagua.png" group-title="Giờ Vàng TV",08:00 - 13/08 | CD Motagua VS Cartagines Deportiva SA (CONCACAF Central American Cup) | Blv Tri
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-cd-motagua-vs-cartagines-deportiva-sa-13-08-2026-6a31e5dbea5e0af71602acba%2F&blv=blv-tri
+#EXTINF:-1 tvg-logo="https://ssl.gstatic.com/onebox/media/sports/logos/optimized/RVKv2FJ_8ifhK9d-SwpN-w_96x96.png" group-title="Giờ Vàng TV",09:00 - 13/08 | Portland Fire VS Minnesota Lynx (Women’s National Basketball Association) | Blv Pery
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-portland-fire-vs-minnesota-lynx-13-08-2026-20815071%2F&blv=blv-pery
+#EXTINF:-1 tvg-logo="https://ssl.gstatic.com/onebox/media/sports/logos/optimized/haucNv3xFMMX3pXIbXVTkQ_96x96.png" group-title="Giờ Vàng TV",09:00 - 13/08 | Golden State Valkyries VS Chicago Sky (Women’s National Basketball Association) | Blv Leo
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-golden-state-valkyries-vs-chicago-sky-13-08-2026-29715079%2F&blv=blv-leo
+#EXTINF:-1 tvg-logo="https://ssl.gstatic.com/onebox/media/sports/logos/optimized/4B7tjX3hwKWl-3pnbs1AKQ_96x96.png" group-title="Giờ Vàng TV",09:10 - 13/08 | Los Angeles Angels VS Texas Rangers (MLB) | Blv Ngu
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-los-angeles-angels-vs-texas-rangers-13-08-2026-il71ppc2yh8l%2F&blv=blv-ngu
+#EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/pQjpOMWg-b7NYdTs6.png" group-title="Giờ Vàng TV",09:15 - 13/08 | San Diego VS Puebla (Leagues Cup) | Blv Minh
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-san-diego-vs-puebla-13-08-2026-4tlcezxz3pfw%2F&blv=blv-minh
+#EXTINF:-1 tvg-logo="https://ssl.gstatic.com/onebox/media/sports/logos/optimized/waD0z1CWx6_r4UT_hgb7nA_96x96.png" group-title="Giờ Vàng TV",09:30 - 13/08 | Los Angeles FC VS Querétaro (Leagues Cup) | Blv Mat
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-los-angeles-fc-vs-queretaro-13-08-2026-10jbyshph6cc%2F&blv=blv-mat
+#EXTINF:-1 tvg-logo="https://ssl.gstatic.com/onebox/media/sports/logos/optimized/k6m3hoy4Rn3KRrMYSYDjog_96x96.png" group-title="Giờ Vàng TV",09:30 - 13/08 | Seattle Sounders FC VS Guadalajara (Leagues Cup) | Blv Ngong
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-seattle-sounders-fc-vs-guadalajara-13-08-2026-8nv15e0trmgo%2F&blv=blv-ngong
+#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/cd-fas.png" group-title="Giờ Vàng TV",10:00 - 13/08 | CD FAS VS Hankook Verdes (CONCACAF Central American Cup) | Blv Tri
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-cd-fas-vs-hankook-verdes-13-08-2026-6a3337260f72229b92061b9c%2F&blv=blv-tri
+#EXTINF:-1 tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/1b58325d8265d895b6cf505730edcf77.png" group-title="Giờ Vàng TV",14:00 - 13/08 | Manila Stars VS Marikina Shoemasters (Philippines MPBL) | Blv Leo
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-manila-stars-vs-marikina-shoemasters-13-08-2026-10081278%2F&blv=blv-leo
 #EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/bgSWuehl-SxdIjKYi.png" group-title="Giờ Vàng TV",15:00 - 13/08 | KRX VS FearX (LCK) | Blv Pery
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-krx-vs-fearx-13-08-2026-zerluvwohcg8%2F&blv=blv-pery
 #EXTINF:-1 tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/44b923abc0dfdd25add729b91a4f6d28.png" group-title="Giờ Vàng TV",16:00 - 13/08 | Paranaque Patriots VS Quezon Huskers (Philippines MPBL) | Blv Leo
