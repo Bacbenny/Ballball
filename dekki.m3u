@@ -1,12 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/plT1Aqil-OpJ5uAOg.png" group-title="Giờ Vàng TV",00:35 - 14/08 | New York Yankees VS Seattle Mariners (MLB) | Blv Cay
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-new-york-yankees-vs-seattle-mariners-14-08-2026-o1d8rlqcowf0%2F&blv=blv-cay
-#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/heart-of-midlothian.png" group-title="Giờ Vàng TV",01:45 - 14/08 | Hearts VS SL Benfica (C2) | Blv Ngong
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-heart-of-midlothian-vs-benfica-14-08-2026-6a6d37da7c050192260d53e2%2F&blv=blv-ngong
-#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/egnatia.png" group-title="Giờ Vàng TV",02:00 - 14/08 | Egnatia VS Shamrock Rovers (C2) | Blv Mù
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-egnatia-vs-shamrock-rovers-14-08-2026-6a6d37da7c050192260d53d8%2F&blv=blv%20M%C3%B9
-#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/llaneros-fc.png" group-title="Giờ Vàng TV",04:00 - 14/08 | Inter Bogotá VS Real Cundinamarca (Copa Colombia) | Blv Mù
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-inter-bogota-vs-real-cundinamarca-14-08-2026-6a7671ae24d46db870ae8832%2F&blv=blv%20M%C3%B9
 #EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/S2NdWdWg-tOt4Rhy2.png" group-title="Giờ Vàng TV",05:00 - 14/08 | Iga Swiatek VS Elena Rybakina (Canadian Open WTA) | Blv Ben
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-iga-swiatek-vs-elena-rybakina-14-08-2026-yvu6njtplbck%2F&blv=blv-ben
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/santos.png" group-title="Giờ Vàng TV",05:00 - 14/08 | Santos VS Macara (Copa Sudamericana) | Blv Ngong
@@ -85,8 +77,6 @@ https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/ap
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-portsmouth-vs-queens-park-rangers-15-08-2026-6a75201d24d46db870671ba7%2F&blv=blv-ben
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/stoke-city.png" group-title="Giờ Vàng TV",21:00 - 15/08 | Stoke City VS Swansea City (Hạng Nhất Anh) | Blv Mat
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-stoke-city-vs-swansea-city-15-08-2026-6a75201d24d46db870671bb0%2F&blv=blv-mat
-#EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_6422.jpg" group-title="Pháo Hoa TV",01:45 - 14/08 | Hearts VS Benfica (UEFA Europa League) | Chim Nhỏ
-https://luong.phaohoa.live/live/phaohoa5/index.m3u8?expire=1815505159&sign=67cc5bcdcabb081229f5406e5b07483d|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
 #EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_5088.jpg" group-title="Pháo Hoa TV",17:00 - 14/08 | Verdy VS Kashiwa Reysol (J1 League) | Tày
 https://luong.phaohoa.live/live/phaohoa8/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
 #EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_2251.jpg" group-title="Pháo Hoa TV",18:35 - 14/08 | Shandong Taishan VS Qingdao Hainiu (Chinese Super League) | Chim Nhỏ
