@@ -1,8 +1,6 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://storage.allsportdb.com/orig/event/e2b7fa13-e624-452a-b2af-4b56208d3bf2" group-title="Giờ Vàng TV",17:00 - 13/08 | Europe Smash - Sweden VS Europe Smash - Sweden (Europe Smash - Sweden 2026) | Blv 18
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-europe-smash-sweden-vs-europe-smash-sweden-13-08-2026-u0rwhhhxg84n%2F&blv=blv-18
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/termez-surkhon.png" group-title="Giờ Vàng TV",21:00 - 13/08 | Termez Surkhon VS FK Sogdiana Jizak (Uzbekistan Super League) | Blv Bon
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-termez-surkhon-vs-fk-sogdiana-jizak-13-08-2026-6a7671a424d46db870ae7cf6%2F&blv=blv-bon
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-termez-surkhon-vs-sogdiana-jizak-13-08-2026-6a7671a424d46db870ae7cf6%2F&blv=blv-bon
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/ilves-tampere.png" group-title="Giờ Vàng TV",23:00 - 13/08 | Ilves Tampere VS NK Rijeka (Europa Conference League) | Blv Mù
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-ilves-tampere-vs-rijeka-13-08-2026-6a6e89350f85b1e1860470d8%2F&blv=blv%20M%C3%B9
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/fc-flora-tallinn.png" group-title="Giờ Vàng TV",23:00 - 13/08 | FC Flora Tallinn VS Inter Club Escaldes (Europa Conference League) | Blv Beo
@@ -29,6 +27,8 @@ https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/ap
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-new-york-city-fc-vs-necaxa-14-08-2026-69b9f0a3b44d771b900c40cf%2F&blv=blv%20M%C3%B9
 #EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/UBXM3cXg-fgTOwTv9.png" group-title="Giờ Vàng TV",07:00 - 14/08 | Jakub Mensik VS Brandon Nakashima (Canadian Open) | Blv Ben
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-jakub-mensik-vs-brandon-nakashima-14-08-2026-mnzi0fnjl47q%2F&blv=blv-ben
+#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/alianza-fc-pan.png" group-title="Giờ Vàng TV",07:00 - 14/08 | Alianza FC (PAN) VS UMECIT (CONCACAF Central American Cup) | Blv Mat
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-alianza-fc-pan-vs-umecit-14-08-2026-6a31e5dbea5e0af71602acb9%2F&blv=blv-mat
 #EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/pKkqJ4Wg-bB59SVBr.png" group-title="Giờ Vàng TV",15:00 - 15/08 | HLE VS KT (LCK) | Blv Pery
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-hle-vs-kt-15-08-2026-om9vsq5041ah%2F&blv=blv-pery
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/urawa-red-diamonds.png" group-title="Giờ Vàng TV",17:00 - 15/08 | Urawa Red Diamonds VS Sanfrecce Hiroshima (VĐQG Nhật Bản) | Blv Beo
@@ -45,8 +45,14 @@ https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/ap
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-bolton-wanderers-vs-preston-north-end-15-08-2026-6a75201924d46db8706715b8%2F&blv=blv-minh
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/tianjin-tigers.png" group-title="Giờ Vàng TV",18:35 - 15/08 | Tianjin Jinmen Tiger VS Beijing Guoan (VĐQG Trung Quốc) | Blv Sun
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-tianjin-jinmen-tiger-vs-beijing-guoan-15-08-2026-6a75201a24d46db8706716b8%2F&blv=blv-sun
-#EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/FC_Andijon_logo.png" group-title="Pháo Hoa TV",21:00 - 13/08 | Andijan VS Neftchi Fargona (Super League) | Chim Nhỏ
-https://luong.phaohoa.live/live/phaohoa5/index.m3u8?expire=1815505159&sign=67cc5bcdcabb081229f5406e5b07483d|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
+#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/bristol-city.png" group-title="Giờ Vàng TV",21:00 - 15/08 | Bristol City VS Millwall (Hạng Nhất Anh) | Blv Beo
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-bristol-city-vs-millwall-15-08-2026-6a75201d24d46db870671b8a%2F&blv=blv-beo
+#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/norwich-city.png" group-title="Giờ Vàng TV",21:00 - 15/08 | Norwich City VS West Bromwich(WBA) (Hạng Nhất Anh) | Blv Mù
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-norwich-city-vs-west-bromwich-wba-15-08-2026-6a75201d24d46db870671b9f%2F&blv=blv%20M%C3%B9
+#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/portsmouth.png" group-title="Giờ Vàng TV",21:00 - 15/08 | Portsmouth VS Queens Park Rangers (Hạng Nhất Anh) | Blv Ben
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-portsmouth-vs-queens-park-rangers-15-08-2026-6a75201d24d46db870671ba7%2F&blv=blv-ben
+#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/stoke-city.png" group-title="Giờ Vàng TV",21:00 - 15/08 | Stoke City VS Swansea City (Hạng Nhất Anh) | Blv Mat
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-stoke-city-vs-swansea-city-15-08-2026-6a75201d24d46db870671bb0%2F&blv=blv-mat
 #EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_5105.jpg" group-title="Pháo Hoa TV",22:30 - 13/08 | Tobol VS Partizan (UEFA Conference League) | Pháo Thủ
 https://luong.phaohoa.live/live/phaohoa4/index.m3u8?expire=1815505159&sign=faaa23580764370ed378ecd708c9f262|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
 #EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_110.jpg" group-title="Pháo Hoa TV",23:00 - 13/08 | Qarabag VS Dyn. Kyiv (UEFA Conference League) | Tày
