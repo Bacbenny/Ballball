@@ -1,12 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/cbf9424df17d6e06d655dca78651d329.png" group-title="Giờ Vàng TV",09:00 - 14/08 | Las Vegas Aces VS Washington Mystics (Women’s National Basketball Association) | Blv Pery
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-las-vegas-aces-vs-washington-mystics-14-08-2026-23815074%2F&blv=blv-pery
-#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/antigua-gfc.png" group-title="Giờ Vàng TV",09:00 - 14/08 | Antigua GFC VS Marathon (CONCACAF Central American Cup) | Blv Tri
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-antigua-gfc-vs-marathon-14-08-2026-6a31e5dbea5e0af71602acb8%2F&blv=blv-tri
-#EXTINF:-1 tvg-logo="https://ssl.gstatic.com/onebox/media/sports/logos/optimized/58MDezoOT1DAkMexRNiW3w_96x96.png" group-title="Giờ Vàng TV",09:10 - 14/08 | Los Angeles Dodgers VS Milwaukee Brewers (MLB) | Blv Ngu
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-los-angeles-dodgers-vs-milwaukee-brewers-14-08-2026-pj6l89ejz4y5%2F&blv=blv-ngu
-#EXTINF:-1 tvg-logo="https://ssl.gstatic.com/onebox/media/sports/logos/optimized/2Fx-HnSGv-0rGERxn4YSRA_96x96.png" group-title="Giờ Vàng TV",09:30 - 14/08 | Portland Timbers VS Tijuana (Leagues Cup) | Blv Minh
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-portland-timbers-vs-tijuana-14-08-2026-iznarap77fns%2F&blv=blv-minh
 #EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/xtnvwhh5-rgb1I9qH.png" group-title="Giờ Vàng TV",14:00 - 14/08 | EDG VS LGD (LPL) | Blv Minh
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-edg-vs-lgd-14-08-2026-7rbeot2xqca9%2F&blv=blv-minh
 #EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyDV2FwktUy4xt7oA8Jt05I7iBIbaIN5cK86GiJg39rw&s=10" group-title="Giờ Vàng TV",14:00 - 14/08 | SkyCity New Zealand Darts Masters 2026 VS SkyCity New Zealand Darts Masters 2026 (Dart) | Blv Can
@@ -17,12 +9,20 @@ https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/ap
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-cagliari-vs-arezzo-14-08-2026-6a7a661924d46db87074b183%2F&blv=blv-ngong
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/viborg.png" group-title="Giờ Vàng TV",00:00 - 15/08 | Viborg VS Aarhus AGF (VĐQG Đan Mạch) | Blv Beo
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-viborg-vs-aarhus-agf-15-08-2026-6a75201424d46db870670e47%2F&blv=blv-beo
+#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/elfsborg.png" group-title="Giờ Vàng TV",00:00 - 15/08 | Elfsborg VS Vasteras SK (VĐQG Thụy Điển) | Blv Mat
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-elfsborg-vs-vasteras-sk-fk-15-08-2026-6a7671ac24d46db870ae8585%2F&blv=blv-mat
+#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/al-ettifaq.png" group-title="Giờ Vàng TV",01:00 - 15/08 | Al-Ettifaq VS Al-Riyadh (VĐQG Ả Rập Xê Út) | Blv Ben
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-al-ettifaq-vs-al-riyadh-15-08-2026-6a75201524d46db870670f69%2F&blv=blv-ben
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/monza.png" group-title="Giờ Vàng TV",01:45 - 15/08 | Monza VS Avellino (Cúp Ý) | Blv Mat
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-monza-vs-avellino-15-08-2026-6a4066293c78f1054f0ee0a5%2F&blv=blv-mat
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/wolves.png" group-title="Giờ Vàng TV",02:00 - 15/08 | Wolves VS Blackburn Rovers (Hạng Nhất Anh) | Blv Ngong
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-wolves-vs-blackburn-rovers-15-08-2026-6a75201524d46db87067106c%2F&blv=blv-ngong
+#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/sporting-cp.png" group-title="Giờ Vàng TV",02:15 - 15/08 | Sporting CP VS Vitoria Guimaraes (VĐQG Bồ Đào Nha) | Blv Mat
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-sporting-cp-vs-vitoria-guimaraes-15-08-2026-6a75201624d46db8706710a4%2F&blv=blv-mat
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/universidad-de-concepcion.png" group-title="Giờ Vàng TV",06:00 - 15/08 | U.Concepcion VS La Serena (VĐQG Chilê) | Blv Tri
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-universidad-de-concepcion-vs-deportes-la-serena-15-08-2026-6a75201624d46db8706710cb%2F&blv=blv-tri
+#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/llaneros-fc.png" group-title="Giờ Vàng TV",06:00 - 15/08 | Llaneros FC VS Deportes Tolima (VĐQG Colombia) | Blv Ngong
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-llaneros-fc-vs-deportes-tolima-15-08-2026-6a7671ae24d46db870ae8832%2F&blv=blv-ngong
 #EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/ncOoVXBr-8Gs6bSZh.png" group-title="Giờ Vàng TV",06:15 - 15/08 | Toronto Blue Jays VS New York Yankees (MLB) | Blv Cay
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-toronto-blue-jays-vs-new-york-yankees-15-08-2026-op60hcu4xfjg%2F&blv=blv-cay
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/racing-club.png" group-title="Giờ Vàng TV",06:30 - 15/08 | Racing Club VS CA Banfield (VĐQG Argentina) | Blv Mat
