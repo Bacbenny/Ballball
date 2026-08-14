@@ -1,10 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/cagliari.png" group-title="Giờ Vàng TV",23:30 - 14/08 | Cagliari VS Arezzo (Cúp Ý) | Blv Mason
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-cagliari-vs-arezzo-14-08-2026-6a7a661924d46db87074b183%2F&blv=blv-mason
-#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/elfsborg.png" group-title="Giờ Vàng TV",00:00 - 15/08 | Elfsborg VS Vasteras SK (VĐQG Thụy Điển) | Blv Mat
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-elfsborg-vs-vasteras-sk-fk-15-08-2026-6a7671ac24d46db870ae8585%2F&blv=blv-mat
-#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/viborg.png" group-title="Giờ Vàng TV",00:00 - 15/08 | Viborg VS Aarhus AGF (VĐQG Đan Mạch) | Blv Beo
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-viborg-vs-aarhus-agf-15-08-2026-6a75201424d46db870670e47%2F&blv=blv-beo
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/al-hilal.png" group-title="Giờ Vàng TV",01:00 - 15/08 | Al Hilal VS Al-Faisaly Harmah (VĐQG Ả Rập Xê Út) | Blv Ben
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-al-hilal-vs-al-faisaly-harmah-15-08-2026-6a75201524d46db870670f72%2F&blv=blv-ben
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/al-ettifaq.png" group-title="Giờ Vàng TV",01:00 - 15/08 | Al-Ettifaq VS Al-Riyadh (VĐQG Ả Rập Xê Út) | Blv Ben
@@ -63,10 +57,6 @@ https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/ap
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-portsmouth-vs-queens-park-rangers-15-08-2026-6a75201d24d46db870671ba7%2F&blv=blv-ben
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/stoke-city.png" group-title="Giờ Vàng TV",21:00 - 15/08 | Stoke City VS Swansea City (Hạng Nhất Anh) | Blv Mat
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-stoke-city-vs-swansea-city-15-08-2026-6a75201d24d46db870671bb0%2F&blv=blv-mat
-#EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_3925.jpg" group-title="Pháo Hoa TV",23:30 - 14/08 | Braunschweig VS Bochum (2. Bundesliga) | Kevin
-https://luong.phaohoa.live/live/phaohoa2/index.m3u8?expire=1815505159&sign=d3bfcbaa36f949863f22cc89e1cc1afa|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
-#EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_7346.jpg" group-title="Pháo Hoa TV",00:00 - 15/08 | Elfsborg VS Vasteras SK (Allsvenskan) | Tày
-https://luong.phaohoa.live/live/phaohoa8/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
 #EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/19c61b1ae0b964b7a8a79d3bf3648a69.png" group-title="Pháo Hoa TV",01:00 - 15/08 | Al Ettifaq VS Al Riyadh (Saudi Pro League) | Pháo Thủ
 https://luong.phaohoa.live/live/phaohoa4/index.m3u8?expire=1815505159&sign=faaa23580764370ed378ecd708c9f262|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
 #EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_366.jpg" group-title="Pháo Hoa TV",01:00 - 15/08 | Al Hilal VS Al-Faisaly (Saudi Pro League) | Ken
