@@ -1,14 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://ssl.gstatic.com/onebox/media/sports/logos/optimized/QysqoqJQsTbiJl8sPL12Yg_96x96.png" group-title="Giờ Vàng TV",07:00 - 14/08 | Las Vegas Raiders VS Arizona Cardinals (NFL - Preseason) | Blv Can
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-las-vegas-raiders-vs-arizona-cardinals-14-08-2026-46fsn5abj40w%2F&blv=blv-can
-#EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/UBXM3cXg-fgTOwTv9.png" group-title="Giờ Vàng TV",07:00 - 14/08 | Ben Shelton VS Brandon Nakashima (Canadian Open) | Blv Ben
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-ben-shelton-vs-brandon-nakashima-14-08-2026-v56qf3htj3lo%2F&blv=blv-ben
-#EXTINF:-1 tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/7a41b2cf98e8350722b096134858af8e.png" group-title="Giờ Vàng TV",07:00 - 14/08 | New York Liberty VS Los Angeles Sparks (Women’s National Basketball Association) | Blv Pery
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-new-york-liberty-vs-los-angeles-sparks-14-08-2026-22815073%2F&blv=blv-pery
-#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/alianza-fc-pan.png" group-title="Giờ Vàng TV",07:00 - 14/08 | Alianza FC (PAN) VS UMECIT (CONCACAF Central American Cup) | Blv Mat
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-alianza-fc-pan-vs-umecit-14-08-2026-6a31e5dbea5e0af71602acb9%2F&blv=blv-mat
-#EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/OIErBVEa-IFA1tboe.png" group-title="Giờ Vàng TV",07:30 - 14/08 | América VS Austin (League Cup) | Blv Minh
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-america-vs-austin-14-08-2026-0ffn5xsy2m4r%2F&blv=blv-minh
 #EXTINF:-1 tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/cbf9424df17d6e06d655dca78651d329.png" group-title="Giờ Vàng TV",09:00 - 14/08 | Las Vegas Aces VS Washington Mystics (Women’s National Basketball Association) | Blv Pery
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-las-vegas-aces-vs-washington-mystics-14-08-2026-23815074%2F&blv=blv-pery
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/antigua-gfc.png" group-title="Giờ Vàng TV",09:00 - 14/08 | Antigua GFC VS Marathon (CONCACAF Central American Cup) | Blv Tri
@@ -17,8 +7,6 @@ https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/ap
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-los-angeles-dodgers-vs-milwaukee-brewers-14-08-2026-pj6l89ejz4y5%2F&blv=blv-ngu
 #EXTINF:-1 tvg-logo="https://ssl.gstatic.com/onebox/media/sports/logos/optimized/2Fx-HnSGv-0rGERxn4YSRA_96x96.png" group-title="Giờ Vàng TV",09:30 - 14/08 | Portland Timbers VS Tijuana (Leagues Cup) | Blv Minh
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-portland-timbers-vs-tijuana-14-08-2026-iznarap77fns%2F&blv=blv-minh
-#EXTINF:-1 tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/f265f639507860463b03c6a46fe76e93.png" group-title="Giờ Vàng TV",14:00 - 14/08 | Mindoro Tamaraws VS Quezon City TODA AKSYON (Philippines MPBL) | Blv Ben
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-mindoro-tamaraws-vs-quezon-city-toda-aksyon-14-08-2026-21381272%2F&blv=blv-ben
 #EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/xtnvwhh5-rgb1I9qH.png" group-title="Giờ Vàng TV",14:00 - 14/08 | EDG VS LGD (LPL) | Blv Minh
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-edg-vs-lgd-14-08-2026-7rbeot2xqca9%2F&blv=blv-minh
 #EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyDV2FwktUy4xt7oA8Jt05I7iBIbaIN5cK86GiJg39rw&s=10" group-title="Giờ Vàng TV",14:00 - 14/08 | SkyCity New Zealand Darts Masters 2026 VS SkyCity New Zealand Darts Masters 2026 (Dart) | Blv Can
