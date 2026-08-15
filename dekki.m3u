@@ -1,8 +1,6 @@
 #EXTM3U
 #EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/t0Ieuvf5-h2pEHB7M.png" group-title="Giờ Vàng TV",17:00 - 15/08 | BFX VS DNS (LCK) | Blv Pery
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-bfx-vs-dns-15-08-2026-scyfmhr6x2mu%2F&blv=blv-pery
-#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/urawa-red-diamonds.png" group-title="Giờ Vàng TV",17:00 - 15/08 | Urawa Red Diamonds VS Sanfrecce Hiroshima (VĐQG Nhật Bản) | Blv Beo
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-urawa-red-diamonds-vs-hiroshima-sanfrecce-15-08-2026-6a75201824d46db8706713df%2F&blv=blv-beo
 #EXTINF:-1 tvg-logo="https://europesmash.com/assets/images/sg_text_logo.png" group-title="Giờ Vàng TV",17:00 - 15/08 | Europe Smash - Sweden VS Europe Smash - Sweden (Europe Smash - Sweden 2026) | Blv 18
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-europe-smash-sweden-vs-europe-smash-sweden-15-08-2026-v4obxugiljmf%2F&blv=blv-18
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/fc-seoul.png" group-title="Giờ Vàng TV",17:30 - 15/08 | FC Seoul VS Daejeon Citizen (K-League Hàn Quốc) | Blv Mù
@@ -16,7 +14,7 @@ https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/ap
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/tianjin-tigers.png" group-title="Giờ Vàng TV",18:35 - 15/08 | Tianjin Jinmen Tiger VS Beijing Guoan (VĐQG Trung Quốc) | Blv Sun
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-tianjin-jinmen-tiger-vs-beijing-guoan-15-08-2026-6a75201a24d46db8706716b8%2F&blv=blv-sun
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/yunnan-yukun.png" group-title="Giờ Vàng TV",19:00 - 15/08 | Yunnan Yukun VS Dalian Yingbo (VĐQG Trung Quốc) | Blv Mat
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-yunnan-yukun-vs-dalian-yingbo-15-08-2026-6a75201a24d46db8706716e8%2F&blv=blv-mat
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-yunnan-yukun-vs-dalian-zhixing-15-08-2026-6a75201a24d46db8706716e8%2F&blv=blv-mat
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/chelsea.png" group-title="Giờ Vàng TV",20:00 - 15/08 | Chelsea FC VS Real Sociedad (Giao hữu) | Blv Mason
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-chelsea-vs-real-sociedad-15-08-2026-6a7bb87587b267b97008303b%2F&blv=blv-mason
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/bayern-munchen.png" group-title="Giờ Vàng TV",20:30 - 15/08 | Bayern Munich VS RB Leipzig (Giao hữu) | Blv Ngu
@@ -55,10 +53,6 @@ https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/ap
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-atlanta-united-vs-new-york-red-bulls-16-08-2026-6a7671c324d46db870ae9ec5%2F&blv=blv-ngong
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/toronto-fc.png" group-title="Giờ Vàng TV",06:30 - 16/08 | Toronto FC VS New England Revolution (MLS Mỹ) | Blv Mù
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-toronto-fc-vs-new-england-revolution-16-08-2026-6a7671c324d46db870ae9ee2%2F&blv=blv%20M%C3%B9
-#EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_5051.jpg" group-title="Pháo Hoa TV",17:00 - 15/08 | Urawa Reds VS Sanfrecce Hiroshima (J1 League) | Pháo Thủ
-https://luong.phaohoa.live/live/phaohoa4/index.m3u8?expire=1815505159&sign=faaa23580764370ed378ecd708c9f262|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
-#EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_383.jpg" group-title="Pháo Hoa TV",17:00 - 15/08 | Vissel Kobe VS FC Tokyo (J1 League) | A Heo
-https://luong.phaohoa.live/live/phaohoa7/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
 #EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_2234.jpg" group-title="Pháo Hoa TV",18:35 - 15/08 | Zhejiang Professional VS Chengdu Rongcheng (Chinese Super League) | Văn Minh
 https://luong.phaohoa.live/live/phaohoa3/index.m3u8?expire=1815505159&sign=32dbf97946c3646cdd7f664aebd7fa2a|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
 #EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_88.jpg" group-title="Pháo Hoa TV",20:00 - 15/08 | Chelsea VS Real Sociedad (Club Friendlies) | Pháo Thủ
