@@ -1,14 +1,6 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/t0Ieuvf5-h2pEHB7M.png" group-title="Giờ Vàng TV",17:00 - 15/08 | BFX VS DNS (LCK) | Blv Pery
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-bfx-vs-dns-15-08-2026-scyfmhr6x2mu%2F&blv=blv-pery
 #EXTINF:-1 tvg-logo="https://europesmash.com/assets/images/sg_text_logo.png" group-title="Giờ Vàng TV",17:00 - 15/08 | Europe Smash - Sweden VS Europe Smash - Sweden (Europe Smash - Sweden 2026) | Blv 18
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-europe-smash-sweden-vs-europe-smash-sweden-15-08-2026-v4obxugiljmf%2F&blv=blv-18
-#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/fc-seoul.png" group-title="Giờ Vàng TV",17:30 - 15/08 | FC Seoul VS Daejeon Citizen (K-League Hàn Quốc) | Blv Mù
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-fc-seoul-vs-daejeon-citizen-15-08-2026-6a75201824d46db8706714e4%2F&blv=blv%20M%C3%B9
-#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/jeju-sk-fc.png" group-title="Giờ Vàng TV",17:30 - 15/08 | Jeju United FC VS FC Anyang (K-League Hàn Quốc) | Blv Mason
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-jeju-sk-fc-vs-fc-anyang-15-08-2026-6a75201824d46db8706714de%2F&blv=blv-mason
-#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/gwangju-football-club.png" group-title="Giờ Vàng TV",17:30 - 15/08 | Gwangju FC VS Pohang Steelers (K-League Hàn Quốc) | Blv Bon
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-gwangju-fc-vs-pohang-steelers-15-08-2026-6a75201824d46db8706714d4%2F&blv=blv-bon
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/bolton-wanderers.png" group-title="Giờ Vàng TV",18:30 - 15/08 | Bolton Wanderers VS Preston North End (Hạng Nhất Anh) | Blv Minh
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-bolton-wanderers-vs-preston-north-end-15-08-2026-6a75201924d46db8706715b8%2F&blv=blv-minh
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/tianjin-tigers.png" group-title="Giờ Vàng TV",18:35 - 15/08 | Tianjin Jinmen Tiger VS Beijing Guoan (VĐQG Trung Quốc) | Blv Sun
