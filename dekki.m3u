@@ -1,8 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/4b7ZnQGG-QNrz0V5B.png" group-title="Giờ Vàng TV",20:00 - 15/08 | Singapore VS Thailand (ASIAN CUP 2026) | Blv Ben
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-singapore-vs-thailand-15-08-2026-63tw2y8fh3jg%2F&blv=blv-ben
-#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/chelsea.png" group-title="Giờ Vàng TV",20:00 - 15/08 | Chelsea FC VS Real Sociedad (Giao hữu) | Blv Mason
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-chelsea-vs-real-sociedad-15-08-2026-6a7bb87587b267b97008303b%2F&blv=blv-mason
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/borussia-monchengladbach.png" group-title="Giờ Vàng TV",20:30 - 15/08 | Monchengladbach VS Aston Villa (Giao hữu) | Blv Minh
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-borussia-monchengladbach-vs-aston-villa-15-08-2026-6a7914a624d46db8703fd555%2F&blv=blv-minh
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/bayern-munchen.png" group-title="Giờ Vàng TV",20:30 - 15/08 | Bayern Munich VS RB Leipzig (Giao hữu) | Blv Ngu
@@ -55,14 +51,14 @@ https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/ap
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-washington-mystics-vs-los-angeles-sparks-16-08-2026-27815078%2F&blv=blv-pery
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/ulsan-hd-fc.png" group-title="Giờ Vàng TV",17:30 - 16/08 | Ulsan Hyundai VS Gangwon FC (K-League Hàn Quốc) | Blv Bon
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-ulsan-hd-fc-vs-gangwon-fc-16-08-2026-6a7671c524d46db870aea7cd%2F&blv=blv-bon
+#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/watford.png" group-title="Giờ Vàng TV",19:30 - 16/08 | Watford VS Southampton (Hạng Nhất Anh) | Blv Mat
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-watford-vs-southampton-16-08-2026-6a7671c624d46db870aead44%2F&blv=blv-mat
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/malaysia.png" group-title="Giờ Vàng TV",20:00 - 16/08 | Malaysia VS Việt Nam (ASIAN CUP 2026) | Blv Ngu
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-malaysia-vs-vietnam-16-08-2026-6a7914b124d46db8703fe4a6%2F&blv=blv-ngu
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/malaysia.png" group-title="Giờ Vàng TV",20:00 - 16/08 | Malaysia VS Việt Nam (ASIAN CUP 2026) | Blv Beo
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-malaysia-vs-vietnam-16-08-2026-6a7914b124d46db8703fe4a6%2F&blv=blv-beo
-#EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_88.jpg" group-title="Pháo Hoa TV",20:00 - 15/08 | Chelsea VS Real Sociedad (Club Friendlies) | Pháo Thủ
-https://luong.phaohoa.live/live/phaohoa4/index.m3u8?expire=1815505159&sign=faaa23580764370ed378ecd708c9f262|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
-#EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_483.jpg" group-title="Pháo Hoa TV",20:00 - 15/08 | Singapore VS Thái Lan (ASEAN Championship) | Tày
-https://luong.phaohoa.live/live/phaohoa8/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
+#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/liverpool.png" group-title="Giờ Vàng TV",00:00 - 17/08 | Liverpool VS Como (Giao hữu) | Blv Mason
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-liverpool-vs-como-17-08-2026-6a7a663d24d46db87074e7a5%2F&blv=blv-mason
 #EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_72.jpg" group-title="Pháo Hoa TV",20:30 - 15/08 | Bayern Munich VS RB Leipzig (Club Friendlies) | Chim Nhỏ
 https://luong.phaohoa.live/live/phaohoa5/index.m3u8?expire=1815505159&sign=67cc5bcdcabb081229f5406e5b07483d|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
 #EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_102.jpg" group-title="Pháo Hoa TV",21:45 - 15/08 | Manchester United VS AC Milan (Club Friendlies) | A Heo
