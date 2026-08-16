@@ -1,10 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/arsenal.png" group-title="Giờ Vàng TV",21:00 - 16/08 | Arsenal VS Manchester City (Siêu Cúp Anh) | Daucaumc
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-arsenal-vs-manchester-city-16-08-2026-6a2364861908f3a21c09f702%2F&blv=daucaumc
-#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/arsenal.png" group-title="Giờ Vàng TV",21:00 - 16/08 | Arsenal VS Manchester City (Siêu Cúp Anh) | Daucarsenal
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-arsenal-vs-manchester-city-16-08-2026-6a2364861908f3a21c09f702%2F&blv=daucarsenal
-#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/arsenal.png" group-title="Giờ Vàng TV",21:00 - 16/08 | Arsenal VS Manchester City (Siêu Cúp Anh) | Daucauvuive
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-arsenal-vs-manchester-city-16-08-2026-6a2364861908f3a21c09f702%2F&blv=daucauvuive
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/basel.png" group-title="Giờ Vàng TV",21:30 - 16/08 | Basel VS Barcelona (Giao hữu) | Blv Mat
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-basel-vs-fc-barcelona-16-08-2026-6a7bb87587b267b970083056%2F&blv=blv-mat
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/racing-santander.png" group-title="Giờ Vàng TV",22:00 - 16/08 | Racing Santander VS Villarreal (La Liga) | Blv Mason
@@ -69,6 +63,10 @@ https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/ap
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-internacional-rs-vs-remo-belem-pa-18-08-2026-6a7914c124d46db8703ff732%2F&blv=blv-ngong
 #EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_176.jpg" group-title="Pháo Hoa TV",21:30 - 16/08 | Basel VS Barcelona (Club Friendlies) | Chim Nhỏ
 https://luong.phaohoa.live/live/phaohoa5/index.m3u8?expire=1815505159&sign=67cc5bcdcabb081229f5406e5b07483d|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
+#EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_7220.jpg" group-title="Pháo Hoa TV",22:00 - 16/08 | Racing Santander VS Villarreal (La Liga) | Pháo Thủ
+https://luong.phaohoa.live/live/phaohoa4/index.m3u8?expire=1815505159&sign=faaa23580764370ed378ecd708c9f262|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
+#EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_3931.jpg" group-title="Pháo Hoa TV",22:00 - 16/08 | Schalke VS Real Madrid (Club Friendlies) | Người Lửa
+https://luong.phaohoa.live/live/phaohoa1/index.m3u8?expire=1815505159&sign=9137553faeae361734eec8bda5ea16e2|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
 #EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_1365.jpg" group-title="Pháo Hoa TV",23:30 - 16/08 | KV Mechelen VS St. Liege (First Division A) | Tày
 https://luong.phaohoa.live/live/phaohoa8/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
 #EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/nGfV05dipbAc7zzojivKew_96x96.png" group-title="Pháo Hoa TV",00:00 - 17/08 | Liverpool VS Como (Club Friendlies) | A Heo
@@ -95,6 +93,30 @@ https://luong.phaohoa.live/live/phaohoa2/index.m3u8?expire=1815505159&sign=d3bfc
 https://luong.phaohoa.live/live/phaohoa5/index.m3u8?expire=1815505159&sign=67cc5bcdcabb081229f5406e5b07483d|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
 #EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_18884.jpg" group-title="Pháo Hoa TV",23:15 - 17/08 | Al Zulfi VS Al Riyadh (King's Cup) | Tày
 https://luong.phaohoa.live/live/phaohoa8/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
+#EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_2647.jpg" group-title="Pháo Hoa TV",00:00 - 18/08 | Brondby VS Sonderjyske (Superliga) | Văn Minh
+https://luong.phaohoa.live/live/phaohoa3/index.m3u8?expire=1815505159&sign=32dbf97946c3646cdd7f664aebd7fa2a|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
+#EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_6334.jpg" group-title="Pháo Hoa TV",01:00 - 18/08 | Al Raed VS Al Hilal (King's Cup) | Pháo Thủ
+https://luong.phaohoa.live/live/phaohoa4/index.m3u8?expire=1815505159&sign=faaa23580764370ed378ecd708c9f262|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
+#EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_7665_lT9ZeBb.jpg" group-title="Pháo Hoa TV",01:30 - 18/08 | Samsunspor VS Goztepe (Süper Lig) | Chim Nhỏ
+https://luong.phaohoa.live/live/phaohoa5/index.m3u8?expire=1815505159&sign=67cc5bcdcabb081229f5406e5b07483d|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
+#EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_7200.jpg" group-title="Pháo Hoa TV",02:00 - 18/08 | Dep. La Coruna VS Elche (La Liga) | Kevin
+https://luong.phaohoa.live/live/phaohoa2/index.m3u8?expire=1815505159&sign=d3bfcbaa36f949863f22cc89e1cc1afa|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
+#EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_6018.jpg" group-title="Pháo Hoa TV",02:15 - 18/08 | Casa Pia VS Benfica (Primeira Liga) | Tày
+https://luong.phaohoa.live/live/phaohoa8/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
+#EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_381.jpg" group-title="Pháo Hoa TV",18:35 - 18/08 | Shanghai Shenhua VS Beijing Guoan (Chinese Super League) | Văn Minh
+https://luong.phaohoa.live/live/phaohoa3/index.m3u8?expire=1815505159&sign=32dbf97946c3646cdd7f664aebd7fa2a|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
+#EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_480.jpg" group-title="Pháo Hoa TV",20:00 - 18/08 | Thái Lan VS Singapore (ASEAN Championship) | Kevin
+https://luong.phaohoa.live/live/phaohoa2/index.m3u8?expire=1815505159&sign=d3bfcbaa36f949863f22cc89e1cc1afa|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
+#EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_480.jpg" group-title="Pháo Hoa TV",20:00 - 18/08 | Thái Lan VS Singapore (ASEAN Championship) | Tày
+https://luong.phaohoa.live/live/phaohoa8/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
+#EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_10546.jpg" group-title="Pháo Hoa TV",22:00 - 18/08 | Buxoro VS Neftchi Fargona (Super League) | KaKa
+https://luong.phaohoa.live/live/phaohoa6/index.m3u8?expire=1815505159&sign=16059952b038cc8982ab6d1980711dc9|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
+#EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_3917.jpg" group-title="Pháo Hoa TV",23:00 - 18/08 | Heidenheim VS Bayern Munich (Club Friendlies) | Chim Nhỏ
+https://luong.phaohoa.live/live/phaohoa5/index.m3u8?expire=1815505159&sign=67cc5bcdcabb081229f5406e5b07483d|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
+#EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_6309.jpg" group-title="Pháo Hoa TV",23:15 - 18/08 | Al Jabalain VS Al Ettifaq (King's Cup) | Tày
+https://luong.phaohoa.live/live/phaohoa8/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
+#EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_12632.jpg" group-title="Pháo Hoa TV",23:15 - 18/08 | Al Najma VS Al Ittihad (King's Cup) | Pháo Thủ
+https://luong.phaohoa.live/live/phaohoa4/index.m3u8?expire=1815505159&sign=faaa23580764370ed378ecd708c9f262|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
 #EXTINF:-1 tvg-id="vtv1hd" group-title="VTV" group-logo="https://sgchill.duckdns.org/logo/vtv.png" tvg-logo="https://sgchill.duckdns.org/logo/vtv1.png",VTV1
 https://HaNoiIPTV.short.gy/HaNoiIPTV-VTV1_HD
 #EXTINF:-1 tvg-id="vtv2hd" group-title="VTV" group-logo="https://sgchill.duckdns.org/logo/vtv.png" tvg-logo="https://sgchill.duckdns.org/logo/vtv2.png",VTV2
