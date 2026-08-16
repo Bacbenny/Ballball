@@ -1,6 +1,8 @@
 #EXTM3U
 #EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/hxbcCXEa-rgb1I9qH.png" group-title="Giờ Vàng TV",15:00 - 16/08 | T1 VS GEN (LCK) | Blv Pery
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-t1-vs-gen-16-08-2026-cappsgnmzpag%2F&blv=blv-pery
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyfKbWD0-fWhDbcs5o9yqz6wk78cebogkDpUx78E6bNRaA2QM6hbWnOuw&s=10" group-title="Giờ Vàng TV",17:00 - 16/08 | Europe Smash VS Sweden 2026 (Europe Smash - Sweden 2026) | Blv 18
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-europe-smash-vs-sweden-2026-16-08-2026-gej2fajs1618%2F&blv=blv-18
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/ulsan-hd-fc.png" group-title="Giờ Vàng TV",17:30 - 16/08 | Ulsan Hyundai VS Gangwon FC (K-League Hàn Quốc) | Blv Bon
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-ulsan-hd-fc-vs-gangwon-fc-16-08-2026-6a7671c524d46db870aea7cd%2F&blv=blv-bon
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/watford.png" group-title="Giờ Vàng TV",19:30 - 16/08 | Watford VS Southampton (Hạng Nhất Anh) | Blv Mat
