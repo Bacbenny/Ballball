@@ -1,6 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/malaysia.png" group-title="Giờ Vàng TV",20:00 - 16/08 | Malaysia VS Việt Nam (ASIAN CUP 2026) | Blv Beo
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-malaysia-vs-vietnam-16-08-2026-6a7914b124d46db8703fe4a6%2F&blv=blv-beo
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/arsenal.png" group-title="Giờ Vàng TV",21:00 - 16/08 | Arsenal VS Manchester City (Siêu Cúp Anh) | Daucaumc
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-arsenal-vs-manchester-city-16-08-2026-6a2364861908f3a21c09f702%2F&blv=daucaumc
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/arsenal.png" group-title="Giờ Vàng TV",21:00 - 16/08 | Arsenal VS Manchester City (Siêu Cúp Anh) | Daucarsenal
@@ -67,10 +65,6 @@ https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/ap
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-cardiff-city-vs-wrexham-18-08-2026-6a7914c124d46db8703ff6c1%2F&blv=blv-ngong
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/internacional-rs.png" group-title="Giờ Vàng TV",06:00 - 18/08 | Internacional (RS) VS Remo Belem (PA) (VĐQG Brazil) | Blv Ngong
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-internacional-rs-vs-remo-belem-pa-18-08-2026-6a7914c124d46db8703ff732%2F&blv=blv-ngong
-#EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_478.jpg" group-title="Pháo Hoa TV",20:00 - 16/08 | Malaysia VS Việt Nam (ASEAN Championship) | Người Lửa
-https://luong.phaohoa.live/live/phaohoa1/index.m3u8?expire=1815505159&sign=9137553faeae361734eec8bda5ea16e2|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
-#EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_478.jpg" group-title="Pháo Hoa TV",20:00 - 16/08 | Malaysia VS Việt Nam (ASEAN Championship) | A Heo
-https://luong.phaohoa.live/live/phaohoa7/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
 #EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_141.jpg" group-title="Pháo Hoa TV",21:00 - 16/08 | Arsenal VS Manchester City (Community Shield) | Kevin
 https://luong.phaohoa.live/live/phaohoa2/index.m3u8?expire=1815505159&sign=d3bfcbaa36f949863f22cc89e1cc1afa|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
 #EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_176.jpg" group-title="Pháo Hoa TV",21:30 - 16/08 | Basel VS Barcelona (Club Friendlies) | Chim Nhỏ
