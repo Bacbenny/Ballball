@@ -1,8 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/watford.png" group-title="Giờ Vàng TV",19:30 - 16/08 | Watford VS Southampton (Hạng Nhất Anh) | Blv Mat
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-watford-vs-southampton-16-08-2026-6a7671c624d46db870aead44%2F&blv=blv-mat
-#EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/hxdMgrGG-Wz6bfhxO.png" group-title="Giờ Vàng TV",19:30 - 16/08 | Feyenoord VS G.A. Eagles (Netherlands Eredivisie - Round 2) | Blv Mason
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-feyenoord-vs-g-a-eagles-16-08-2026-xd84csqh5xuu%2F&blv=blv-mason
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/malaysia.png" group-title="Giờ Vàng TV",20:00 - 16/08 | Malaysia VS Việt Nam (ASIAN CUP 2026) | Blv Beo
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-malaysia-vs-vietnam-16-08-2026-6a7914b124d46db8703fe4a6%2F&blv=blv-beo
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/arsenal.png" group-title="Giờ Vàng TV",21:00 - 16/08 | Arsenal VS Manchester City (Siêu Cúp Anh) | Daucaumc
@@ -12,15 +8,17 @@ https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/ap
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/arsenal.png" group-title="Giờ Vàng TV",21:00 - 16/08 | Arsenal VS Manchester City (Siêu Cúp Anh) | Daucauvuive
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-arsenal-vs-manchester-city-16-08-2026-6a2364861908f3a21c09f702%2F&blv=daucauvuive
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/basel.png" group-title="Giờ Vàng TV",21:30 - 16/08 | Basel VS Barcelona (Giao hữu) | Blv Mat
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-basel-vs-barcelona-16-08-2026-6a7bb87587b267b970083056%2F&blv=blv-mat
-#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/schalke-04.png" group-title="Giờ Vàng TV",22:00 - 16/08 | Schalke 04 VS Real Madrid (Giao hữu) | Blv Ngu
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-schalke-04-vs-real-madrid-16-08-2026-6a712c3298d3bfb9800a255e%2F&blv=blv-ngu
-#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/burnley.png" group-title="Giờ Vàng TV",22:00 - 16/08 | Burnley VS West Ham United (Hạng Nhất Anh) | Blv Mù
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-burnley-vs-west-ham-united-16-08-2026-6a7671c924d46db870aeb123%2F&blv=blv%20M%C3%B9
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-basel-vs-fc-barcelona-16-08-2026-6a7bb87587b267b970083056%2F&blv=blv-mat
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/racing-santander.png" group-title="Giờ Vàng TV",22:00 - 16/08 | Racing Santander VS Villarreal (La Liga) | Blv Mason
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-racing-santander-vs-villarreal-16-08-2026-6a7671c924d46db870aeb11f%2F&blv=blv-mason
+#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/burnley.png" group-title="Giờ Vàng TV",22:00 - 16/08 | Burnley VS West Ham United (Hạng Nhất Anh) | Blv Mù
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-burnley-vs-west-ham-united-16-08-2026-6a7671c924d46db870aeb123%2F&blv=blv%20M%C3%B9
+#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/schalke-04.png" group-title="Giờ Vàng TV",22:00 - 16/08 | Schalke 04 VS Real Madrid (Giao hữu) | Blv Ngu
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-schalke-04-vs-real-madrid-16-08-2026-6a712c3298d3bfb9800a255e%2F&blv=blv-ngu
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/frosinone.png" group-title="Giờ Vàng TV",23:00 - 16/08 | Frosinone VS Juve Stabia (Cúp Ý) | Blv Leo
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-frosinone-vs-juve-stabia-16-08-2026-6a4066293c78f1054f0ee0a8%2F&blv=blv-leo
+#EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/UT4OdIYI-EaDgml7d.png" group-title="Giờ Vàng TV",23:00 - 16/08 | Europe Smash VS Sweden 2026 Chung kết (Europe Smash - Sweden 2026 Chung kết) | Blv 18
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-europe-smash-vs-sweden-2026-chung-ket-16-08-2026-khoduay1im78%2F&blv=blv-18
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/liverpool.png" group-title="Giờ Vàng TV",23:59 - 16/08 | Liverpool VS Como (Giao hữu) | Blv Mù
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-liverpool-vs-como-16-08-2026-6a7a663d24d46db87074e7a5%2F&blv=blv%20M%C3%B9
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/rcd-espanyol.png" group-title="Giờ Vàng TV",00:00 - 17/08 | Espanyol VS Levante (La Liga) | Blv Mat
