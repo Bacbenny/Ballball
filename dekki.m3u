@@ -1,6 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/lens.png" group-title="Giờ Vàng TV",01:45 - 17/08 | Lens VS Paris Saint Germain (Siêu cúp Pháp) | Blv Ben
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-lens-vs-paris-saint-germain-psg-17-08-2026-6a3f144ddb65f8f93c086de9%2F&blv=blv-ben
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/atletico-mineiro.png" group-title="Giờ Vàng TV",02:00 - 17/08 | Atletico Mineiro VS Gremio (RS) (VĐQG Brazil) | Blv Mat
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-atletico-mineiro-vs-gremio-rs-17-08-2026-6a7a663824d46db87074e26e%2F&blv=blv-mat
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/lazio.png" group-title="Giờ Vàng TV",02:15 - 17/08 | Lazio VS Mantova (Cúp Ý) | Blv Mason
@@ -9,12 +7,12 @@ https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/ap
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-celta-vigo-vs-osasuna-17-08-2026-6a7a664724d46db8707501ae%2F&blv=blv-mason
 #EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/OWHH40Wg-EXlX9pp1.png" group-title="Giờ Vàng TV",03:00 - 17/08 | Inter Toronto VS HFX Wanderers (Canadian Premier League) | Blv Mù
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-inter-toronto-vs-hfx-wanderers-17-08-2026-8ql4epb0f49d%2F&blv=blv%20M%C3%B9
-#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/river-plate.png" group-title="Giờ Vàng TV",04:00 - 17/08 | River Plate VS Argentinos Juniors (VĐQG Argentina) | Blv Mat
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-river-plate-vs-argentinos-juniors-17-08-2026-6a7a664824d46db870750360%2F&blv=blv-mat
-#EXTINF:-1 tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/f527c983cab3560c60e7b9d147904d7d.png" group-title="Giờ Vàng TV",04:00 - 17/08 | Atlanta Dream VS Indiana Fever (Women’s National Basketball Association) | Blv Ben
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-atlanta-dream-vs-indiana-fever-17-08-2026-21915073%2F&blv=blv-ben
 #EXTINF:-1 tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/f9c0c5ff8557d6be9b17f1ab94781948.png" group-title="Giờ Vàng TV",04:00 - 17/08 | Seattle Storm VS Chicago Sky (Women’s National Basketball Association) | Blv Cay
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-seattle-storm-vs-chicago-sky-17-08-2026-39815070%2F&blv=blv-cay
+#EXTINF:-1 tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/f527c983cab3560c60e7b9d147904d7d.png" group-title="Giờ Vàng TV",04:00 - 17/08 | Atlanta Dream VS Indiana Fever (Women’s National Basketball Association) | Blv Ben
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-atlanta-dream-vs-indiana-fever-17-08-2026-21915073%2F&blv=blv-ben
+#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/river-plate.png" group-title="Giờ Vàng TV",04:00 - 17/08 | River Plate VS Argentinos Juniors (VĐQG Argentina) | Blv Mat
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-river-plate-vs-argentinos-juniors-17-08-2026-6a7a664824d46db870750360%2F&blv=blv-mat
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/colo-colo.png" group-title="Giờ Vàng TV",04:30 - 17/08 | Colo Colo VS O Higgins (VĐQG Chilê) | Blv Mason
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-colo-colo-vs-ohiggins-17-08-2026-6a7a664824d46db8707503b0%2F&blv=blv-mason
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/mirassol.png" group-title="Giờ Vàng TV",04:30 - 17/08 | Mirassol FC VS Flamengo (VĐQG Brazil) | Blv Ngong
@@ -51,8 +49,6 @@ https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/ap
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-cardiff-city-vs-wrexham-18-08-2026-6a7914c124d46db8703ff6c1%2F&blv=blv-ngong
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/internacional-rs.png" group-title="Giờ Vàng TV",06:00 - 18/08 | Internacional (RS) VS Remo Belem (PA) (VĐQG Brazil) | Blv Ngong
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-internacional-rs-vs-remo-belem-pa-18-08-2026-6a7914c124d46db8703ff732%2F&blv=blv-ngong
-#EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_3821.jpg" group-title="Pháo Hoa TV",01:45 - 17/08 | Lens VS PSG (Trophée des Champions) | Kevin
-https://luong.phaohoa.live/live/phaohoa2/index.m3u8?expire=1815505159&sign=d3bfcbaa36f949863f22cc89e1cc1afa|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
 #EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_6008.jpg" group-title="Pháo Hoa TV",02:30 - 17/08 | Famalicao VS Maritimo (Primeira Liga) | Pháo Thủ
 https://luong.phaohoa.live/live/phaohoa4/index.m3u8?expire=1815505159&sign=faaa23580764370ed378ecd708c9f262|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
 #EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/OIP_tj4Ymih.jpg" group-title="Pháo Hoa TV",06:00 - 17/08 | Mỹ VS Thổ Nhĩ Kì (U17 World Championship) | KaKa
