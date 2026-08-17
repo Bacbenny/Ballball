@@ -59,8 +59,6 @@ https://luong.phaohoa.live/live/phaohoa5/index.m3u8?expire=1815505159&sign=67cc5
 https://luong.phaohoa.live/live/phaohoa4/index.m3u8?expire=1815505159&sign=faaa23580764370ed378ecd708c9f262|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
 #EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_7694.jpg" group-title="Pháo Hoa TV",02:00 - 19/08 | Fenerbahce VS Lyon (UEFA Champions League) | Tày
 https://luong.phaohoa.live/live/phaohoa8/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
-#EXTINF:-1 tvg-id="footylive-401877012" tvg-name="Tijuana vs Cruz Azul" tvg-logo="https://footylive.vercel.app/api/v1/team-logo/7oxx1fzpiZSymbiyjkJtEdYVp78HgEJ2qXs1EtYh8YKsN1ixisJTJ565mTeDAcnN3DW9jzc67QxNarYZJGZ6vgCR8JnABVVojEddyoFcaYKRcoFHmdXdg2oR6HC3vXeLmXzGZxbH6xnxJ13kaUyUCL2EpK8jfFuPHM2L9hoEQZdN33qsiYwNtitRwpwwYk9t26CsYdNscio3JH6xU2ukZqhULGwEst" group-title="Footy Live",LIVE | Tijuana vs Cruz Azul (Mexican Liga BBVA MX) [HD] | 2-1
-https://sportsembed.su/embed/401877012/tijuana-cruz-azul/hd/1
 #EXTINF:-1 tvg-id="vtv1hd" group-title="VTV" group-logo="https://sgchill.duckdns.org/logo/vtv.png" tvg-logo="https://sgchill.duckdns.org/logo/vtv1.png",VTV1
 https://HaNoiIPTV.short.gy/HaNoiIPTV-VTV1_HD
 #EXTINF:-1 tvg-id="vtv2hd" group-title="VTV" group-logo="https://sgchill.duckdns.org/logo/vtv.png" tvg-logo="https://sgchill.duckdns.org/logo/vtv2.png",VTV2
@@ -865,3 +863,4 @@ http://cdn69630.sp-vpn-vad.com:80/at2sc0r6b4/kmmutt995q/1609304
 http://cdn69630.sp-vpn-vad.com:80/at2sc0r6b4/kmmutt995q/1609305
 #EXTINF:-1 tvg-name="Ligue 1+ 10 ʜᴅ" tvg-logo="https://cdn.broadbandtvnews.com/wp-content/uploads/2025/08/14122528/Ligue1-900x600.jpg" group-title="LIGUE PLUS LIVE",Ligue 1+ 10 ʜᴅ
 http://cdn69630.sp-vpn-vad.com:80/at2sc0r6b4/kmmutt995q/1609306
+# Errors: footylive: footylive: không có trận nào có stream trong thời gian hợp lệ
