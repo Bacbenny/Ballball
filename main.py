@@ -504,14 +504,220 @@ def fetch_phaohoa() -> list:
     return _build_phaohoa_lines(matches)
 
 
+# ─── Footy Live ───────────────────────────────────────────────────────────────
+# Footy Live exposes the same match data used by its web page.  Each match may
+# have several providers/servers; the playlist intentionally keeps only the
+# best one so IPTV clients do not show duplicate programs.
+FOOTYLIVE_BASE_URL = (
+    os.environ.get("FOOTYLIVE_BASE_URL") or "https://footylive.vercel.app"
+).rstrip("/")
+FOOTYLIVE_MATCHES_URL = f"{FOOTYLIVE_BASE_URL}/api/matches"
+FOOTYLIVE_HDR = {
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+    ),
+    "Accept": "application/json, text/plain, */*",
+    "Referer": FOOTYLIVE_BASE_URL + "/",
+}
+
+
+def _footylive_absolute_url(url: str) -> str:
+    url = str(url or "").strip()
+    if url.startswith("/"):
+        return FOOTYLIVE_BASE_URL + url
+    return url
+
+
+def _footylive_quality_rank(quality: str) -> int:
+    value = str(quality or "").upper().replace(" ", "")
+    if value in {"4K", "2160P", "UHD", "FHD", "1080P", "1080"}:
+        return 0
+    if value in {"HD", "720P", "720"}:
+        return 1
+    if value in {"SD", "480P", "480", "360P", "360"}:
+        return 2
+    return 3
+
+
+def _footylive_provider_rank(source: dict) -> int:
+    provider = str(source.get("provider") or source.get("source") or "").lower()
+    # WatchFooty is FootyLive's primary provider.  Other providers are useful
+    # fallbacks, but should not replace an equal-quality primary stream.
+    if "watchfooty" in provider or provider.startswith("wf-"):
+        return 0
+    if "streamed" in provider:
+        return 1
+    if "cdn" in provider:
+        return 2
+    return 3
+
+
+def _choose_footylive_stream(sources: list) -> dict | None:
+    """Return one stable, non-proxied source with the best quality."""
+    candidates = []
+    seen_urls = set()
+    for index, source in enumerate(sources or []):
+        if not isinstance(source, dict):
+            continue
+        url = str(source.get("url") or "").strip()
+        # proxiedUrl is signed for a short period and must not be persisted in
+        # the repository playlist.  Use the original stream/embed URL instead.
+        if not url or url in seen_urls:
+            continue
+        seen_urls.add(url)
+        candidates.append((
+            _footylive_quality_rank(source.get("quality")),
+            _footylive_provider_rank(source),
+            index,
+            source,
+        ))
+    if not candidates:
+        return None
+    candidates.sort(key=lambda item: item[:3])
+    return candidates[0][3]
+
+
+def _footylive_match_in_window(match: dict, now_ms: int) -> bool:
+    status = str(match.get("status") or "").lower()
+    timestamp = int(match.get("timestamp") or 0)
+    if status == "live":
+        # Trust FootyLive's live status.  Some fixtures run beyond the generic
+        # two-hour window while the source is still actively marked as live.
+        return True
+    if not timestamp:
+        return False
+    return (
+        now_ms - MATCH_MAX_AGE_SECONDS * 1000
+        <= timestamp
+        <= now_ms + FUTURE_WINDOW_SECONDS * 1000
+    )
+
+
+def _fetch_footylive_stream(match: dict) -> tuple[str, dict | None]:
+    """Choose only sources attached to this match by the list endpoint.
+
+    Do not call /api/streams/{id} here: that endpoint can aggregate provider
+    fallbacks whose generic embed URL is occasionally assigned to the wrong
+    fixture.  A missing source is safer than a misleading program.
+    """
+    match_id = str(match.get("id") or "").strip()
+    source = _choose_footylive_stream(match.get("sources") or [])
+    return match_id, source
+
+
+def _footylive_logo(match: dict) -> str:
+    home = match.get("homeTeam") or {}
+    away = match.get("awayTeam") or {}
+    for value in (
+        home.get("badge"),
+        away.get("badge"),
+        match.get("leagueLogo"),
+        match.get("poster"),
+    ):
+        url = _footylive_absolute_url(value)
+        if url:
+            return url
+    return SPORT_LOGOS["football"]
+
+
+def _build_footylive_lines(matches: list, sources_by_id: dict) -> list:
+    now_ms = int(time.time() * 1000)
+    ordered = sorted(
+        matches,
+        key=lambda item: (
+            0 if str(item.get("status") or "").lower() == "live" else 1,
+            int(item.get("timestamp") or 0),
+            str(item.get("title") or ""),
+        ),
+    )
+    lines = []
+    seen_match_ids = set()
+
+    for match in ordered:
+        match_id = str(match.get("id") or "").strip()
+        if not match_id or match_id in seen_match_ids:
+            continue
+        if not _footylive_match_in_window(match, now_ms):
+            continue
+        source = sources_by_id.get(match_id)
+        stream_url = _footylive_absolute_url((source or {}).get("url"))
+        if not source or not stream_url.startswith(("http://", "https://")):
+            continue
+
+        seen_match_ids.add(match_id)
+        timestamp = int(match.get("timestamp") or 0)
+        status = str(match.get("status") or "").lower()
+        if timestamp:
+            kickoff = datetime.fromtimestamp(timestamp / 1000, tz=VN_TZ)
+            time_label = kickoff.strftime("%H:%M %d/%m")
+        else:
+            time_label = "--:-- --/--"
+
+        title = str(match.get("title") or "Football match").strip()
+        tournament = str(match.get("tournament") or "").strip()
+        quality = str(source.get("quality") or "Stream").upper()
+        score = ""
+        if status == "live":
+            home_score = match.get("homeScore")
+            away_score = match.get("awayScore")
+            if home_score is not None and away_score is not None:
+                score = f" | {home_score}-{away_score}"
+        state = "LIVE" if status == "live" else time_label
+        details = f"{state} | {title}"
+        if tournament:
+            details += f" ({tournament})"
+        details += f" [{quality}]"
+        if score:
+            details += score
+
+        safe_title = title.replace('"', "'")
+        lines.append(
+            f'#EXTINF:-1 tvg-id="footylive-{match_id}" '
+            f'tvg-name="{safe_title}" tvg-logo="{_footylive_logo(match)}" '
+            f'group-title="Footy Live",{details}'
+        )
+        lines.append(stream_url)
+    return lines
+
+
+def fetch_footylive() -> list:
+    """Fetch Footy Live programs and keep exactly one best source per match."""
+    response = requests.get(FOOTYLIVE_MATCHES_URL, headers=FOOTYLIVE_HDR, timeout=20)
+    response.raise_for_status()
+    payload = response.json()
+    matches = payload.get("matches") if isinstance(payload, dict) else payload
+    if not isinstance(matches, list):
+        raise ValueError("footylive: API không trả về danh sách trận đấu")
+
+    now_ms = int(time.time() * 1000)
+    candidates = [m for m in matches if isinstance(m, dict) and _footylive_match_in_window(m, now_ms)]
+    sources_by_id = {}
+    for match in candidates:
+        match_id, source = _fetch_footylive_stream(match)
+        if match_id and source:
+            sources_by_id[match_id] = source
+
+    lines = _build_footylive_lines(candidates, sources_by_id)
+    if not lines:
+        raise ValueError("footylive: không có trận nào có stream trong thời gian hợp lệ")
+    count = sum(1 for line in lines if line.startswith("#EXTINF"))
+    print(
+        f"  footylive: {count} trận, mỗi trận chỉ giữ 1 stream tốt nhất",
+        file=sys.stderr,
+    )
+    return lines
+
+
 # ─── Main ─────────────────────────────────────────────────────────────────────
 
 def main():
-    print("🔄 Đang fetch dữ liệu từ 3 nguồn song song…")
+    print("🔄 Đang fetch dữ liệu từ 4 nguồn song song…")
 
     tasks = {
         "giovang":  fetch_giovang,
         "phaohoa":  fetch_phaohoa,
+        "footylive": fetch_footylive,
         "vtv":      fetch_vtv,
     }
 
@@ -533,9 +739,10 @@ def main():
 
     giovang_lines = results.get("giovang", [])
     phaohoa_lines = results.get("phaohoa", [])
+    footylive_lines = results.get("footylive", [])
     vtv_lines     = results.get("vtv",     [])
 
-    all_lines = giovang_lines + phaohoa_lines + vtv_lines
+    all_lines = giovang_lines + phaohoa_lines + footylive_lines + vtv_lines
 
     total   = sum(1 for l in all_lines if l.startswith("#EXTINF"))
     content = "#EXTM3U\n" + "\n".join(all_lines)
@@ -547,7 +754,11 @@ def main():
 
     gv_count = sum(1 for l in giovang_lines if l.startswith("#EXTINF"))
     ph_count = sum(1 for l in phaohoa_lines if l.startswith("#EXTINF"))
-    print(f"\n✅ Hoàn thành! Đã lưu {total} kênh vào 'dekki.m3u' (Giờ Vàng: {gv_count}, Pháo Hoa: {ph_count})")
+    fl_count = sum(1 for l in footylive_lines if l.startswith("#EXTINF"))
+    print(
+        f"\n✅ Hoàn thành! Đã lưu {total} kênh vào 'dekki.m3u' "
+        f"(Giờ Vàng: {gv_count}, Pháo Hoa: {ph_count}, Footy Live: {fl_count})"
+    )
     if errors:
         print(f"⚠️  Lỗi xảy ra: {'; '.join(errors)}", file=sys.stderr)
 
