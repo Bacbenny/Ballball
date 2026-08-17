@@ -1,4 +1,6 @@
 #EXTM3U
+#EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/hxbcCXEa-rgb1I9qH.png" group-title="Giờ Vàng TV",16:00 - 17/08 | T1 VS DNS (KESPA CUP) | Blv Can
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-t1-vs-dns-17-08-2026-keadivazlfzo%2F&blv=blv-can
 #EXTINF:-1 tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/779c533165ff6737a253e453f0e09e5c.png" group-title="Giờ Vàng TV",16:00 - 17/08 | Meycauayan VS Cebu Classic (Philippines MPBL) | Blv Leo
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-meycauayan-vs-cebu-classic-17-08-2026-27081275%2F&blv=blv-leo
 #EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/4xYH6GwS-4lfNl3on.png" group-title="Giờ Vàng TV",17:30 - 17/08 | FC Bulleen Lions VS North Sunshine Eagles SC (Australia VPL 1) | Blv Mat
