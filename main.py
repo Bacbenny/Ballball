@@ -512,6 +512,13 @@ FOOTYLIVE_BASE_URL = (
     os.environ.get("FOOTYLIVE_BASE_URL") or "https://footylive.vercel.app"
 ).rstrip("/")
 FOOTYLIVE_MATCHES_URL = f"{FOOTYLIVE_BASE_URL}/api/matches"
+FOOTYLIVE_FUTURE_WINDOW_SECONDS = int(
+    os.environ.get("FOOTYLIVE_FUTURE_WINDOW") or 86400
+)
+FOOTYLIVE_RELAY_BASE = (
+    os.environ.get("FOOTYLIVE_RELAY_BASE")
+    or "https://dekki.bacbenny95.workers.dev/footylive"
+).rstrip("/")
 FOOTYLIVE_HDR = {
     "User-Agent": (
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
@@ -590,7 +597,7 @@ def _footylive_match_in_window(match: dict, now_ms: int) -> bool:
     return (
         now_ms - MATCH_MAX_AGE_SECONDS * 1000
         <= timestamp
-        <= now_ms + FUTURE_WINDOW_SECONDS * 1000
+        <= now_ms + FOOTYLIVE_FUTURE_WINDOW_SECONDS * 1000
     )
 
 
@@ -621,6 +628,12 @@ def _footylive_logo(match: dict) -> str:
     return SPORT_LOGOS["football"]
 
 
+def _footylive_relay_url(match_id: str) -> str:
+    if not FOOTYLIVE_RELAY_BASE or not match_id:
+        return ""
+    return f"{FOOTYLIVE_RELAY_BASE}/{quote(str(match_id), safe='')}"
+
+
 def _build_footylive_lines(matches: list, sources_by_id: dict) -> list:
     now_ms = int(time.time() * 1000)
     ordered = sorted(
@@ -641,40 +654,42 @@ def _build_footylive_lines(matches: list, sources_by_id: dict) -> list:
         if not _footylive_match_in_window(match, now_ms):
             continue
         source = sources_by_id.get(match_id)
-        stream_url = _footylive_absolute_url((source or {}).get("url"))
-        if not source or not stream_url.startswith(("http://", "https://")):
+        direct_url = _footylive_absolute_url((source or {}).get("url"))
+        relay_url = _footylive_relay_url(match_id)
+        if relay_url:
+            # Resolve the source only when the IPTV client clicks the item.
+            # This keeps upcoming fixtures visible before their stream exists
+            # and avoids persisting short-lived provider URLs in the M3U.
+            stream_url = relay_url
+        elif direct_url.startswith(("http://", "https://")):
+            stream_url = direct_url
+        else:
             continue
 
         seen_match_ids.add(match_id)
         timestamp = int(match.get("timestamp") or 0)
-        status = str(match.get("status") or "").lower()
         if timestamp:
             kickoff = datetime.fromtimestamp(timestamp / 1000, tz=VN_TZ)
-            time_label = kickoff.strftime("%H:%M %d/%m")
+            time_label = kickoff.strftime("%H:%M:%S - %d/%m")
         else:
-            time_label = "--:-- --/--"
+            time_label = "--:--:-- - --/--"
 
-        title = str(match.get("title") or "Football match").strip()
+        home = str((match.get("homeTeam") or {}).get("name") or "").strip()
+        away = str((match.get("awayTeam") or {}).get("name") or "").strip()
+        title = (
+            f"{home} VS {away}"
+            if home and away
+            else str(match.get("title") or "Football match").strip()
+        )
         tournament = str(match.get("tournament") or "").strip()
-        quality = str(source.get("quality") or "Stream").upper()
-        score = ""
-        if status == "live":
-            home_score = match.get("homeScore")
-            away_score = match.get("awayScore")
-            if home_score is not None and away_score is not None:
-                score = f" | {home_score}-{away_score}"
-        state = "LIVE" if status == "live" else time_label
-        details = f"{state} | {title}"
+        details = f"{time_label} | {title}"
         if tournament:
-            details += f" ({tournament})"
-        details += f" [{quality}]"
-        if score:
-            details += score
+            details += f" | {tournament}"
 
-        safe_title = title.replace('"', "'")
+        safe_details = details.replace('"', "'")
         lines.append(
             f'#EXTINF:-1 tvg-id="footylive-{match_id}" '
-            f'tvg-name="{safe_title}" tvg-logo="{_footylive_logo(match)}" '
+            f'tvg-name="{safe_details}" tvg-logo="{_footylive_logo(match)}" '
             f'group-title="Footy Live",{details}'
         )
         lines.append(stream_url)
