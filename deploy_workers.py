@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""deploy_workers.py — Auto-redeploy CF Workers (multipart form CF API v4)"""
+"""deploy_workers.py — Auto-redeploy CF Workers (Service Worker format with WASM)"""
 import os, sys, hashlib, json, requests
 from pathlib import Path
 
@@ -44,7 +44,7 @@ def build_bindings(name: str) -> list | None:
             return None
         print(f"  {name}: WARN — RELAY_SECRET not set, deploying without it")
 
-    bindings: list = []
+    bindings: list = [{"name": "STREAM_LOCK", "type": "wasm_module", "part": "stream-lock.wasm"}]
     if RELAY_SECRET:
         bindings.append({"name": "RELAY_SECRET", "type": "secret_text", "text": RELAY_SECRET})
     return bindings
@@ -63,13 +63,17 @@ def deploy(name: str, path: str) -> bool:
     if bindings is None:
         return False
 
+    wasm_path = p.parent / "stream-lock.wasm"
+    if not wasm_path.exists():
+        print(f"  {name}: {wasm_path} not found — skip")
+        return False
+
     print(f"  {name}: deploying ({len(code)} chars, md5={local_md[:8]})...")
     print(f"  {name}: bindings={[b['name'] for b in bindings]}")
 
+    # Use Service Worker format (not module) — multipart with metadata
     metadata = json.dumps({
-        "main_module": "index.js",
-        "compatibility_date": "2024-09-23",
-        "usage_model": "standard",
+        "body_part": "main",
         "bindings": bindings,
     })
 
@@ -77,8 +81,9 @@ def deploy(name: str, path: str) -> bool:
         f"https://api.cloudflare.com/client/v4/accounts/{ACCOUNT}/workers/scripts/{name}",
         headers=_cf_headers(),
         files={
-            "metadata": ("blob",      metadata, "application/json"),
-            "index.js": ("index.js",  code,     "application/javascript+module"),
+            "metadata": ("metadata", metadata, "application/json"),
+            "main": ("main", code, "application/javascript"),
+            "stream-lock.wasm": ("stream-lock.wasm", wasm_path.read_bytes(), "application/wasm"),
         },
         timeout=30,
     )
