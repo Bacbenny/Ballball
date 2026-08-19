@@ -427,9 +427,17 @@ function handleMatch(request, env, matchId) {
 }
 
 // ── entry ────────────────────────────────────────────────────────────────────
+// In Cloudflare Service Worker format, bindings are globals (not event.env).
+function serviceBindings() {
+  var bindings = {};
+  try { if (typeof STREAM_LOCK !== "undefined") bindings.STREAM_LOCK = STREAM_LOCK; } catch (_) {}
+  try { if (typeof RELAY_SECRET !== "undefined") bindings.RELAY_SECRET = RELAY_SECRET; } catch (_) {}
+  return bindings;
+}
 
 addEventListener("fetch", function(event) {
   var request = event.request;
+  var bindings = serviceBindings();
   if (request.method === "OPTIONS") {
     event.respondWith(new Response(null, { status: 204, headers: CORS_HEADERS }));
     return;
@@ -442,8 +450,8 @@ addEventListener("fetch", function(event) {
       ok: true,
       worker: "dekki-relay",
       resolver: "sportsembed-handshake",
-      relay_secret_set: Boolean(env.RELAY_SECRET),
-      wasm_loaded: Boolean(env.STREAM_LOCK)
+      relay_secret_set: Boolean(bindings.RELAY_SECRET),
+      wasm_loaded: Boolean(bindings.STREAM_LOCK)
     }));
     return;
   }
@@ -451,7 +459,7 @@ addEventListener("fetch", function(event) {
   var footyMatch = url.pathname.match(/^\/footylive\/([^/]+)$/);
   if (footyMatch && (request.method === "GET" || request.method === "HEAD")) {
     event.respondWith(
-      handleMatch(request, event.env || {}, decodeURIComponent(footyMatch[1])).catch(function(error) {
+      handleMatch(request, bindings, decodeURIComponent(footyMatch[1])).catch(function(error) {
         return jsonResp({ error: "Footy Live resolver failed", detail: String(error && error.message || error) }, 502);
       })
     );
