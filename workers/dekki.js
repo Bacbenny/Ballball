@@ -107,7 +107,11 @@ var wasmInstance = null;
 function getWasm(env) {
   if (wasmInstance) return Promise.resolve(wasmInstance);
   return WebAssembly.instantiate(env.STREAM_LOCK).then(function(result) {
-    wasmInstance = result.instance.exports;
+    // Cloudflare wasm_module bindings may resolve to an Instance directly,
+    // while raw WASM bytes resolve to { instance, module }.
+    var instance = result && result.instance ? result.instance : result;
+    if (!instance || !instance.exports) throw new Error("WASM instance has no exports");
+    wasmInstance = instance.exports;
     return wasmInstance;
   });
 }
