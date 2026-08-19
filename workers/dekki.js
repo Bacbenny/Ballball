@@ -1,7 +1,6 @@
 // dekki-relay — Cloudflare Worker (Service Worker format)
 // Resolves Footy Live sources via sportsembed handshake (protobuf + WASM crypto),
-// decrypts the HLS playlist URL, and proxies playlist + segments with the
-// correct Referer so IPTV clients can play without a browser.
+// tries every available embed server, then proxies playlist + segments.
 
 const FOOTYLIVE_STREAMS_URL = "https://footylive.vercel.app/api/streams/";
 const EMBED_ORIGIN = "https://sportsembed.su";
@@ -13,8 +12,6 @@ const CORS_HEADERS = {
   "Access-Control-Allow-Methods": "GET,HEAD,OPTIONS",
   "Access-Control-Allow-Headers": "Content-Type,Authorization,X-Relay-Token",
 };
-
-// ── helpers ────────────────────────────────────────────────────────────────
 
 function jsonResp(body, status) {
   status = status || 200;
@@ -39,9 +36,7 @@ function base64ToBytes(value) {
 
 function base64UrlEncode(value) {
   return bytesToBase64(new TextEncoder().encode(value))
-    .replace(/\+/g, "-")
-    .replace(/\//g, "_")
-    .replace(/=+$/, "");
+    .replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
 }
 
 function base64UrlDecode(value) {
@@ -58,20 +53,13 @@ function concatBytes() {
   var size = arrays.reduce(function(t, a) { return t + a.length; }, 0);
   var out = new Uint8Array(size);
   var off = 0;
-  for (var i = 0; i < arrays.length; i++) {
-    out.set(arrays[i], off);
-    off += arrays[i].length;
-  }
+  for (var i = 0; i < arrays.length; i++) { out.set(arrays[i], off); off += arrays[i].length; }
   return out;
 }
 
 function varint(n) {
-  var bytes = [];
-  var v = n;
-  while (v > 0x7f) {
-    bytes.push((v & 0x7f) | 0x80);
-    v >>>= 7;
-  }
+  var bytes = [], v = n;
+  while (v > 0x7f) { bytes.push((v & 0x7f) | 0x80); v >>>= 7; }
   bytes.push(v);
   return new Uint8Array(bytes);
 }
@@ -82,12 +70,8 @@ function protoField(field, value) {
 }
 
 function encodeRequest(data) {
-  return concatBytes(
-    protoField(1, data.category),
-    protoField(2, data.slug),
-    protoField(3, data.stream),
-    protoField(4, data.matchId),
-  );
+  return concatBytes(protoField(1, data.category), protoField(2, data.slug),
+    protoField(3, data.stream), protoField(4, data.matchId));
 }
 
 function pack(op, chunks) {
@@ -100,15 +84,10 @@ function pack(op, chunks) {
   return concatBytes.apply(null, parts);
 }
 
-// ── WASM crypto ────────────────────────────────────────────────────────────
-
 var wasmInstance = null;
-
 function getWasm(env) {
   if (wasmInstance) return Promise.resolve(wasmInstance);
   return WebAssembly.instantiate(env.STREAM_LOCK).then(function(result) {
-    // Cloudflare wasm_module bindings may resolve to an Instance directly,
-    // while raw WASM bytes resolve to { instance, module }.
     var instance = result && result.instance ? result.instance : result;
     if (!instance || !instance.exports) throw new Error("WASM instance has no exports");
     wasmInstance = instance.exports;
@@ -118,7 +97,6 @@ function getWasm(env) {
 
 function wasmDispatch(env, input) {
   return getWasm(env).then(function(wasm) {
-    // Allocation may grow WASM memory and detach previously-created views.
     var ptr = wasm.zonl3736033c71(input.length, 1);
     var inputMemory = new Uint8Array(wasm.memory.buffer);
     inputMemory.set(input, ptr);
@@ -130,8 +108,6 @@ function wasmDispatch(env, input) {
     return new Uint8Array(wasm.memory.buffer).slice(outPtr, outPtr + outLen);
   });
 }
-
-// ── embed handshake ─────────────────────────────────────────────────────────
 
 function resolveEmbed(env, embedUrl) {
   var url = new URL(embedUrl);
@@ -147,17 +123,13 @@ function resolveEmbed(env, embedUrl) {
     return wasmDispatch(env, pack(0x29, [body, nonce, factor])).then(function(proofBytes) {
       var proof = new TextDecoder().decode(proofBytes);
       if (!/^[0-9a-f]{64}$/.test(proof)) throw new Error("Invalid client proof");
-
       return fetch(EMBED_ORIGIN + "/api/get", {
         method: "POST",
         headers: {
-          "Content-Type": "application/octet-stream",
-          Origin: EMBED_ORIGIN,
+          "Content-Type": "application/octet-stream", Origin: EMBED_ORIGIN,
           Referer: EMBED_ORIGIN + "/embed/" + matchId + "/" + slug + "/" + category + "/" + stream,
-          "User-Agent": USER_AGENT,
-          "x-client-nonce": bytesToBase64(nonce),
-          "x-client-factor": bytesToBase64(factor),
-          "x-client-proof": proof,
+          "User-Agent": USER_AGENT, "x-client-nonce": bytesToBase64(nonce),
+          "x-client-factor": bytesToBase64(factor), "x-client-proof": proof,
         },
         body: body,
       });
@@ -169,11 +141,9 @@ function resolveEmbed(env, embedUrl) {
         var edge = base64ToBytes(upstream.headers.get("x-edge") || "");
         var bodyTag = base64ToBytes(upstream.headers.get("x-body-tag") || "");
         var keyHex = live.split("_").pop() || "";
-        var keyMatch = keyHex.match(/.{2}/g) || [];
-        var key = Uint8Array.from(keyMatch, function(h) { return parseInt(h, 16); });
+        var key = Uint8Array.from(keyHex.match(/.{2}/g) || [], function(h) { return parseInt(h, 16); });
         if (key.length !== 16 || edge.length !== 16 || bodyTag.length !== 8)
           throw new Error("Invalid embed response headers");
-
         return wasmDispatch(env, pack(0x3b, [encrypted, concatBytes(key, edge), nonce, factor, bodyTag]));
       }).then(function(streamUrlBytes) {
         var streamUrl = new TextDecoder().decode(streamUrlBytes).trim();
@@ -184,20 +154,11 @@ function resolveEmbed(env, embedUrl) {
   });
 }
 
-// ── signed proxy URLs ──────────────────────────────────────────────────────
-
 function hmac(secret, value) {
-  return crypto.subtle.importKey(
-    "raw",
-    new TextEncoder().encode(secret),
-    { name: "HMAC", hash: "SHA-256" },
-    false,
-    ["sign"]
-  ).then(function(key) {
-    return crypto.subtle.sign("HMAC", key, new TextEncoder().encode(value));
-  }).then(function(sig) {
-    return hexStr(new Uint8Array(sig));
-  });
+  return crypto.subtle.importKey("raw", new TextEncoder().encode(secret),
+    { name: "HMAC", hash: "SHA-256" }, false, ["sign"]).then(function(key) {
+      return crypto.subtle.sign("HMAC", key, new TextEncoder().encode(value));
+    }).then(function(sig) { return hexStr(new Uint8Array(sig)); });
 }
 
 function buildProxyUrl(origin, target, embed, secret, expires) {
@@ -213,232 +174,136 @@ function buildProxyUrl(origin, target, embed, secret, expires) {
 
 function verifyProxy(requestUrl, env) {
   var url = new URL(requestUrl);
-  var encodedTarget = url.searchParams.get("u");
-  var encodedEmbed = url.searchParams.get("e");
-  var expires = url.searchParams.get("x");
-  var provided = url.searchParams.get("s");
+  var encodedTarget = url.searchParams.get("u"), encodedEmbed = url.searchParams.get("e");
+  var expires = url.searchParams.get("x"), provided = url.searchParams.get("s");
   if (!encodedTarget || !encodedEmbed || !expires || !provided)
     return Promise.reject(new Error("Missing proxy parameters"));
   if (Number(expires) < Date.now()) return Promise.reject(new Error("Expired stream URL"));
-
-  var target = base64UrlDecode(encodedTarget);
-  var embed = base64UrlDecode(encodedEmbed);
+  var target = base64UrlDecode(encodedTarget), embed = base64UrlDecode(encodedEmbed);
   if (!target.startsWith("https://")) return Promise.reject(new Error("Invalid stream target"));
-
   return hmac(env.RELAY_SECRET, expires + "|" + embed + "|" + target).then(function(expected) {
     if (provided !== expected) throw new Error("Invalid proxy signature");
     return { target: target, embed: embed };
   });
 }
 
-// ── HLS relay ───────────────────────────────────────────────────────────────
-
-function absoluteUrl(value, base) {
-  return new URL(value, base).toString();
-}
-
+function absoluteUrl(value, base) { return new URL(value, base).toString(); }
 function isPlaylist(contentType, body) {
-  var head = body.toString("utf8", 0, Math.min(body.length, 256));
-  if (head.includes("#EXTM3U")) return true;
-  return contentType.includes("mpegurl") || (contentType.includes("text/plain") && head.includes("#EXT"));
-}
-
-function rewritePlaylist(text, baseUrl, embed, origin, secret, expires) {
-  var lines = text.split(/\r?\n/);
-  var promises = [];
-  var out = [];
-
-  for (var i = 0; i < lines.length; i++) {
-    var line = lines[i];
-    var trimmed = line.trim();
-    if (!trimmed) {
-      out.push(line);
-      continue;
-    }
-    if (trimmed.startsWith("#")) {
-      if (trimmed.includes('URI="') && !trimmed.includes('URI="data:')) {
-        var rebuilt = line;
-        var matches = Array.from(line.matchAll(/URI="([^"]+)"/g));
-        var chain = Promise.resolve(rebuilt);
-        for (var j = 0; j < matches.length; j++) {
-          (function(m) {
-            if (!m[1].startsWith("data:")) {
-              chain = chain.then(function(current) {
-                var absolute = absoluteUrl(m[1], baseUrl);
-                return buildProxyUrl(origin, absolute, embed, secret, expires).then(function(proxied) {
-                  return current.replace(m[0], 'URI="' + proxied + '"');
-                });
-              });
-            }
-          })(matches[j]);
-        }
-        promises.push(chain.then(function(result) { out.push(result); }));
-      } else {
-        out.push(line);
-      }
-      continue;
-    }
-    // Segment line
-    (function(segLine) {
-      promises.push(
-        buildProxyUrl(origin, absoluteUrl(segLine, baseUrl), embed, secret, expires).then(function(proxied) {
-          out.push(proxied);
-        })
-      );
-    })(trimmed);
-  }
-
-  return Promise.all(promises).then(function() {
-    // Reconstruct in order - we need to handle the fact that out is built out of order
-    // Actually we pushed in order, but promises resolve out of order
-    // Let's use indexed approach instead
-    return null;
-  }).then(function() {
-    // Fallback: rebuild with indexed promises
-    return rewritePlaylistIndexed(text, baseUrl, embed, origin, secret, expires);
-  });
+  var head = new TextDecoder().decode(body.slice(0, Math.min(body.length, 256)));
+  return head.includes("#EXTM3U") || contentType.includes("mpegurl") ||
+    (contentType.includes("text/plain") && head.includes("#EXT"));
 }
 
 function rewritePlaylistIndexed(text, baseUrl, embed, origin, secret, expires) {
-  var lines = text.split(/\r?\n/);
-  var results = new Array(lines.length);
-  var promises = [];
-
+  var lines = text.split(/\r?\n/), results = new Array(lines.length), promises = [];
   for (var i = 0; i < lines.length; i++) {
-    var line = lines[i];
-    var trimmed = line.trim();
-    if (!trimmed) {
-      results[i] = line;
-      continue;
-    }
+    var line = lines[i], trimmed = line.trim();
+    if (!trimmed) { results[i] = line; continue; }
     if (trimmed.startsWith("#")) {
       if (trimmed.includes('URI="') && !trimmed.includes('URI="data:')) {
-        var rebuilt = line;
-        var matches = Array.from(line.matchAll(/URI="([^"]+)"/g));
-        var chain = Promise.resolve(rebuilt);
-        for (var j = 0; j < matches.length; j++) {
-          (function(m) {
-            if (!m[1].startsWith("data:")) {
-              chain = chain.then(function(current) {
-                var absolute = absoluteUrl(m[1], baseUrl);
-                return buildProxyUrl(origin, absolute, embed, secret, expires).then(function(proxied) {
-                  return current.replace(m[0], 'URI="' + proxied + '"');
-                });
-              });
-            }
-          })(matches[j]);
-        }
-        promises.push(chain.then(function(result) { results[i] = result; }));
-      } else {
-        results[i] = line;
-      }
+        var rebuilt = line, matches = Array.from(line.matchAll(/URI="([^"]+)"/g)), chain = Promise.resolve(rebuilt);
+        for (var j = 0; j < matches.length; j++) (function(m) {
+          if (!m[1].startsWith("data:")) chain = chain.then(function(current) {
+            return buildProxyUrl(origin, absoluteUrl(m[1], baseUrl), embed, secret, expires)
+              .then(function(proxied) { return current.replace(m[0], 'URI="' + proxied + '"'); });
+          });
+        })(matches[j]);
+        (function(idx, c) { promises.push(c.then(function(result) { results[idx] = result; })); })(i, chain);
+      } else results[i] = line;
       continue;
     }
-    // Segment line
     (function(idx, segLine) {
-      promises.push(
-        buildProxyUrl(origin, absoluteUrl(segLine, baseUrl), embed, secret, expires).then(function(proxied) {
-          results[idx] = proxied;
-        })
-      );
+      promises.push(buildProxyUrl(origin, absoluteUrl(segLine, baseUrl), embed, secret, expires)
+        .then(function(proxied) { results[idx] = proxied; }));
     })(i, trimmed);
   }
-
-  return Promise.all(promises).then(function() {
-    return results.join("\n");
-  });
+  return Promise.all(promises).then(function() { return results.join("\n"); });
 }
 
 function serveProxy(requestUrl, env) {
   return verifyProxy(requestUrl, env).then(function(verified) {
-    return fetch(verified.target, {
-      headers: { Accept: "*/*", Referer: EMBED_ORIGIN + "/", "User-Agent": USER_AGENT },
-    });
+    return fetch(verified.target, { headers: { Accept: "*/*", Referer: EMBED_ORIGIN + "/", "User-Agent": USER_AGENT } });
   }).then(function(upstream) {
     if (!upstream.ok) return jsonResp({ error: "Upstream returned " + upstream.status }, 502);
     var contentType = upstream.headers.get("content-type") || "";
     return upstream.arrayBuffer().then(function(body) {
       var bodyBytes = new Uint8Array(body);
-      if (!isPlaylist(contentType, bodyBytes)) {
-        return new Response(body, {
-          status: 200,
-          headers: Object.assign({}, CORS_HEADERS, {
-            "Content-Type": contentType || "video/mp2t",
-            "Cache-Control": "no-store",
-          }),
-        });
-      }
-      var text = new TextDecoder().decode(bodyBytes);
-      var origin = new URL(requestUrl).origin;
-      var expires = Date.now() + 1800000;
-      return rewritePlaylistIndexed(text, verified.target, verified.embed, origin, env.RELAY_SECRET, expires).then(function(rewritten) {
-        return new Response(rewritten, {
-          status: 200,
-          headers: Object.assign({}, CORS_HEADERS, {
-            "Content-Type": "application/vnd.apple.mpegurl",
-            "Cache-Control": "no-store",
-          }),
-        });
+      if (!isPlaylist(contentType, bodyBytes)) return new Response(body, {
+        status: 200, headers: Object.assign({}, CORS_HEADERS, { "Content-Type": contentType || "video/mp2t", "Cache-Control": "no-store" })
       });
+      var expires = Date.now() + 1800000;
+      return rewritePlaylistIndexed(new TextDecoder().decode(bodyBytes), verified.target,
+        verified.embed, new URL(requestUrl).origin, env.RELAY_SECRET, expires).then(function(rewritten) {
+          return new Response(rewritten, { status: 200, headers: Object.assign({}, CORS_HEADERS, {
+            "Content-Type": "application/vnd.apple.mpegurl", "Cache-Control": "no-store"
+          })});
+        });
     });
   });
 }
 
-// ── Footy Live match resolution ─────────────────────────────────────────────
-
-function pickSource(payload, matchId) {
+function pickSources(payload, matchId) {
   var streams = Array.isArray(payload.streams) ? payload.streams : [];
-  if (!streams.length) throw new Error("No streams for match " + matchId);
-  var source = streams.find(function(s) { return s && s.url && String(s.provider || "").toLowerCase().includes("watchfooty"); }) ||
-               streams.find(function(s) { return s && s.url; });
-  if (!source || !source.url) throw new Error("No embed URL for match " + matchId);
-  return source.url;
+  var valid = streams.filter(function(s) { return s && s.url; });
+  if (!valid.length) throw new Error("No streams for match " + matchId);
+  var watch = valid.filter(function(s) { return String(s.provider || "").toLowerCase().includes("watchfooty"); });
+  return (watch.length ? watch : valid).map(function(s) { return s.url; });
+}
+
+function resolveFirstWorking(env, embedUrls, requestUrl, matchId) {
+  var index = 0, failures = [];
+  function next() {
+    if (index >= embedUrls.length) {
+      throw new Error("All " + embedUrls.length + " Footy sources failed: " + failures.join("; "));
+    }
+    var embedUrl = embedUrls[index++];
+    return resolveEmbed(env, embedUrl).then(function(resolved) {
+      var embedReferer = EMBED_ORIGIN + "/embed/" + resolved.embed;
+      return fetch(resolved.streamUrl, {
+        headers: {
+          Accept: "application/vnd.apple.mpegurl, application/x-mpegURL, */*",
+          Referer: embedReferer, Origin: EMBED_ORIGIN, "User-Agent": USER_AGENT,
+        },
+      }).then(function(playlist) {
+        if (!playlist.ok) {
+          failures.push(resolved.embed + " HLS " + playlist.status);
+          return next();
+        }
+        return playlist.text().then(function(text) {
+          if (!text.includes("#EXTM3U")) {
+            failures.push(resolved.embed + " invalid playlist");
+            return next();
+          }
+          var expires = Date.now() + 1800000;
+          return rewritePlaylistIndexed(text, resolved.streamUrl, resolved.embed,
+            new URL(requestUrl).origin, env.RELAY_SECRET, expires).then(function(rewritten) {
+              return new Response(rewritten, { status: 200, headers: Object.assign({}, CORS_HEADERS, {
+                "Content-Type": "application/vnd.apple.mpegurl", "Cache-Control": "no-store"
+              })});
+            });
+        });
+      });
+    }).catch(function(error) {
+      failures.push(embedUrl + " " + String(error && error.message || error));
+      return next();
+    });
+  }
+  return next();
 }
 
 function handleMatch(request, env, matchId) {
   var requestUrl = new URL(request.url);
-
-  if (requestUrl.searchParams.has("u")) {
-    return serveProxy(request.url, env);
-  }
-
+  if (requestUrl.searchParams.has("u")) return serveProxy(request.url, env);
   return fetch(FOOTYLIVE_STREAMS_URL + encodeURIComponent(matchId), {
     headers: { Accept: "application/json", "User-Agent": USER_AGENT },
   }).then(function(api) {
     if (!api.ok) return jsonResp({ error: "Footy Live API returned " + api.status }, 502);
     return api.json().then(function(payload) {
-      var embedUrl = pickSource(payload, matchId);
-      return resolveEmbed(env, embedUrl).then(function(resolved) {
-        var embedReferer = EMBED_ORIGIN + "/embed/" + resolved.embed;
-        return fetch(resolved.streamUrl, {
-          headers: {
-            Accept: "application/vnd.apple.mpegurl, application/x-mpegURL, */*",
-            Referer: embedReferer,
-            Origin: EMBED_ORIGIN,
-            "User-Agent": USER_AGENT,
-          },
-        }).then(function(playlist) {
-          if (!playlist.ok) return jsonResp({ error: "HLS upstream returned " + playlist.status }, 502);
-          return playlist.text().then(function(text) {
-            var expires = Date.now() + 1800000;
-            return rewritePlaylistIndexed(text, resolved.streamUrl, resolved.embed, requestUrl.origin, env.RELAY_SECRET, expires).then(function(rewritten) {
-              return new Response(rewritten, {
-                status: 200,
-                headers: Object.assign({}, CORS_HEADERS, {
-                  "Content-Type": "application/vnd.apple.mpegurl",
-                  "Cache-Control": "no-store",
-                }),
-              });
-            });
-          });
-        });
-      });
+      return resolveFirstWorking(env, pickSources(payload, matchId), request.url, matchId);
     });
   });
 }
 
-// ── entry ────────────────────────────────────────────────────────────────────
-// In Cloudflare Service Worker format, bindings are globals (not event.env).
 function serviceBindings() {
   var bindings = {};
   try { if (typeof STREAM_LOCK !== "undefined") bindings.STREAM_LOCK = STREAM_LOCK; } catch (_) {}
@@ -447,35 +312,21 @@ function serviceBindings() {
 }
 
 addEventListener("fetch", function(event) {
-  var request = event.request;
-  var bindings = serviceBindings();
+  var request = event.request, bindings = serviceBindings();
   if (request.method === "OPTIONS") {
-    event.respondWith(new Response(null, { status: 204, headers: CORS_HEADERS }));
-    return;
+    event.respondWith(new Response(null, { status: 204, headers: CORS_HEADERS })); return;
   }
-
   var url = new URL(request.url);
-
   if (url.pathname === "/healthz") {
-    event.respondWith(jsonResp({
-      ok: true,
-      worker: "dekki-relay",
-      resolver: "sportsembed-handshake",
-      relay_secret_set: Boolean(bindings.RELAY_SECRET),
-      wasm_loaded: Boolean(bindings.STREAM_LOCK)
-    }));
-    return;
+    event.respondWith(jsonResp({ ok: true, worker: "dekki-relay", resolver: "sportsembed-handshake",
+      relay_secret_set: Boolean(bindings.RELAY_SECRET), wasm_loaded: Boolean(bindings.STREAM_LOCK) })); return;
   }
-
   var footyMatch = url.pathname.match(/^\/footylive\/([^/]+)$/);
   if (footyMatch && (request.method === "GET" || request.method === "HEAD")) {
-    event.respondWith(
-      handleMatch(request, bindings, decodeURIComponent(footyMatch[1])).catch(function(error) {
-        return jsonResp({ error: "Footy Live resolver failed", detail: String(error && error.message || error) }, 502);
-      })
-    );
+    event.respondWith(handleMatch(request, bindings, decodeURIComponent(footyMatch[1]))
+      .catch(function(error) { return jsonResp({ error: "Footy Live resolver failed",
+        detail: String(error && error.message || error) }, 502); }));
     return;
   }
-
   event.respondWith(jsonResp({ error: "Not found. Use /healthz" }, 404));
 });
