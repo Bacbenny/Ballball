@@ -118,15 +118,16 @@ function getWasm(env) {
 
 function wasmDispatch(env, input) {
   return getWasm(env).then(function(wasm) {
-    var memory = new Uint8Array(wasm.memory.buffer);
-    var view = new DataView(wasm.memory.buffer);
+    // Allocation may grow WASM memory and detach previously-created views.
     var ptr = wasm.zonl3736033c71(input.length, 1);
-    memory.set(input, ptr);
+    var inputMemory = new Uint8Array(wasm.memory.buffer);
+    inputMemory.set(input, ptr);
     var retptr = wasm.yojc788d654767(-8);
     wasm.juut545fd2befc(retptr, ptr, input.length);
+    var view = new DataView(wasm.memory.buffer);
     var outPtr = view.getUint32(retptr, true);
     var outLen = view.getUint32(retptr + 4, true);
-    return memory.slice(outPtr, outPtr + outLen);
+    return new Uint8Array(wasm.memory.buffer).slice(outPtr, outPtr + outLen);
   });
 }
 
