@@ -194,6 +194,36 @@ function isPlaylist(contentType, body) {
     (contentType.includes("text/plain") && head.includes("#EXT"));
 }
 
+function fetchHlsPlaylist(streamUrl, embed) {
+  var referers = [
+    EMBED_ORIGIN + "/embed/" + embed,
+    EMBED_ORIGIN + "/",
+    "https://footylive.vercel.app/",
+  ];
+  var index = 0;
+  function next() {
+    if (index >= referers.length) {
+      return Promise.resolve(new Response(null, { status: 403 }));
+    }
+    var referer = referers[index++];
+    return fetch(streamUrl, {
+      headers: {
+        Accept: "application/vnd.apple.mpegurl, application/x-mpegURL, */*",
+        Referer: referer,
+        Origin: EMBED_ORIGIN,
+        "User-Agent": USER_AGENT,
+        "Sec-Fetch-Dest": "empty",
+        "Sec-Fetch-Mode": "cors",
+        "Sec-Fetch-Site": "cross-site",
+      },
+    }).then(function(response) {
+      if (response.ok) return response;
+      return next();
+    });
+  }
+  return next();
+}
+
 function rewritePlaylistIndexed(text, baseUrl, embed, origin, secret, expires) {
   var lines = text.split(/\r?\n/), results = new Array(lines.length), promises = [];
   for (var i = 0; i < lines.length; i++) {
@@ -258,13 +288,7 @@ function resolveFirstWorking(env, embedUrls, requestUrl, matchId) {
     }
     var embedUrl = embedUrls[index++];
     return resolveEmbed(env, embedUrl).then(function(resolved) {
-      var embedReferer = EMBED_ORIGIN + "/embed/" + resolved.embed;
-      return fetch(resolved.streamUrl, {
-        headers: {
-          Accept: "application/vnd.apple.mpegurl, application/x-mpegURL, */*",
-          Referer: embedReferer, Origin: EMBED_ORIGIN, "User-Agent": USER_AGENT,
-        },
-      }).then(function(playlist) {
+      return fetchHlsPlaylist(resolved.streamUrl, resolved.embed).then(function(playlist) {
         if (!playlist.ok) {
           failures.push(resolved.embed + " HLS " + playlist.status);
           return next();
