@@ -3,6 +3,7 @@
 // tries every available embed server, then proxies playlist + segments.
 
 const FOOTYLIVE_STREAMS_URL = "https://footylive.vercel.app/api/streams/";
+const WATCHFOOTY_MATCH_URL = "https://api.watchfooty.st/api/v1/match/";
 const EMBED_ORIGIN = "https://sportsembed.su";
 const USER_AGENT =
   "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36";
@@ -315,16 +316,38 @@ function resolveFirstWorking(env, embedUrls, requestUrl, matchId) {
   return next();
 }
 
+function fetchMatchPayload(matchId) {
+  var headers = { Accept: "application/json", "User-Agent": USER_AGENT };
+  return fetch(FOOTYLIVE_STREAMS_URL + encodeURIComponent(matchId), { headers: headers })
+    .then(function(api) {
+      if (api.ok) {
+        return api.json().then(function(payload) {
+          if (Array.isArray(payload && payload.streams) && payload.streams.length) return payload;
+          throw new Error("Footy Live API returned no streams");
+        });
+      }
+      throw new Error("Footy Live API returned " + api.status);
+    })
+    .catch(function() {
+      // The aggregator can return 500 while the underlying WatchFooty API
+      // still has the live match and its embed servers.
+      return fetch(WATCHFOOTY_MATCH_URL + encodeURIComponent(matchId), { headers: headers })
+        .then(function(api) {
+          if (!api.ok) throw new Error("WatchFooty API returned " + api.status);
+          return api.json().then(function(match) {
+            var streams = Array.isArray(match && match.streams) ? match.streams : [];
+            if (!streams.length) throw new Error("WatchFooty API returned no streams");
+            return { matchTitle: match.title || "", streams: streams };
+          });
+        });
+    });
+}
+
 function handleMatch(request, env, matchId) {
   var requestUrl = new URL(request.url);
   if (requestUrl.searchParams.has("u")) return serveProxy(request.url, env);
-  return fetch(FOOTYLIVE_STREAMS_URL + encodeURIComponent(matchId), {
-    headers: { Accept: "application/json", "User-Agent": USER_AGENT },
-  }).then(function(api) {
-    if (!api.ok) return jsonResp({ error: "Footy Live API returned " + api.status }, 502);
-    return api.json().then(function(payload) {
-      return resolveFirstWorking(env, pickSources(payload, matchId), request.url, matchId);
-    });
+  return fetchMatchPayload(matchId).then(function(payload) {
+    return resolveFirstWorking(env, pickSources(payload, matchId), request.url, matchId);
   });
 }
 
