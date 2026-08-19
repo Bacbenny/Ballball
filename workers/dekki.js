@@ -409,20 +409,26 @@ function handleMatch(request, env, matchId) {
     return api.json().then(function(payload) {
       var embedUrl = pickSource(payload, matchId);
       return resolveEmbed(env, embedUrl).then(function(resolved) {
+        var embedReferer = EMBED_ORIGIN + "/embed/" + resolved.embed;
         return fetch(resolved.streamUrl, {
-          headers: { Accept: "*/*", Referer: EMBED_ORIGIN + "/", "User-Agent": USER_AGENT },
-        });
-      }).then(function(playlist) {
-        if (!playlist.ok) return jsonResp({ error: "HLS upstream returned " + playlist.status }, 502);
-        return playlist.text().then(function(text) {
-          var expires = Date.now() + 1800000;
-          return rewritePlaylistIndexed(text, resolved.streamUrl, resolved.embed, requestUrl.origin, env.RELAY_SECRET, expires).then(function(rewritten) {
-            return new Response(rewritten, {
-              status: 200,
-              headers: Object.assign({}, CORS_HEADERS, {
-                "Content-Type": "application/vnd.apple.mpegurl",
-                "Cache-Control": "no-store",
-              }),
+          headers: {
+            Accept: "application/vnd.apple.mpegurl, application/x-mpegURL, */*",
+            Referer: embedReferer,
+            Origin: EMBED_ORIGIN,
+            "User-Agent": USER_AGENT,
+          },
+        }).then(function(playlist) {
+          if (!playlist.ok) return jsonResp({ error: "HLS upstream returned " + playlist.status }, 502);
+          return playlist.text().then(function(text) {
+            var expires = Date.now() + 1800000;
+            return rewritePlaylistIndexed(text, resolved.streamUrl, resolved.embed, requestUrl.origin, env.RELAY_SECRET, expires).then(function(rewritten) {
+              return new Response(rewritten, {
+                status: 200,
+                headers: Object.assign({}, CORS_HEADERS, {
+                  "Content-Type": "application/vnd.apple.mpegurl",
+                  "Cache-Control": "no-store",
+                }),
+              });
             });
           });
         });
