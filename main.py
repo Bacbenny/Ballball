@@ -586,11 +586,15 @@ def _choose_footylive_stream(sources: list) -> dict | None:
 
 
 def _footylive_match_in_window(match: dict, now_ms: int) -> bool:
-    status = str(match.get("status") or "").lower()
+    status = str(match.get("status") or "").strip().lower().replace("-", "_")
     timestamp = int(match.get("timestamp") or 0)
-    if status == "live":
-        # Trust FootyLive's live status.  Some fixtures run beyond the generic
-        # two-hour window while the source is still actively marked as live.
+    # The API has returned both Unix seconds and Unix milliseconds over time.
+    if 0 < timestamp < 100_000_000_000:
+        timestamp *= 1000
+    if status in {"live", "in_progress", "inprogress"}:
+        # Trust the provider's active status even when kickoff is stale.
+        return True
+    if status in {"upcoming", "scheduled", "not_started", "notstarted"} and not timestamp:
         return True
     if not timestamp:
         return False
