@@ -63,14 +63,6 @@ def deploy(name: str, path: str) -> bool:
     if bindings is None:
         return False
 
-    # Check for companion WASM module
-    wasm_path = p.parent / "stream-lock.wasm"
-    if not wasm_path.exists():
-        print(f"  {name}: {wasm_path} not found — skip")
-        return False
-
-    bindings = [*bindings, {"name": "STREAM_LOCK", "type": "wasm_module", "part": "stream-lock.wasm"}]
-
     print(f"  {name}: deploying ({len(code)} chars, md5={local_md[:8]})...")
     print(f"  {name}: bindings={[b['name'] for b in bindings]}")
 
@@ -87,7 +79,6 @@ def deploy(name: str, path: str) -> bool:
         files={
             "metadata": ("blob",      metadata, "application/json"),
             "index.js": ("index.js",  code,     "application/javascript+module"),
-            "stream-lock.wasm": ("stream-lock.wasm", wasm_path.read_bytes(), "application/wasm"),
         },
         timeout=30,
     )
