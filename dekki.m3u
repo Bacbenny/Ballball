@@ -1,12 +1,6 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://img.vtvprime.vn/bXvJuP3HD4D9FSyCBoV7bY-3ZsWh8X7Qb7IHhCFL8yk/rs:fit:716:402/czM6Ly9wcmQtc24taW1hZ2VzL2V2ZW50L2M1NDFhY2NhLWVkZTgtNGUyZC1hYzk4LTExZGM2OWFmNGRmZS5qcGc=.jpg" group-title="Giờ Vàng TV",23:59 - 19/08 | ATP Cincinnati Open VS ATP Cincinnati Open (ATP Cincinnati Open) | Blv Ben
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-atp-cincinnati-open-vs-atp-cincinnati-open-19-08-2026-bf1efjkcctot%2F&blv=blv-ben
-#EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/KUkA1be5-MyFeHWzn.png" group-title="Giờ Vàng TV",07:10 - 20/08 | Houston Astros VS Los Angeles Angels (MLB) | Blv Ngu
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-houston-astros-vs-los-angeles-angels-20-08-2026-h61lxuqdybph%2F&blv=blv-ngu
 #EXTINF:-1 tvg-logo="https://ssl.gstatic.com/onebox/media/sports/logos/optimized/etbcCni_q9qN-uhD83ZGmw_96x96.png" group-title="Giờ Vàng TV",07:40 - 20/08 | Colorado Rockies VS Los Angeles Dodgers (MLB) | Blv Can
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-colorado-rockies-vs-los-angeles-dodgers-20-08-2026-u9wlpbknngol%2F&blv=blv-can
-#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/marathon.png" group-title="Giờ Vàng TV",08:00 - 20/08 | Marathon VS Alianza FC (CONCACAF Central American Cup) | Blv Mat
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-marathon-vs-alianza-san-salvador-20-08-2026-6a3337260f72229b92061b8c%2F&blv=blv-mat
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/seattle-sounders.png" group-title="Giờ Vàng TV",08:30 - 20/08 | Seattle Sounders VS Austin FC (MLS Mỹ) | Blv Beo
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-seattle-sounders-vs-austin-fc-20-08-2026-6a7d093624d46db870f7ca9d%2F&blv=blv-beo
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/real-salt-lake.png" group-title="Giờ Vàng TV",08:30 - 20/08 | Real Salt Lake VS FC Dallas (MLS Mỹ) | Blv Mù
@@ -395,6 +389,8 @@ https://dekki.bacbenny95.workers.dev/footylive/5991788
 https://dekki.bacbenny95.workers.dev/footylive/4761058
 #EXTINF:-1 tvg-id="footylive-1000007723" tvg-name="09:00:00 - 21/08 | Los Angeles FC II VS Sporting Kansas City II | MLS NEXT Pro" tvg-logo="https://footylive.vercel.app/api/v1/team-logo/5Z8gMptwdEaAiDpugAM4Q1Kifo8UWamtjLRoNNuTci3jR7H3ui6HVzVnfX4SVvGP1NbiysBiHj4ypFyzTWYATv5SF1NdcUTRxwEddk6a8qfK2rX6UfMVLtCj2sUNtcisnrs2UTuf" group-title="Footy Live",09:00:00 - 21/08 | Los Angeles FC II VS Sporting Kansas City II | MLS NEXT Pro
 https://dekki.bacbenny95.workers.dev/footylive/1000007723
+#EXTINF:-1 tvg-id="footylive-5848847" tvg-name="10:00:00 - 21/08 | Firpo VS LD Alajuelense | Concacaf Central American Cup" tvg-logo="https://footylive.vercel.app/api/v1/team-logo/J8WX7fanVohPfdNUYh1U5wZtdHidw7D3y1Zuh45yr1cA58ojT6YFoG44pFrozyMxLGbFr3yYQZDXcMTvpHadYBMkGHwc4462DUxqx88rLcsbvETBECa6VVYcVvhv3FogAC8mN" group-title="Footy Live",10:00:00 - 21/08 | Firpo VS LD Alajuelense | Concacaf Central American Cup
+https://dekki.bacbenny95.workers.dev/footylive/5848847
 #EXTINF:-1 tvg-id="vtv1hd" group-title="VTV" group-logo="https://sgchill.duckdns.org/logo/vtv.png" tvg-logo="https://sgchill.duckdns.org/logo/vtv1.png",VTV1
 https://HaNoiIPTV.short.gy/HaNoiIPTV-VTV1_HD
 #EXTINF:-1 tvg-id="vtv2hd" group-title="VTV" group-logo="https://sgchill.duckdns.org/logo/vtv.png" tvg-logo="https://sgchill.duckdns.org/logo/vtv2.png",VTV2
