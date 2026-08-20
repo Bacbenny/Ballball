@@ -1,6 +1,7 @@
 // dekki-relay — Cloudflare Worker (Service Worker format)
 // Resolves Footy Live sources via sportsembed handshake (protobuf + WASM crypto),
 // tries every available embed server, then proxies playlist + segments.
+// Also supports /footylive/<id>/raw mode that returns a 302 redirect to the real m3u8.
 
 const FOOTYLIVE_STREAMS_URL = "https://footylive.vercel.app/api/streams/";
 const WATCHFOOTY_MATCH_URL = "https://api.watchfooty.st/api/v1/match/";
@@ -316,6 +317,24 @@ function resolveFirstWorking(env, embedUrls, requestUrl, matchId) {
   return next();
 }
 
+// Raw mode: resolve embed and return 302 redirect to the real m3u8 URL
+function resolveRawRedirect(env, embedUrls, matchId) {
+  var index = 0, failures = [];
+  function next() {
+    if (index >= embedUrls.length) {
+      throw new Error("All " + embedUrls.length + " Footy sources failed: " + failures.join("; "));
+    }
+    var embedUrl = embedUrls[index++];
+    return resolveEmbed(env, embedUrl).then(function(resolved) {
+      return { streamUrl: resolved.streamUrl, embed: resolved.embed };
+    }).catch(function(error) {
+      failures.push(embedUrl + " " + String(error && error.message || error));
+      return next();
+    });
+  }
+  return next();
+}
+
 function fetchMatchPayload(matchId) {
   var headers = { Accept: "application/json", "User-Agent": USER_AGENT };
   return fetch(FOOTYLIVE_STREAMS_URL + encodeURIComponent(matchId), { headers: headers })
@@ -329,8 +348,6 @@ function fetchMatchPayload(matchId) {
       throw new Error("Footy Live API returned " + api.status);
     })
     .catch(function() {
-      // The aggregator can return 500 while the underlying WatchFooty API
-      // still has the live match and its embed servers.
       return fetch(WATCHFOOTY_MATCH_URL + encodeURIComponent(matchId), { headers: headers })
         .then(function(api) {
           if (!api.ok) throw new Error("WatchFooty API returned " + api.status);
@@ -351,6 +368,21 @@ function handleMatch(request, env, matchId) {
   });
 }
 
+// Raw mode: /footylive/<id>/raw — resolve and 302 redirect to real m3u8
+function handleRawRedirect(request, env, matchId) {
+  return fetchMatchPayload(matchId).then(function(payload) {
+    return resolveRawRedirect(env, pickSources(payload, matchId), matchId);
+  }).then(function(resolved) {
+    return new Response(null, {
+      status: 302,
+      headers: Object.assign({}, CORS_HEADERS, {
+        "Location": resolved.streamUrl,
+        "Cache-Control": "no-store",
+      }),
+    });
+  });
+}
+
 function serviceBindings() {
   var bindings = {};
   try { if (typeof STREAM_LOCK !== "undefined") bindings.STREAM_LOCK = STREAM_LOCK; } catch (_) {}
@@ -367,6 +399,14 @@ addEventListener("fetch", function(event) {
   if (url.pathname === "/healthz") {
     event.respondWith(jsonResp({ ok: true, worker: "dekki-relay", resolver: "sportsembed-handshake",
       relay_secret_set: Boolean(bindings.RELAY_SECRET), wasm_loaded: Boolean(bindings.STREAM_LOCK) })); return;
+  }
+  // Raw redirect mode: /footylive/<id>/raw
+  var rawMatch = url.pathname.match(/^\/footylive\/([^/]+)\/raw$/);
+  if (rawMatch && (request.method === "GET" || request.method === "HEAD")) {
+    event.respondWith(handleRawRedirect(request, bindings, decodeURIComponent(rawMatch[1]))
+      .catch(function(error) { return jsonResp({ error: "Footy Live raw redirect failed",
+        detail: String(error && error.message || error) }, 502); }));
+    return;
   }
   var footyMatch = url.pathname.match(/^\/footylive\/([^/]+)$/);
   if (footyMatch && (request.method === "GET" || request.method === "HEAD")) {
