@@ -33,8 +33,6 @@ https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/ap
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-chicago-sky-vs-golden-state-valkyries-22-08-2026-12025076%2F&blv=blv-ben
 #EXTINF:-1 tvg-logo="https://nba.titan007.com/files/team/1har101sdj1w.png" group-title="Giờ Vàng TV",06:30 - 22/08 | Washington Mystics VS Minnesota Lynx (Women’s National Basketball Association) | Blv Pery
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-washington-mystics-vs-minnesota-lynx-22-08-2026-13025077%2F&blv=blv-pery
-#EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/OIP_RsNoEng.jpg" group-title="Pháo Hoa TV",18:00 - 20/08 | Brazil VS Mexico (U17 World Championship) | KaKa
-https://luong.phaohoa.live/live/phaohoa6/index.m3u8?expire=1815505159&sign=16059952b038cc8982ab6d1980711dc9|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
 #EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_6061_oV2JM2t.jpg" group-title="Pháo Hoa TV",21:15 - 20/08 | Al Wakra VS Qatar SC (Stars League) | Văn Minh
 https://luong.phaohoa.live/live/phaohoa3/index.m3u8?expire=1815505159&sign=32dbf97946c3646cdd7f664aebd7fa2a|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
 #EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_245.jpg" group-title="Pháo Hoa TV",22:00 - 20/08 | Kairat Almaty VS Anderlecht (UEFA Europa League) | Chim Nhỏ
@@ -353,6 +351,8 @@ https://dekki.bacbenny95.workers.dev/footylive/4802670
 https://dekki.bacbenny95.workers.dev/footylive/401912463
 #EXTINF:-1 tvg-id="footylive-4815132" tvg-name="18:00:00 - 21/08 | Real Madrid Castilla VS Atletico Baleares | Club Friendlies" tvg-logo="https://footylive.vercel.app/api/v1/team-logo/6PKQMT67bZWRYW7v6CQcQ8aWp4qt8ybXmntjA7UQWmCtx9GWUse7f5EsW7xF2YzX3M4Muy5S3jT796tKCTx2L4F7UaUnQfr1LyWP6vRYxCURMXrrtYhqy5w4FeeZ1k11yruUJxgr" group-title="Footy Live",18:00:00 - 21/08 | Real Madrid Castilla VS Atletico Baleares | Club Friendlies
 https://dekki.bacbenny95.workers.dev/footylive/4815132
+#EXTINF:-1 tvg-id="footylive-5972945" tvg-name="19:00:00 - 21/08 | Alashkert FC VS Gandzasar | Armenian First League" tvg-logo="https://footylive.vercel.app/api/v1/team-logo/2RdHrmhcKk44naaJFpGK4NGufJzmz147PSswuTkoEtQbBUK2VDmFAFTDs18bjsngwUhucmXZKAc9afM4784WnJNz82UAV8DagVMd9HY55mbpx3EmoBP59euzP14bGpuRawXCe5L" group-title="Footy Live",19:00:00 - 21/08 | Alashkert FC VS Gandzasar | Armenian First League
+https://dekki.bacbenny95.workers.dev/footylive/5972945
 #EXTINF:-1 tvg-id="vtv1hd" group-title="VTV" group-logo="https://sgchill.duckdns.org/logo/vtv.png" tvg-logo="https://sgchill.duckdns.org/logo/vtv1.png",VTV1
 https://HaNoiIPTV.short.gy/HaNoiIPTV-VTV1_HD
 #EXTINF:-1 tvg-id="vtv2hd" group-title="VTV" group-logo="https://sgchill.duckdns.org/logo/vtv.png" tvg-logo="https://sgchill.duckdns.org/logo/vtv2.png",VTV2
