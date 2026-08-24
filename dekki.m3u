@@ -1,8 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/jH8flBZA-UknO2XLh.png" group-title="Giờ Vàng TV",14:00 - 24/08 | Thái Lan VS Indonesia (Asian Women's Volleyball Championship) | Blv Sun
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-thai-lan-vs-indonesia-24-08-2026-etwgbk2likb3%2F&blv=blv-sun
-#EXTINF:-1 tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/0103d6b334ebb5d69d96d75e5aef3bd3.png" group-title="Giờ Vàng TV",14:00 - 24/08 | Quezon City TODA AKSYON VS Imus Agimat (Philippines MPBL) | Blv Cay
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-quezon-city-toda-aksyon-vs-imus-agimat-24-08-2026-22181271%2F&blv=blv-cay
 #EXTINF:-1 tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/c7ead789b0925ea6b2b21e8191c8d795.png" group-title="Giờ Vàng TV",16:00 - 24/08 | Negros Muscovados VS Mindoro Tamaraws (Philippines MPBL) | Blv Leo
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-negros-muscovados-vs-mindoro-tamaraws-24-08-2026-22481274%2F&blv=blv-leo
 #EXTINF:-1 tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/1ba7bc78f9d1c7a7110e43d1c6f141f3.png" group-title="Giờ Vàng TV",18:00 - 24/08 | Zamboanga Familys Brand Sardines VS Bataan Risers (Philippines MPBL) | Blv Leo
@@ -43,8 +39,8 @@ https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/ap
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-dana-white-s-contender-series-season-10-week-3-vs-dana-white-s-contender-series-season-10-week-3-25-08-2026-stq0oxbxh54r%2F&blv=blv-cay
 #EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/vRS62UcM-WbSxsmeb.png" group-title="Giờ Vàng TV",15:00 - 26/08 | KT VS BRO (LCK) | Blv Can
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-kt-vs-bro-26-08-2026-1hkj33m77z8f%2F&blv=blv-can
-#EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/OIP_Q9mUTFM.jpg" group-title="Pháo Hoa TV",14:00 - 24/08 | Thái Lan VS Indonesia (Vô Địch Châu Á) | Tày
-https://luong.phaohoa.live/live/phaohoa8/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
+#EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/4rLQYLGG-lldGheui.png" group-title="Giờ Vàng TV",16:03 - 26/08 | Preston Lions VS South Melbourne (VĐQG Úc) | Blv Mat
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-preston-lions-vs-south-melbourne-26-08-2026-dfer5asfevgf%2F&blv=blv-mat
 #EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/OIP_OOrZwnR.jpg" group-title="Pháo Hoa TV",18:30 - 24/08 | Trung Quốc VS Iran (Vô Địch Châu Á) | Tày
 https://luong.phaohoa.live/live/phaohoa8/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
 #EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/OIP_kMG9h3O.jpg" group-title="Pháo Hoa TV",18:30 - 24/08 | Hà Lan VS Bồ Đào Nha (Vô Địch Châu Âu) | Chim Nhỏ
