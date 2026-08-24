@@ -1,6 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/jilBtfFG-0xLZRP53.png" group-title="Giờ Vàng TV",09:00 - 24/08 | Việt Nam VS Hồng Kông TQ (Asian Women's Volleyball Championship) | Blv Sun
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-viet-nam-vs-hong-kong-tq-24-08-2026-ntzyaal40fv3%2F&blv=blv-sun
 #EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/jH8flBZA-UknO2XLh.png" group-title="Giờ Vàng TV",14:00 - 24/08 | Thái Lan VS Indonesia (Asian Women's Volleyball Championship) | Blv Sun
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-thai-lan-vs-indonesia-24-08-2026-etwgbk2likb3%2F&blv=blv-sun
 #EXTINF:-1 tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/c7ead789b0925ea6b2b21e8191c8d795.png" group-title="Giờ Vàng TV",16:00 - 24/08 | Negros Muscovados VS Mindoro Tamaraws (Philippines MPBL) | Blv Leo
@@ -19,8 +17,6 @@ https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/ap
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-ukraine-vs-austria-24-08-2026-cd74wj31vamo%2F&blv=blv-mat
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/kuruvchi-kokand-qoqon.png" group-title="Giờ Vàng TV",21:00 - 24/08 | Kuruvchi Kokand Qoqon VS Buxoro FK (Uzbekistan Super League) | Blv Bon
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-kuruvchi-kokand-qoqon-vs-buxoro-fk-24-08-2026-6a80fda424d46db870d067e5%2F&blv=blv-bon
-#EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/OIP_hdpF9Rm.jpg" group-title="Pháo Hoa TV",09:00 - 24/08 | Việt Nam VS Hong Kong (Vô Địch Châu Á) | KaKa
-https://luong.phaohoa.live/live/phaohoa6/index.m3u8?expire=1815505159&sign=16059952b038cc8982ab6d1980711dc9|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
 #EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/OIP_Q9mUTFM.jpg" group-title="Pháo Hoa TV",14:00 - 24/08 | Thái Lan VS Indonesia (Vô Địch Châu Á) | Tày
 https://luong.phaohoa.live/live/phaohoa8/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
 #EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/OIP_OOrZwnR.jpg" group-title="Pháo Hoa TV",18:30 - 24/08 | Trung Quốc VS Iran (Vô Địch Châu Á) | Tày
