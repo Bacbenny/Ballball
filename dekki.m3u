@@ -1,14 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/talleres-cordoba.png" group-title="Giờ Vàng TV",07:15 - 25/08 | Talleres Cordoba VS Rosario Central (VĐQG Argentina) | Blv Mù
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-talleres-cordoba-vs-rosario-central-25-08-2026-6a824f3224d46db8701ad3b6%2F&blv=blv%20M%C3%B9
-#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/lanus.png" group-title="Giờ Vàng TV",07:15 - 25/08 | Lanus VS Argentinos Juniors (VĐQG Argentina) | Blv Minh
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-lanus-vs-argentinos-juniors-25-08-2026-6a824f3224d46db8701ad3ac%2F&blv=blv-minh
-#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/atlas.gif" group-title="Giờ Vàng TV",08:00 - 25/08 | Atlas VS Tijuana (Mexico Liga MX) | Blv Beo
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-atlas-vs-tijuana-25-08-2026-n1y3brfquivx%2F&blv=blv-beo
-#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcVStvvVE4AFk27fsazXiVFYEa1uAe9Tr0nbTGjbjYCg&s=10" group-title="Giờ Vàng TV",08:40 - 25/08 | Arizona Diamondbacks VS Chicago Cubs (MLB) | Blv Can
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-arizona-diamondbacks-vs-chicago-cubs-25-08-2026-1qbpa5uxkmk1%2F&blv=blv-can
-#EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/jH8flBZA-UknO2XLh.png" group-title="Giờ Vàng TV",09:00 - 25/08 | Thái Lan VS Kazakhstan (Asian Women's Volleyball Championship) | Blv Sun
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-thai-lan-vs-kazakhstan-25-08-2026-187w5dunajw9%2F&blv=blv-sun
 #EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/xt3pVREa-tWhhL1yr.png" group-title="Giờ Vàng TV",13:00 - 25/08 | Iran VS Iraq (Asian Women's Volleyball Championship) | Blv Sun
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-iran-vs-iraq-25-08-2026-r0ichiioqw28%2F&blv=blv-sun
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/avondale-fc.png" group-title="Giờ Vàng TV",16:30 - 25/08 | Lions VS North Sunshine Eagles (Cúp Úc) | Blv Tri
@@ -36,11 +26,11 @@ https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/ap
 #EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/4rLQYLGG-lldGheui.png" group-title="Giờ Vàng TV",16:03 - 26/08 | Preston Lions VS South Melbourne (VĐQG Úc) | Blv Mat
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-preston-lions-vs-south-melbourne-26-08-2026-dfer5asfevgf%2F&blv=blv-mat
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/fc-anyang.png" group-title="Giờ Vàng TV",17:30 - 26/08 | FC Anyang VS Incheon United FC (K-League Hàn Quốc) | Blv Tri
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-fc-anyang-vs-incheon-united-26-08-2026-6a83a0d424d46db8705e754f%2F&blv=blv-tri
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-fc-anyang-vs-incheon-united-fc-26-08-2026-6a83a0d424d46db8705e754f%2F&blv=blv-tri
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/daejeon-citizen.png" group-title="Giờ Vàng TV",17:30 - 26/08 | Daejeon Citizen VS Ulsan Hyundai (K-League Hàn Quốc) | Blv Mason
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-daejeon-citizen-vs-ulsan-hd-fc-26-08-2026-6a83a0d424d46db8705e7558%2F&blv=blv-mason
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-daejeon-citizen-vs-ulsan-hyundai-26-08-2026-6a83a0d424d46db8705e7558%2F&blv=blv-mason
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/gangwon-fc.png" group-title="Giờ Vàng TV",17:30 - 26/08 | Gangwon FC VS Gwangju FC (K-League Hàn Quốc) | Blv Bon
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-gangwon-fc-vs-gwangju-football-club-26-08-2026-6a83a0d424d46db8705e755c%2F&blv=blv-bon
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-gangwon-fc-vs-gwangju-fc-26-08-2026-6a83a0d424d46db8705e755c%2F&blv=blv-bon
 #EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/Aoh2l9il-UcUsQHVR.png" group-title="Giờ Vàng TV",18:00 - 26/08 | Maldives VS Sri Lanka (FIBA World Cup) | Blv Cay
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-maldives-vs-sri-lanka-26-08-2026-dom6y1npn09h%2F&blv=blv-cay
 #EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/zuKuPVWg-8fviIzFt.png" group-title="Giờ Vàng TV",18:30 - 26/08 | Trung Quốc VS Đài Bắc Trung Hoa (Asian Women's Volleyball Championship) | Blv Tri
