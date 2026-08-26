@@ -1,10 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/vRS62UcM-WbSxsmeb.png" group-title="Giờ Vàng TV",15:00 - 26/08 | KT VS BRO (LCK) | Blv Can
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-kt-vs-bro-26-08-2026-1hkj33m77z8f%2F&blv=blv-can
-#EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/hEiQqnHG-UJq6P5tS.png" group-title="Giờ Vàng TV",18:30 - 26/08 | Spain VS Portugal (European Women's Volleyball Championship) | Blv Mat
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-spain-vs-portugal-26-08-2026-vhpjqunz29ci%2F&blv=blv-mat
-#EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/zuKuPVWg-8fviIzFt.png" group-title="Giờ Vàng TV",18:30 - 26/08 | Trung Quốc VS Đài Bắc Trung Hoa (Asian Women's Volleyball Championship) | Blv Sun
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-trung-quoc-vs-dai-bac-trung-hoa-26-08-2026-t46vux81gbs1%2F&blv=blv-sun
 #EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/rZCKbaFa-QHeKqeWC.png" group-title="Giờ Vàng TV",20:00 - 26/08 | Việt Nam VS Thái Lan (ASEAN Club Championship) | Haucay
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-viet-nam-vs-thai-lan-26-08-2026-c2516f618772%2F&blv=haucay
 #EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/rZCKbaFa-QHeKqeWC.png" group-title="Giờ Vàng TV",20:00 - 26/08 | Việt Nam VS Thái Lan (ASEAN Club Championship) | Dieccay
@@ -21,6 +15,12 @@ https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/ap
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-france-vs-italy-26-08-2026-m42mzfoe70gj%2F&blv=blv-mat
 #EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/Qur1J5jl-dtrVaP64.png" group-title="Giờ Vàng TV",21:30 - 26/08 | Belgium VS Azerbaijan (European Women's Volleyball Championship) | Blv Sun
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-belgium-vs-azerbaijan-26-08-2026-qlulynuvv2wh%2F&blv=blv-sun
+#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/al-faisaly-harmah.png" group-title="Giờ Vàng TV",23:00 - 26/08 | Al-Faisaly Harmah VS Al-Fateh SC (VĐQG Ả Rập Xê Út) | Blv Mason
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-al-faisaly-harmah-vs-al-fateh-26-08-2026-6a83a0d524d46db8705e763c%2F&blv=blv-mason
+#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/rapid-wien.png" group-title="Giờ Vàng TV",23:45 - 26/08 | Rapid Wien VS Hearts (Europa Conference League) | Blv 18
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-rapid-wien-vs-heart-of-midlothian-26-08-2026-6a80fe6414d93d23140c6699%2F&blv=blv-18
+#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/real-madrid.png" group-title="Giờ Vàng TV",02:00 - 27/08 | Real Madrid VS Real Sociedad (La Liga) | Blv Mason
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-real-madrid-vs-real-sociedad-27-08-2026-6a8e2c8624d46db870e153fa%2F&blv=blv-mason
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/river-plate.png" group-title="Giờ Vàng TV",07:30 - 27/08 | River Plate VS Independiente Santa Fe (Copa Sudamericana) | Blv Bon
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-river-plate-vs-independiente-santa-fe-27-08-2026-6a6d37ed7c050192260d53f7%2F&blv=blv-bon
 #EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/4SMElrXg-pMAPH8AH.png" group-title="Giờ Vàng TV",16:00 - 28/08 | Syria VS Australia (FIBA WC) | Blv Can
@@ -32,7 +32,7 @@ https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/ap
 #EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/Od7JGXZA-0E8Iihe1.png" group-title="Giờ Vàng TV",18:30 - 28/08 | Spain VS Romania (European Women's Volleyball Championship) | Blv Mat
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-spain-vs-romania-28-08-2026-jp2jc6xptd40%2F&blv=blv-mat
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/dalian-zhixing.png" group-title="Giờ Vàng TV",18:35 - 28/08 | Dalian Yingbo VS Beijing Guoan (VĐQG Trung Quốc) | Blv Tri
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-dalian-yingbo-vs-beijing-guoan-28-08-2026-6a87954b24d46db870ab454a%2F&blv=blv-tri
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-dalian-zhixing-vs-beijing-guoan-28-08-2026-6a87954b24d46db870ab454a%2F&blv=blv-tri
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/shenzhen-xinpengcheng.png" group-title="Giờ Vàng TV",19:00 - 28/08 | Shenzhen Xinpengcheng VS Shanghai Port (VĐQG Trung Quốc) | Blv Mason
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-shenzhen-xinpengcheng-vs-shanghai-port-28-08-2026-6a87954b24d46db870ab4565%2F&blv=blv-mason
 #EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_479.jpg" group-title="Pháo Hoa TV",20:00 - 26/08 | Việt Nam VS Thái Lan (ASEAN Championship) | Người Lửa
