@@ -1,16 +1,20 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/real-sociedad.png" group-title="Giờ Vàng TV",00:00 - 30/08 | Real Sociedad VS Espanyol (La Liga) | Blv Tri
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-real-sociedad-vs-espanyol-30-08-2026-6a8e2cb024d46db870e19c82%2F&blv=blv-tri
-#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/juventus.png" group-title="Giờ Vàng TV",01:45 - 30/08 | Juventus VS Parma (Seria A) | Blv Mù
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-juventus-vs-parma-30-08-2026-6a8e2cb124d46db870e19ed3%2F&blv=blv%20M%C3%B9
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/sevilla.png" group-title="Giờ Vàng TV",02:30 - 30/08 | Sevilla VS Atletico Madrid (La Liga) | Blv Mason
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-sevilla-vs-atletico-madrid-30-08-2026-6a8e2cb224d46db870e1a00f%2F&blv=blv-mason
-#EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_153.jpg" group-title="Pháo Hoa TV",00:00 - 30/08 | Real Sociedad VS Espanyol (La Liga) | Tày
-https://luong.phaohoa.live/live/phaohoa8/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
-#EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_96.jpg" group-title="Pháo Hoa TV",01:45 - 30/08 | Juventus VS Parma (Serie A) | Pháo Thủ
-https://luong.phaohoa.live/live/phaohoa4/index.m3u8?expire=1815505159&sign=faaa23580764370ed378ecd708c9f262|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
-#EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_3815.jpg" group-title="Pháo Hoa TV",01:45 - 30/08 | Lyon VS Le Havre (Ligue 1) | Tiểu Mây
-https://luong.phaohoa.live/live/phaohoa9/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
+#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/club-america.png" group-title="Giờ Vàng TV",08:00 - 30/08 | Club America VS Puebla (Mexico Liga MX) | Blv Tri
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-club-america-vs-puebla-30-08-2026-6a8e2cb524d46db870e1a410%2F&blv=blv-tri
+#EXTINF:-1 tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/f35ccb51f91cd187f149d4d55fc6be24.png" group-title="Giờ Vàng TV",09:00 - 30/08 | Phoenix Mercury VS Toronto Tempo (Women’s National Basketball Association) | Blv Cay
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-phoenix-mercury-vs-toronto-tempo-30-08-2026-26225072%2F&blv=blv-cay
+#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/santos-laguna.png" group-title="Giờ Vàng TV",10:00 - 30/08 | Santos Laguna VS Tigres UANL (Mexico Liga MX) | Blv Tri
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-santos-laguna-vs-tigres-uanl-30-08-2026-6a8e2cb524d46db870e1a4ad%2F&blv=blv-tri
+#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/marconi-stallions.png" group-title="Giờ Vàng TV",12:00 - 30/08 | Marconi Stallions VS Spirit FC (NPL NSW Úc) | Blv 1 2
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-marconi-stallions-vs-spirit-fc-30-08-2026-6a8e2cb624d46db870e1a4fa%2F&blv=blv-1-2
+#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/sutherland-sharks.png" group-title="Giờ Vàng TV",12:00 - 30/08 | Sutherland Sharks VS SD Raiders FC (NPL NSW Úc) | Blv Tri
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-sutherland-sharks-vs-sd-raiders-fc-30-08-2026-6a8e2cb624d46db870e1a524%2F&blv=blv-tri
+#EXTINF:-1 tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/fc7e9e5c1b3b475d85424951d119b3a1.jpg" group-title="Giờ Vàng TV",13:00 - 30/08 | Vietnam VS Thailand (Asia Cup Qualifiers) | Blv Vit
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-vietnam-vs-thailand-30-08-2026-25107272%2F&blv=blv-vit
+#EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/EZHAVpFa-hhXdwebJ.png" group-title="Giờ Vàng TV",14:15 - 30/08 | Nhật Bản VS Iran (Asian Women's Volleyball Championship) | Blv Sun
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-nhat-ban-vs-iran-30-08-2026-n03vzz4vljc6%2F&blv=blv-sun
 #EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_89.jpg" group-title="Pháo Hoa TV",02:30 - 30/08 | Sevilla VS Atl. Madrid (La Liga) | Kevin
 https://luong.phaohoa.live/live/phaohoa2/index.m3u8?expire=1815505159&sign=d3bfcbaa36f949863f22cc89e1cc1afa|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
 #EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/INTER-90-x-90-1024x1024.png" group-title="Pháo Hoa TV",06:30 - 30/08 | Inter Miami VS CF Montreal (MLS) | Chim Nhỏ
