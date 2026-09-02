@@ -1,16 +1,22 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSid8hQv3qe8eN2yrnvzVq1QmXBW_oGlXIE1MLfSILg1A&s=10" group-title="Giờ Vàng TV",22:00 - 02/09 | US OPEN VS US OPEN (US OPEN) | Blv Ben
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-us-open-vs-us-open-02-09-2026-r01k7eraov6s%2F&blv=blv-ben
-#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/udinese.png" group-title="Giờ Vàng TV",23:00 - 02/09 | Udinese VS Venezia F.C. (Cúp Ý) | Blv Mason
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-udinese-vs-venezia-02-09-2026-6a8f7e5324d46db87045ed06%2F&blv=blv-mason
-#EXTINF:-1 tvg-logo="https://ssl.gstatic.com/onebox/media/sports/logos/optimized/joYpsiaYi4GDCqhSRAq5Zg_96x96.png" group-title="Giờ Vàng TV",00:00 - 03/09 | Italy VS Thụy Điển (European Women's Volleyball Championship) | Blv Diec
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-italy-vs-thuy-dien-03-09-2026-buq4rc37llr8%2F&blv=blv-diec
+#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/millwall.png" group-title="Giờ Vàng TV",01:45 - 03/09 | Millwall VS Wrexham (Hạng Nhất Anh) | Blv Ngong
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-millwall-vs-wrexham-03-09-2026-6a8e2cd524d46db870e1de51%2F&blv=blv-ngong
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/vfl-osnabruck.jpg" group-title="Giờ Vàng TV",01:45 - 03/09 | VfL Osnabruck VS Bayern Munich (Cúp Quốc Gia Đức) | Blv Mason
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-vfl-osnabruck-vs-bayern-munchen-03-09-2026-6a29fd389d3f17fa5f00c5c7%2F&blv=blv-mason
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSid8hQv3qe8eN2yrnvzVq1QmXBW_oGlXIE1MLfSILg1A&s=10" group-title="Giờ Vàng TV",02:00 - 03/09 | US Open ATP VS US Open ATP (US Open ATP) | Blv Diec
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-us-open-atp-vs-us-open-atp-03-09-2026-i0zcpjbaqqxx%2F&blv=blv-diec
+#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/flamengo.png" group-title="Giờ Vàng TV",05:30 - 03/09 | Flamengo VS Mirassol FC (VĐQG Brazil) | Blv Ngong
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-flamengo-vs-mirassol-03-09-2026-699cea0b24d46db8701ac90c%2F&blv=blv-ngong
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSid8hQv3qe8eN2yrnvzVq1QmXBW_oGlXIE1MLfSILg1A&s=10" group-title="Giờ Vàng TV",06:00 - 03/09 | US Open ATP VS US Open ATP (US Open ATP) | Blv Mù
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-us-open-atp-vs-us-open-atp-03-09-2026-bp9k4gy6yxxt%2F&blv=blv%20M%C3%B9
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSid8hQv3qe8eN2yrnvzVq1QmXBW_oGlXIE1MLfSILg1A&s=10" group-title="Giờ Vàng TV",06:00 - 03/09 | US Open WTA VS US Open WTA (US Open WTA) | Blv Sun
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-us-open-wta-vs-us-open-wta-03-09-2026-2iwvsp350ppn%2F&blv=blv-sun
 #EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/pEvQ0hg5-hGyw8vJk.png" group-title="Giờ Vàng TV",07:00 - 03/09 | Forward Madison VS One Knoxville (United States - USL League One) | Blv Minh
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-forward-madison-vs-one-knoxville-03-09-2026-colxl7qldyc3%2F&blv=blv-minh
 #EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/GCXCT0Xg-vaQLo0O1.png" group-title="Giờ Vàng TV",07:10 - 03/09 | Jaime Faria VS Carlos Alcaraz (US Open ATP) | Blv Vit
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-jaime-faria-vs-carlos-alcaraz-03-09-2026-y99w98zt0obj%2F&blv=blv-vit
+#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/santos.png" group-title="Giờ Vàng TV",07:30 - 03/09 | Santos VS Palmeiras (Cúp Brazil) | Blv Ngong
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-santos-vs-palmeiras-03-09-2026-6a7e5b4db2e3a429e3051fcd%2F&blv=blv-ngong
 #EXTINF:-1 tvg-logo="https://bqn.1cdn.vn/thumbs/540x360/2026/08/28/_biangoai.png" group-title="Giờ Vàng TV",08:00 - 03/09 | Pickleball world cup 2026 - Tiên Sơn Center VS Pickleball world cup 2026 - Tiên Sơn Center (Pickleball world cup 2026 - Đồng đội) | Blv 18
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-pickleball-world-cup-2026-tien-son-center-vs-pickleball-world-cup-2026-tien-son-center-03-09-2026-emhofmtabwfj%2F&blv=blv-18
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/independiente-santa-fe.png" group-title="Giờ Vàng TV",08:25 - 03/09 | Independiente Santa Fe VS Millonarios (VĐQG Colombia) | Blv Bon
@@ -47,12 +53,6 @@ https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/ap
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-afghanistan-u20-vs-tajikistan-u20-03-09-2026-r0ckzkum06ud%2F&blv=blv-minh
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/india.png" group-title="Giờ Vàng TV",21:00 - 03/09 | India U20 VS Uzbekistan U20 (AFC U20 Qualification) | Blv Ngu
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-india-u20-vs-uzbekistan-u20-03-09-2026-0zg8gsxc7p7o%2F&blv=blv-ngu
-#EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_95.jpg" group-title="Pháo Hoa TV",22:30 - 02/09 | Zenit VS Dynamo Makhachkala (Cup) | Tiểu Mây
-https://luong.phaohoa.live/live/phaohoa9/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
-#EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_4984.jpg" group-title="Pháo Hoa TV",23:00 - 02/09 | Udinese VS Venezia (Coppa Italia) | Kevin
-https://luong.phaohoa.live/live/phaohoa2/index.m3u8?expire=1815505159&sign=d3bfcbaa36f949863f22cc89e1cc1afa|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
-#EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/OIP_p55YJlm.jpg" group-title="Pháo Hoa TV",00:00 - 03/09 | Italy VS Thuỵ Điển (CEV Cup) | KaKa
-https://luong.phaohoa.live/live/phaohoa6/index.m3u8?expire=1815505159&sign=16059952b038cc8982ab6d1980711dc9|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
 #EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_486.jpg" group-title="Pháo Hoa TV",01:00 - 03/09 | Real Madrid W VS Ajax W (UEFA Women's Champions League) | Tiểu Mây
 https://luong.phaohoa.live/live/phaohoa9/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
 #EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_1368.jpg" group-title="Pháo Hoa TV",01:30 - 03/09 | St. Truiden VS Royale Union SG (First Division A) | Văn Minh
@@ -63,18 +63,16 @@ https://luong.phaohoa.live/live/phaohoa8/index.m3u8?expire=1815822079&sign=9a0c1
 https://luong.phaohoa.live/live/phaohoa2/index.m3u8?expire=1815505159&sign=d3bfcbaa36f949863f22cc89e1cc1afa|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
 #EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_3926.jpg" group-title="Pháo Hoa TV",01:45 - 03/09 | VfL Osnabruck VS Bayern Munich (DFB Pokal) | Lưu Bị
 https://luong.phaohoa.live/live/phaohoa7/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
-#EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_3075.jpg" group-title="Pháo Hoa TV",02:00 - 03/09 | Burnley VS Middlesbrough (Championship) | Chim Nhỏ
-https://luong.phaohoa.live/live/phaohoa5/index.m3u8?expire=1815505159&sign=67cc5bcdcabb081229f5406e5b07483d|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
 #EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_18083.jpg" group-title="Pháo Hoa TV",15:30 - 03/09 | United Arab Emirates U20 VS Iraq U20 (AFC U20 Asian Cup) | Tiểu Mây
 https://luong.phaohoa.live/live/phaohoa9/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
-#EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_37961.jpg" group-title="Pháo Hoa TV",16:00 - 03/09 | Malaysia U20 VS Australia U20 (AFC U20 Asian Cup) | Tày
-https://luong.phaohoa.live/live/phaohoa8/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
+#EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_37961.jpg" group-title="Pháo Hoa TV",16:00 - 03/09 | Malaysia U20 VS Australia U20 (AFC U20 Asian Cup) | Kevin
+https://luong.phaohoa.live/live/phaohoa2/index.m3u8?expire=1815505159&sign=d3bfcbaa36f949863f22cc89e1cc1afa|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
 #EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_37953.jpg" group-title="Pháo Hoa TV",19:00 - 03/09 | Cambodia U20 VS Japan U20 (AFC U20 Asian Cup) | Chim Nhỏ
 https://luong.phaohoa.live/live/phaohoa5/index.m3u8?expire=1815505159&sign=67cc5bcdcabb081229f5406e5b07483d|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
 #EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_26089.jpg" group-title="Pháo Hoa TV",19:00 - 03/09 | Palestine U20 VS Vietnam U20 (AFC U20 Asian Cup) | Lưu Bị
 https://luong.phaohoa.live/live/phaohoa7/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
-#EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_37971.jpg" group-title="Pháo Hoa TV",19:30 - 03/09 | Turkmenistan U20 VS Thailand U20 (AFC U20 Asian Cup) | Kevin
-https://luong.phaohoa.live/live/phaohoa2/index.m3u8?expire=1815505159&sign=d3bfcbaa36f949863f22cc89e1cc1afa|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
+#EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_37971.jpg" group-title="Pháo Hoa TV",19:30 - 03/09 | Turkmenistan U20 VS Thailand U20 (AFC U20 Asian Cup) | Tày
+https://luong.phaohoa.live/live/phaohoa8/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
 #EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/OIP_uiH5uS2.jpg" group-title="Pháo Hoa TV",20:00 - 03/09 | Ba Lan VS Hà Lan (CEV Cup) | KaKa
 https://luong.phaohoa.live/live/phaohoa6/index.m3u8?expire=1815505159&sign=16059952b038cc8982ab6d1980711dc9|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
 #EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_6058.jpg" group-title="Pháo Hoa TV",21:00 - 03/09 | Al Ahli Doha VS Qatar SC (Stars League) | Văn Minh
