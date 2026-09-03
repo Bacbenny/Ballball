@@ -1,18 +1,12 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUTqvFrv1pqmJ_DKk_2M04ZxtRPzvRPRmVYf69kbMwGQ&s=10" group-title="Giờ Vàng TV",22:00 - 03/09 | Felix Auger Aliassime VS Karen Khachanov (US Open ATP) | Blv Mù
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-felix-auger-aliassime-vs-karen-khachanov-03-09-2026-utvx61hov20h%2F&blv=blv%20M%C3%B9
-#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/toulouse.png" group-title="Giờ Vàng TV",01:45 - 04/09 | Toulouse VS Lille OSC (Ligue 1) | Blv Mason
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-toulouse-vs-lille-04-09-2026-6a8f7e5a24d46db87045f628%2F&blv=blv-mason
-#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/real-sociedad.png" group-title="Giờ Vàng TV",02:00 - 04/09 | Real Sociedad VS Celta Vigo (La Liga) | Blv Ngong
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-real-sociedad-vs-celta-vigo-04-09-2026-6a90cfd324d46db8708d833b%2F&blv=blv-ngong
 #EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/tbCo8hwS-Miwa1QR9.png" group-title="Giờ Vàng TV",05:00 - 04/09 | Boca Juniors 2 VS Quilmes 2 (Argentina - Reserve League) | Blv Mat
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-boca-juniors-2-vs-quilmes-2-04-09-2026-i9vfmnu7y0ho%2F&blv=blv-mat
+#EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/S8ndY0FG-QqWcpfRh.png" group-title="Giờ Vàng TV",06:00 - 04/09 | Gael Monfils VS Learner Tien (US Open ATP) | Blv Mù
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-gael-monfils-vs-learner-tien-04-09-2026-37xo8qlqwr8e%2F&blv=blv%20M%C3%B9
 #EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/QPdJscAr-tQsU6dGl.png" group-title="Giờ Vàng TV",06:00 - 04/09 | Gremio VS Internacional (Copa Betano do Brasil) | Blv Ngong
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-gremio-vs-internacional-04-09-2026-msjtvsmewmwt%2F&blv=blv-ngong
 #EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/APeTacFG-Imfa8Cul.png" group-title="Giờ Vàng TV",06:00 - 04/09 | Paula Badosa VS Coco Gauf (US Open WTA) | Blv Sun
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-paula-badosa-vs-coco-gauf-04-09-2026-n40pfxusa29d%2F&blv=blv-sun
-#EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/S8ndY0FG-QqWcpfRh.png" group-title="Giờ Vàng TV",06:00 - 04/09 | Gael Monfils VS Learner Tien (US Open ATP) | Blv Mù
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-gael-monfils-vs-learner-tien-04-09-2026-37xo8qlqwr8e%2F&blv=blv%20M%C3%B9
 #EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/tO5cePjl-2DqYxEbl.png" group-title="Giờ Vàng TV",07:10 - 04/09 | Alexander Zverev VS Quentin Halys (US Open ATP) | Blv Ben
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-alexander-zverev-vs-quentin-halys-04-09-2026-eu2h1d3skt47%2F&blv=blv-ben
 #EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/jBfwbQjl-SzVvkMXB.png" group-title="Giờ Vàng TV",07:30 - 04/09 | Catolica VS CD Puerto Varas (Chile) | Blv Leo
@@ -35,10 +29,6 @@ https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/ap
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-germany-w-vs-japan-w-05-09-2026-drpwtuc9y3o1%2F&blv=blv-cay
 #EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/n9L75XEa-rFgTisIH.png" group-title="Giờ Vàng TV",01:45 - 06/09 | France W VS South Korea W (FIBA WC) | Blv Tom
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-france-w-vs-south-korea-w-06-09-2026-m0d8l7vxozsy%2F&blv=blv-tom
-#EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/243050_imgbank_1784643564.png" group-title="Pháo Hoa TV",01:00 - 04/09 | Al Diriyah VS Al Qadsiah (Saudi Pro League) | Pháo Thủ
-https://luong.phaohoa.live/live/phaohoa4/index.m3u8?expire=1815505159&sign=faaa23580764370ed378ecd708c9f262|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
-#EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_3794.jpg" group-title="Pháo Hoa TV",01:45 - 04/09 | Toulouse VS Lille (Ligue 1) | Chim Nhỏ
-https://luong.phaohoa.live/live/phaohoa5/index.m3u8?expire=1815505159&sign=67cc5bcdcabb081229f5406e5b07483d|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
 #EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/OIP_xjljaQl.jpg" group-title="Pháo Hoa TV",10:30 - 04/09 | Iran VS New Zealand (Vô Địch Châu Á) | KaKa
 https://luong.phaohoa.live/live/phaohoa6/index.m3u8?expire=1815505159&sign=16059952b038cc8982ab6d1980711dc9|Referer=https://phaohoa.live/&User-Agent=Mozilla/5.0
 #EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/Flag_of_South_Korea.svg.webp" group-title="Pháo Hoa TV",14:00 - 04/09 | Hàn Quốc VS Đài Loan (Vô Địch Châu Á) | Tày
