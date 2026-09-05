@@ -1,14 +1,10 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/detroit-city.png" group-title="Giờ Vàng TV",04:30 - 05/09 | Crown Legacy VS Chicago Fire II (USL Championship Mỹ) | Blv Ngong
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-crown-legacy-vs-chicago-fire-ii-05-09-2026-6a92215124d46db870e388ff%2F&blv=blv-ngong
-#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSid8hQv3qe8eN2yrnvzVq1QmXBW_oGlXIE1MLfSILg1A&s=10" group-title="Giờ Vàng TV",06:00 - 05/09 | US Open ATP VS US Open ATP (US Open ATP) | Blv Mù
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-us-open-atp-vs-us-open-atp-05-09-2026-hbuctzl3nzw4%2F&blv=blv%20M%C3%B9
 #EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/IuKvZHcM-MVDuhL74.png" group-title="Giờ Vàng TV",07:00 - 05/09 | Deportivo Campoelto VS Dep. San Jose (Paraguay) | Blv Leo
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-deportivo-campoelto-vs-dep-san-jose-05-09-2026-hpcs7rm1lmc5%2F&blv=blv-leo
 #EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/UBXM3cXg-fgTOwTv9.png" group-title="Giờ Vàng TV",07:10 - 05/09 | Ben Shelton VS Denis Shapovalov (US Open ATP) | Blv Ben
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-ben-shelton-vs-denis-shapovalov-05-09-2026-v396i26gvehb%2F&blv=blv-ben
-#EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/jgSYTgil-lGGssG8o.png" group-title="Giờ Vàng TV",07:30 - 05/09 | Puerto Montt VS Curicó Unido (Chile - Primera B) | Blv Minh
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-puerto-montt-vs-curico-unido-05-09-2026-i24otrbipswo%2F&blv=blv-minh
+#EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/nkZ3BZjl-KbTonrXB.png" group-title="Giờ Vàng TV",07:30 - 05/09 | D. Concepcion VS A. Italiano (Chile - Primera B) | Blv Minh
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-d-concepcion-vs-a-italiano-05-09-2026-i24otrbipswo%2F&blv=blv-minh
 #EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/e9lHfCTDsps/hqdefault.jpg?v=6a970a5f" group-title="Giờ Vàng TV",08:00 - 05/09 | ONE Fight Night 47 VS ONE Fight Night 47 (ONE Fight Night 47) | Blv 18
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-one-fight-night-47-vs-one-fight-night-47-05-09-2026-sfgz4qkdw05o%2F&blv=blv-18
 #EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/MZR1PNyS-zXpVtysq.png" group-title="Giờ Vàng TV",08:00 - 05/09 | Australia VS Bahrain (Asian Championship) | Blv Sun
@@ -40,7 +36,7 @@ https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/ap
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/hull-city.png" group-title="Giờ Vàng TV",23:30 - 05/09 | Hull City VS Aston Villa (Ngoại hạng Anh) | Blv Leo
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-hull-city-vs-aston-villa-05-09-2026-6a90cfec24d46db8708daab0%2F&blv=blv-leo
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/al-ittihad.png" group-title="Giờ Vàng TV",01:00 - 06/09 | Al Ittihad Jeddah VS Al-Nassr FC (VĐQG Ả Rập Xê Út) | Blv Ben
-https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-al-ittihad-jeddah-vs-al-nassr-fc-06-09-2026-6a92214f24d46db870e385fe%2F&blv=blv-ben
+https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-al-ittihad-vs-al-nassr-06-09-2026-6a92214f24d46db870e385fe%2F&blv=blv-ben
 #EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/n9L75XEa-rFgTisIH.png" group-title="Giờ Vàng TV",01:45 - 06/09 | France W VS South Korea W (FIBA WC) | Blv Tom
 https://a9ad1c81-aa0e-4108-86a8-5b05fa562d96-00-1rp01pegi8sso.pike.replit.dev/api/giovang-relay?page=https%3A%2F%2Fgiovang.city%2Ftruc-tiep-france-w-vs-south-korea-w-06-09-2026-m0d8l7vxozsy%2F&blv=blv-tom
 #EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/n9L75XEa-rFgTisIH.png" group-title="Giờ Vàng TV",01:45 - 06/09 | France W VS South Korea W (FIBA WC) | Blv Tom
@@ -927,4 +923,4 @@ http://cdn69630.sp-vpn-vad.com:80/at2sc0r6b4/kmmutt995q/1609304
 http://cdn69630.sp-vpn-vad.com:80/at2sc0r6b4/kmmutt995q/1609305
 #EXTINF:-1 tvg-name="Ligue 1+ 10 ʜᴅ" tvg-logo="https://cdn.broadbandtvnews.com/wp-content/uploads/2025/08/14122528/Ligue1-900x600.jpg" group-title="LIGUE PLUS LIVE",Ligue 1+ 10 ʜᴅ
 http://cdn69630.sp-vpn-vad.com:80/at2sc0r6b4/kmmutt995q/1609306
-# Errors: phaohoa: phaohoa: không fetch được dữ liệu trận đấu từ API; footylive: 402 Client Error: Payment Required for url: https://footylive.vercel.app/api/matches
+# Errors: footylive: 402 Client Error: Payment Required for url: https://footylive.vercel.app/api/matches; phaohoa: phaohoa: không fetch được dữ liệu trận đấu từ API
